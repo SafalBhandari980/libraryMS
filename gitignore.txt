@@ -1,0 +1,29 @@
+# NetBeans Specific
+/nbproject/private/
+/nbproject/Makefile-*.mk
+/nbproject/Package-*.bash
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/nbactions.xml
+/nb-configuration.xml
+/.nb-gradle/
+
+# Compiled Java Classes
+*.class
+
+# Package Files
+*.jar
+*.war
+*.ear
+
+# Log files
+*.log
+
+# OS Specific
+.DS_Store
+Thumbs.db
+
+database ignore
+src/database
