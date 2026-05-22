@@ -4,10 +4,18 @@
  */
 package database;
 import java.sql.Connection;
+import java.sql.ResultSet;
+
 /**
  *
  * @author acer
  */
 public interface db {
     Connection openConnection();
+    void closeConnection();
+    ResultSet runQuery();
+    int executeUpdate();
+
+    public void closeConnection(Connection conn);
+    
 }

@@ -4,6 +4,10 @@
  */
 package libraryms;
 
+import database.db;
+import database.MySqlConnector;
+import java.sql.Connection;
+
 /**
  *
  * @author acer
@@ -15,6 +19,9 @@ public class LibraryMS {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        db dbConnection=new MySqlConnector();
+        Connection conn=dbConnection.openConnection();
+        dbConnection.closeConnection(conn);
     }
     
 }
