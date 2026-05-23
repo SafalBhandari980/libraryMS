@@ -81,22 +81,12 @@ public class LMS_Login_Page extends javax.swing.JFrame {
         RecLabel.setForeground(java.awt.Color.white);
         RecLabel.setText("Personalized recommendations");
 
-        MainIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/logo-libraryms.png"))); // NOI18N
-
         join_prompt.setForeground(new java.awt.Color(249, 250, 251));
         join_prompt.setText("Join our Library management system with modern features!");
 
         softwarica_label.setFont(new java.awt.Font("Yu Gothic", 0, 12)); // NOI18N
         softwarica_label.setForeground(new java.awt.Color(122, 134, 154));
         softwarica_label.setText("© 2026 Softwarica College of IT & E-commerce · Coventry University");
-
-        noticon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-notification-bell.png"))); // NOI18N
-
-        searchicon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-book-search.png"))); // NOI18N
-
-        rocket_icon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-stat-reservations.png"))); // NOI18N
-
-        crediticon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-fine-payment.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -248,10 +238,8 @@ public class LMS_Login_Page extends javax.swing.JFrame {
                                 .addComponent(checkbox1, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(Forgotpasswordbutton, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(PasswordTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 401, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(panel3Layout.createSequentialGroup()
-                        .addGap(109, 109, 109)
-                        .addComponent(welcomebacklabel, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(PasswordTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 401, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(welcomebacklabel, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(panel3Layout.createSequentialGroup()
                         .addGap(216, 216, 216)
                         .addComponent(Newprompt, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)

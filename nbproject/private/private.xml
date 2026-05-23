@@ -3,9 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/LENOVO/Desktop/PROJECT%20LMS/libraryMS/src/database/MySqlConnector.java</file>
-            <file>file:/C:/Users/LENOVO/Desktop/PROJECT%20LMS/libraryMS/src/database/db.java</file>
+            <file>file:/C:/Users/LENOVO/Desktop/PROJECT%20LMS/libraryMS/src/view/BookSearch.java</file>
+            <file>file:/C:/Users/LENOVO/Desktop/PROJECT%20LMS/libraryMS/src/controller/control.java</file>
             <file>file:/C:/Users/LENOVO/Desktop/PROJECT%20LMS/libraryMS/src/view/NewClass.java</file>
+            <file>file:/C:/Users/LENOVO/Desktop/PROJECT%20LMS/libraryMS/src/model/java.java</file>
         </group>
     </open-files>
 </project-private>

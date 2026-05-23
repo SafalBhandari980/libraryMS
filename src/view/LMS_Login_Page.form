@@ -184,11 +184,6 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="MainIcon">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/logo-libraryms.png"/>
-            </Property>
-          </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="join_prompt">
           <Properties>
@@ -210,32 +205,12 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="noticon">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-notification-bell.png"/>
-            </Property>
-          </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="searchicon">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-book-search.png"/>
-            </Property>
-          </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="rocket_icon">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-stat-reservations.png"/>
-            </Property>
-          </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="crediticon">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-fine-payment.png"/>
-            </Property>
-          </Properties>
         </Component>
       </SubComponents>
     </Container>
@@ -307,11 +282,8 @@
                                       <Component id="Forgotpasswordbutton" min="-2" pref="154" max="-2" attributes="0"/>
                                   </Group>
                                   <Component id="PasswordTextField" alignment="0" min="-2" pref="401" max="-2" attributes="0"/>
+                                  <Component id="welcomebacklabel" alignment="0" min="-2" pref="340" max="-2" attributes="0"/>
                               </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="109" max="-2" attributes="0"/>
-                              <Component id="welcomebacklabel" min="-2" pref="340" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="216" max="-2" attributes="0"/>

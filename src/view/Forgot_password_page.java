@@ -88,8 +88,7 @@ public class Forgot_password_page extends javax.swing.JFrame {
         SendOTp.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 14)); // NOI18N
         SendOTp.setForeground(java.awt.Color.white);
         SendOTp.setText("SEND OTP ->");
-
-        Icon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-key.png"))); // NOI18N
+        SendOTp.addActionListener(this::SendOTpActionPerformed);
 
         javax.swing.GroupLayout panel3Layout = new javax.swing.GroupLayout(panel3);
         panel3.setLayout(panel3Layout);
@@ -99,13 +98,14 @@ public class Forgot_password_page extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel3Layout.createSequentialGroup()
-                        .addGroup(panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(ResetLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(EnterLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 283, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(140, 140, 140))
+                        .addComponent(EnterLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 283, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(197, 197, 197))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel3Layout.createSequentialGroup()
                         .addComponent(BackToLoginButton)
-                        .addGap(244, 244, 244))))
+                        .addGap(244, 244, 244))
+                    .addGroup(panel3Layout.createSequentialGroup()
+                        .addComponent(ResetLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 346, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())))
             .addGroup(panel3Layout.createSequentialGroup()
                 .addGroup(panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panel3Layout.createSequentialGroup()
@@ -156,14 +156,14 @@ public class Forgot_password_page extends javax.swing.JFrame {
             panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel1Layout.createSequentialGroup()
                 .addGap(71, 71, 71)
-                .addComponent(panel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(panel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(990, Short.MAX_VALUE))
         );
         panel1Layout.setVerticalGroup(
             panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel1Layout.createSequentialGroup()
                 .addGap(60, 60, 60)
-                .addComponent(panel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(panel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(697, Short.MAX_VALUE))
         );
 
@@ -189,22 +189,12 @@ public class Forgot_password_page extends javax.swing.JFrame {
         Feature4.setForeground(java.awt.Color.white);
         Feature4.setText("Personalized recommendations");
 
-        MSIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/logo-libraryms.png"))); // NOI18N
-
         DontWorrylabel.setForeground(new java.awt.Color(249, 250, 251));
         DontWorrylabel.setText("Don't worry - we'll help you get back in securely");
 
         jLabel14.setFont(new java.awt.Font("Yu Gothic", 0, 12)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(122, 134, 154));
         jLabel14.setText("© 2026 Softwarica College of IT & E-commerce · Coventry University");
-
-        NotifIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-notification-bell.png"))); // NOI18N
-
-        SearchIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-book-search.png"))); // NOI18N
-
-        RocketIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-stat-reservations.png"))); // NOI18N
-
-        CardIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-fine-payment.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -302,6 +292,10 @@ public class Forgot_password_page extends javax.swing.JFrame {
     private void ResendOTPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ResendOTPActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_ResendOTPActionPerformed
+
+    private void SendOTpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SendOTpActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SendOTpActionPerformed
 
     /**
      * @param args the command line arguments
