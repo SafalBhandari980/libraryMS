@@ -12,9 +12,16 @@ import java.sql.ResultSet;
  *
  * @author acer
  */
-public class MySqlConnector implements db {
+public class MySqlConnector extends db {
 
-    @Override
+    static Connection getConnection() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public static void closeConnection() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
     public Connection openConnection() {
         try{
             String username ="safal";
@@ -31,7 +38,7 @@ public class MySqlConnector implements db {
                 System.out.println("Connectuion success");
             }
             return connection;
-    }catch(Exception e){
+    }catch(SQLException e){
             System.out.println(e);
             }
         return null;
@@ -43,7 +50,7 @@ public class MySqlConnector implements db {
                 System.out.println("Connection close");
             }
 
-        }catch(Exception e){
+        }catch(SQLException e){
 
             System.out.println(e);
         }
@@ -67,9 +74,10 @@ public class MySqlConnector implements db {
           int result = stmp.executeUpdate(query);
           return result;
           
-      }catch(Exception e){
+      }catch(SQLException e){
           System.out.println(e);
           return -1;
       }
     }
+    
 }

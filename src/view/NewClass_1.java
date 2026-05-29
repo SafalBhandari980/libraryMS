@@ -8,6 +8,6 @@ package view;
  *
  * @author acer
  */
-public class NewClass {
+public class NewClass_1 {
     
 }
