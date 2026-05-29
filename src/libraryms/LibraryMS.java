@@ -22,5 +22,9 @@ public class LibraryMS {
             System.out.println("LibraryMS started. Wire up your View here.");
         });
     }
+<<<<<<< HEAD
 }
 
+=======
+}
+>>>>>>> 2adfde3a6e4f6784954be4a208096dec2415f42d

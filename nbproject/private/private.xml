@@ -3,6 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/acer/OneDrive/Dokumen/NetBeansProjects/LibraryMS/src/view/Forgot_password_page.java</file>
             <file>file:/C:/Users/acer/OneDrive/Dokumen/NetBeansProjects/LibraryMS/src/view/LMS_Login_Page.java</file>
             <file>file:/C:/Users/acer/OneDrive/Dokumen/NetBeansProjects/LibraryMS/src/database/db.java</file>
@@ -11,6 +12,23 @@
             <file>file:/C:/Users/acer/OneDrive/Dokumen/NetBeansProjects/LibraryMS/src/view/BookSearch.java</file>
             <file>file:/C:/Users/acer/OneDrive/Dokumen/NetBeansProjects/LibraryMS/src/view/NewClass_1.java</file>
             <file>file:/C:/Users/acer/OneDrive/Dokumen/NetBeansProjects/LibraryMS/src/view/Signup_Page.java</file>
+=======
+<<<<<<< HEAD
+            <file>file:/C:/Users/LENOVO/Desktop/PROJECT%20LMS/libraryMS/src/view/BookSearch.java</file>
+            <file>file:/C:/Users/LENOVO/Desktop/PROJECT%20LMS/libraryMS/src/controller/control.java</file>
+            <file>file:/C:/Users/LENOVO/Desktop/PROJECT%20LMS/libraryMS/src/view/NewClass.java</file>
+            <file>file:/C:/Users/LENOVO/Desktop/PROJECT%20LMS/libraryMS/src/model/java.java</file>
+=======
+            <file>file:/C:/Users/aamis/OneDrive/Documents/NetBeansProjects/libraryMS/src/controller/control.java</file>
+            <file>file:/C:/Users/aamis/OneDrive/Documents/NetBeansProjects/libraryMS/src/database/MySqlConnector.java</file>
+            <file>file:/C:/Users/aamis/OneDrive/Documents/NetBeansProjects/libraryMS/src/model/java.java</file>
+            <file>file:/C:/Users/aamis/OneDrive/Documents/NetBeansProjects/libraryMS/src/dao/data.java</file>
+            <file>file:/C:/Users/aamis/OneDrive/Documents/NetBeansProjects/libraryMS/src/database/db.java</file>
+            <file>file:/C:/Users/aamis/OneDrive/Documents/NetBeansProjects/libraryMS/src/images/picture.java</file>
+            <file>file:/C:/Users/aamis/OneDrive/Documents/NetBeansProjects/libraryMS/src/view/NewClass.java</file>
+            <file>file:/C:/Users/aamis/OneDrive/Documents/NetBeansProjects/libraryMS/src/libraryms/LibraryMS.java</file>
+>>>>>>> c7cd48a (Updated project files and model class)
+>>>>>>> 2adfde3a6e4f6784954be4a208096dec2415f42d
         </group>
     </open-files>
 </project-private>

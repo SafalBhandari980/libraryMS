@@ -24,9 +24,9 @@ public class MySqlConnector extends db {
 
     public Connection openConnection() {
         try{
-            String username ="root";
-            String password ="norman";
-            String database ="human_resources";
+            String username ="safal";
+            String password ="1234567";
+            String database ="Classwork1";
             Connection connection;
             connection = DriverManager.getConnection(
                            "jdbc:mysql://localhost:3306/" + database,username,password
@@ -62,7 +62,7 @@ public class MySqlConnector extends db {
            ResultSet result = stmp.executeQuery(query);
            return result;
 
-       }catch (SQLException e){
+       }catch (Exception e){
            System.out.println(e);
            return null;
        }
@@ -79,23 +79,5 @@ public class MySqlConnector extends db {
           return -1;
       }
     }
-<<<<<<< HEAD
     
-=======
-
-    @Override
-    public void closeConnection() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public ResultSet runQuery() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public int executeUpdate() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
->>>>>>> 2adfde3a6e4f6784954be4a208096dec2415f42d
 }

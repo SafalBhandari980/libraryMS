@@ -2,6 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
+<<<<<<< HEAD
 /*
  * db.java  (database package)
  * ─────────────────────────────────────────────────────────────────
@@ -12,6 +13,8 @@
  *   View → Controller → DAO → db → MySqlConnector → MySQL
  * ─────────────────────────────────────────────────────────────────
  */
+=======
+>>>>>>> 2adfde3a6e4f6784954be4a208096dec2415f42d
 package database;
 
 import java.sql.Connection;
@@ -84,4 +87,8 @@ public class db {
             stmt.setObject(i + 1, params[i]);
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 2adfde3a6e4f6784954be4a208096dec2415f42d
