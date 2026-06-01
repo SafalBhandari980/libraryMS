@@ -1,1 +1,41 @@
-/build/
+# NetBeans build output
+build/
+dist/
+nbproject/private/
+
+# Test scratch files
+test/out/
+*.class
+ClickTest.java
+ControllerTest.java
+DBTest2.java
+DbTest.java
+DbTest2.class
+DbUpdate.class
+DbUpdate.java
+LoginTester.java
+TestInsert.class
+TestInsert.java
+UITest.java
+run_log.txt
+run_log2.txt
+
+# Recovery / scratch scripts
+recover.cs
+recover.py
+recover2.cs
+recover3.cs
+recovered_control_write.txt
+recovered_dashboard.txt
+dash_chunks.txt
+dashboard.txt
+dashboard_tools.jsonl
+extract_dash.cs
+sources.txt
+user_input_control.jsonl
+compile_errors.txt
+
+# IDE
+.idea/
+*.iml
+bin/
