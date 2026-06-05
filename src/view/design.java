@@ -209,57 +209,67 @@ public class design extends javax.swing.JFrame {
         member.setForeground(new java.awt.Color(255, 255, 255));
         member.setText("MEMBER");
 
-        Dashboard.setBackground(new java.awt.Color(0, 204, 255));
+        Dashboard.setBackground(new java.awt.Color(27, 58, 107));
         Dashboard.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        Dashboard.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/home_1-removebg-preview (1).png"))); // NOI18N
+        Dashboard.setForeground(new java.awt.Color(255, 255, 255));
+        Dashboard.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_house-removebg-preview (1).png"))); // NOI18N
         Dashboard.setText("Dashboard");
 
-        booksearch.setBackground(new java.awt.Color(0, 204, 255));
+        booksearch.setBackground(new java.awt.Color(27, 58, 107));
         booksearch.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        booksearch.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/yoyo-removebg-preview (1).png"))); // NOI18N
+        booksearch.setForeground(new java.awt.Color(255, 255, 255));
+        booksearch.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_search-removebg-previe.png"))); // NOI18N
         booksearch.setText("Book Search");
 
-        myborrowings.setBackground(new java.awt.Color(0, 204, 255));
+        myborrowings.setBackground(new java.awt.Color(27, 58, 107));
         myborrowings.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        myborrowings.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/borrowing-removebg-preview (1).png"))); // NOI18N
+        myborrowings.setForeground(new java.awt.Color(255, 255, 255));
+        myborrowings.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_borrowing-removebg-pre.png"))); // NOI18N
         myborrowings.setText("My Borrowings");
 
-        wishlist.setBackground(new java.awt.Color(0, 204, 255));
+        wishlist.setBackground(new java.awt.Color(27, 58, 107));
         wishlist.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        wishlist.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/wishlist-removebg-preview (1).png"))); // NOI18N
+        wishlist.setForeground(new java.awt.Color(255, 255, 255));
+        wishlist.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_wishlist-removebg-prev.png"))); // NOI18N
         wishlist.setText("  Wishlist");
 
-        reviews.setBackground(new java.awt.Color(0, 204, 255));
+        reviews.setBackground(new java.awt.Color(27, 58, 107));
         reviews.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        reviews.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/review-removebg-preview (1).png"))); // NOI18N
+        reviews.setForeground(new java.awt.Color(255, 255, 255));
+        reviews.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_reviews-removebg-previ.png"))); // NOI18N
         reviews.setText("Reviews");
 
-        finepayment.setBackground(new java.awt.Color(0, 204, 255));
+        finepayment.setBackground(new java.awt.Color(27, 58, 107));
         finepayment.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        finepayment.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/payment-removebg-preview (1) (1).png"))); // NOI18N
+        finepayment.setForeground(new java.awt.Color(255, 255, 255));
+        finepayment.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_fine-removebg-preview (1).png"))); // NOI18N
         finepayment.setText("Fine Payment");
 
-        myaccount.setBackground(new java.awt.Color(0, 204, 255));
+        myaccount.setBackground(new java.awt.Color(27, 58, 107));
         myaccount.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        myaccount.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/account-removebg-preview (1).png"))); // NOI18N
+        myaccount.setForeground(new java.awt.Color(255, 255, 255));
+        myaccount.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colorful_my_account-removebg-pre.png"))); // NOI18N
         myaccount.setText("My Account");
 
         admin.setForeground(new java.awt.Color(255, 255, 255));
         admin.setText("ADMIN");
 
-        inventory.setBackground(new java.awt.Color(0, 204, 255));
+        inventory.setBackground(new java.awt.Color(27, 58, 107));
         inventory.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        inventory.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/inv-removebg-preview (1).png"))); // NOI18N
+        inventory.setForeground(new java.awt.Color(255, 255, 255));
+        inventory.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_inv_98-removebg-previe.png"))); // NOI18N
         inventory.setText("Inventory");
 
-        users.setBackground(new java.awt.Color(0, 204, 255));
+        users.setBackground(new java.awt.Color(27, 58, 107));
         users.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        users.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Users-removebg-preview (1).png"))); // NOI18N
+        users.setForeground(new java.awt.Color(255, 255, 255));
+        users.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_users-removebg-preview (1).png"))); // NOI18N
         users.setText("Users");
 
-        reports.setBackground(new java.awt.Color(0, 204, 255));
+        reports.setBackground(new java.awt.Color(27, 58, 107));
         reports.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        reports.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/reports-removebg-preview (1).png"))); // NOI18N
+        reports.setForeground(new java.awt.Color(255, 255, 255));
+        reports.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_reports-removebg-previ.png"))); // NOI18N
         reports.setText("Reports");
 
         SB.setBackground(new java.awt.Color(51, 255, 51));
@@ -289,11 +299,12 @@ public class design extends javax.swing.JFrame {
                         .addComponent(Dashboard)
                         .addComponent(booksearch)
                         .addComponent(myborrowings)
-                        .addComponent(wishlist, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(reviews, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(finepayment)
                         .addComponent(myaccount)
-                        .addComponent(inventory))
+                        .addComponent(inventory)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(reviews, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(wishlist, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(SB, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -672,8 +683,9 @@ public class design extends javax.swing.JFrame {
         improveyourskill.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         improveyourskill.setText("Improve your skills and code quality .");
 
-        borrownow.setBackground(new java.awt.Color(0, 204, 255));
+        borrownow.setBackground(new java.awt.Color(27, 58, 107));
         borrownow.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        borrownow.setForeground(new java.awt.Color(255, 255, 255));
         borrownow.setText("Borrow now");
 
         number.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N

@@ -237,11 +237,13 @@
                           <Component id="Dashboard" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="booksearch" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="myborrowings" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="wishlist" alignment="0" min="-2" pref="127" max="-2" attributes="0"/>
-                          <Component id="reviews" alignment="0" min="-2" pref="116" max="-2" attributes="0"/>
                           <Component id="finepayment" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="myaccount" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="inventory" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="reviews" alignment="0" max="32767" attributes="0"/>
+                              <Component id="wishlist" alignment="0" pref="127" max="32767" attributes="0"/>
+                          </Group>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <Component id="SB" min="-2" pref="55" max="-2" attributes="0"/>
@@ -326,13 +328,16 @@
         <Component class="javax.swing.JButton" name="Dashboard">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="cc" red="0" type="rgb"/>
+              <Color blue="6b" green="3a" red="1b" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="1"/>
             </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/images/home_1-removebg-preview (1).png"/>
+              <Image iconType="3" name="/images/colourful_house-removebg-preview (1).png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Dashboard"/>
           </Properties>
@@ -340,13 +345,16 @@
         <Component class="javax.swing.JButton" name="booksearch">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="cc" red="0" type="rgb"/>
+              <Color blue="6b" green="3a" red="1b" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="1"/>
             </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/images/yoyo-removebg-preview (1).png"/>
+              <Image iconType="3" name="/images/colourful_search-removebg-previe.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Book Search"/>
           </Properties>
@@ -354,13 +362,16 @@
         <Component class="javax.swing.JButton" name="myborrowings">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="cc" red="0" type="rgb"/>
+              <Color blue="6b" green="3a" red="1b" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="1"/>
             </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/images/borrowing-removebg-preview (1).png"/>
+              <Image iconType="3" name="/images/colourful_borrowing-removebg-pre.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="My Borrowings"/>
           </Properties>
@@ -368,13 +379,16 @@
         <Component class="javax.swing.JButton" name="wishlist">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="cc" red="0" type="rgb"/>
+              <Color blue="6b" green="3a" red="1b" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="1"/>
             </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/images/wishlist-removebg-preview (1).png"/>
+              <Image iconType="3" name="/images/colourful_wishlist-removebg-prev.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="  Wishlist"/>
           </Properties>
@@ -382,13 +396,16 @@
         <Component class="javax.swing.JButton" name="reviews">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="cc" red="0" type="rgb"/>
+              <Color blue="6b" green="3a" red="1b" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="1"/>
             </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/images/review-removebg-preview (1).png"/>
+              <Image iconType="3" name="/images/colourful_reviews-removebg-previ.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Reviews"/>
           </Properties>
@@ -396,13 +413,16 @@
         <Component class="javax.swing.JButton" name="finepayment">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="cc" red="0" type="rgb"/>
+              <Color blue="6b" green="3a" red="1b" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="12" style="1"/>
             </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/images/payment-removebg-preview (1) (1).png"/>
+              <Image iconType="3" name="/images/colourful_fine-removebg-preview (1).png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Fine Payment"/>
           </Properties>
@@ -410,13 +430,16 @@
         <Component class="javax.swing.JButton" name="myaccount">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="cc" red="0" type="rgb"/>
+              <Color blue="6b" green="3a" red="1b" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="12" style="1"/>
             </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/images/account-removebg-preview (1).png"/>
+              <Image iconType="3" name="/images/colorful_my_account-removebg-pre.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="My Account"/>
           </Properties>
@@ -432,13 +455,16 @@
         <Component class="javax.swing.JButton" name="inventory">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="cc" red="0" type="rgb"/>
+              <Color blue="6b" green="3a" red="1b" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="1"/>
             </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/images/inv-removebg-preview (1).png"/>
+              <Image iconType="3" name="/images/colourful_inv_98-removebg-previe.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Inventory"/>
           </Properties>
@@ -446,13 +472,16 @@
         <Component class="javax.swing.JButton" name="users">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="cc" red="0" type="rgb"/>
+              <Color blue="6b" green="3a" red="1b" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="1"/>
             </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/images/Users-removebg-preview (1).png"/>
+              <Image iconType="3" name="/images/colourful_users-removebg-preview (1).png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Users"/>
           </Properties>
@@ -460,13 +489,16 @@
         <Component class="javax.swing.JButton" name="reports">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="cc" red="0" type="rgb"/>
+              <Color blue="6b" green="3a" red="1b" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="1"/>
             </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/images/reports-removebg-preview (1).png"/>
+              <Image iconType="3" name="/images/colourful_reports-removebg-previ.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Reports"/>
           </Properties>
@@ -1213,10 +1245,13 @@
         <Component class="javax.swing.JButton" name="borrownow">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="cc" red="0" type="rgb"/>
+              <Color blue="6b" green="3a" red="1b" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="18" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Borrow now"/>
           </Properties>
