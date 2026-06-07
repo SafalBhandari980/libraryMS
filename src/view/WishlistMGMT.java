@@ -201,34 +201,24 @@ public class WishlistMGMT extends javax.swing.JFrame {
         jButton11.setBackground(new java.awt.Color(0, 255, 102));
         jButton11.setText("SB");
 
-        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-wishlist.png"))); // NOI18N
         jLabel19.setText("jLabel14");
 
-        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-reviews.png"))); // NOI18N
         jLabel20.setText("jLabel14");
 
-        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-fine-payment.png"))); // NOI18N
         jLabel24.setText("jLabel14");
 
-        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-my-account.png"))); // NOI18N
         jLabel25.setText("jLabel14");
 
-        jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-borrowing-history.png"))); // NOI18N
         jLabel26.setText("jLabel14");
 
-        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-dashboard.png"))); // NOI18N
         jLabel27.setText("jLabel14");
 
-        jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-book-search.png"))); // NOI18N
         jLabel28.setText("jLabel14");
 
-        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-inventory.png"))); // NOI18N
         jLabel29.setText("jLabel14");
 
-        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-users.png"))); // NOI18N
         jLabel30.setText("jLabel14");
 
-        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-reports.png"))); // NOI18N
         jLabel31.setText("jLabel14");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -462,13 +452,10 @@ public class WishlistMGMT extends javax.swing.JFrame {
         SearchBar.setText("Search books, authors, ISBN....");
         SearchBar.addActionListener(this::SearchBarActionPerformed);
 
-        NotificationButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-notification-bell.png"))); // NOI18N
         NotificationButton.addActionListener(this::NotificationButtonActionPerformed);
 
         ProfileButton.setBackground(new java.awt.Color(0, 255, 102));
         ProfileButton.setText("SB");
-
-        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-book-search.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -525,16 +512,7 @@ public class WishlistMGMT extends javax.swing.JFrame {
         EditProfileButton.setText("Edit profile");
         EditProfileButton.addActionListener(this::EditProfileButtonActionPerformed);
 
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-borrowing-history.png"))); // NOI18N
         jLabel14.setText("jLabel14");
-
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-wishlist.png"))); // NOI18N
-
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-fine-payment.png"))); // NOI18N
-
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-edit-profile.png"))); // NOI18N
-
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-reviews.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -602,7 +580,6 @@ public class WishlistMGMT extends javax.swing.JFrame {
         AvailableLabel.setForeground(new java.awt.Color(153, 255, 153));
         AvailableLabel.setText("Available");
 
-        BookIcon1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image (1).png"))); // NOI18N
         BookIcon1.setText("jLabel33");
 
         BorrowNowButton1.setText("Borrow Now");
@@ -651,7 +628,6 @@ public class WishlistMGMT extends javax.swing.JFrame {
         AvailableLabel1.setForeground(new java.awt.Color(153, 255, 153));
         AvailableLabel1.setText("Available");
 
-        BookIcon2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-book2.png"))); // NOI18N
         BookIcon2.setText("jLabel33");
 
         BorrowNowButton2.setText("Borrow Now");
@@ -700,7 +676,6 @@ public class WishlistMGMT extends javax.swing.JFrame {
         AvailableLabel2.setForeground(new java.awt.Color(153, 255, 153));
         AvailableLabel2.setText("Available");
 
-        BookIcon3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-book3.png"))); // NOI18N
         BookIcon3.setText("jLabel33");
 
         BorrowNowButton3.setText("Borrow Now");
@@ -749,7 +724,6 @@ public class WishlistMGMT extends javax.swing.JFrame {
         AvailableLabel3.setForeground(new java.awt.Color(153, 255, 153));
         AvailableLabel3.setText("Available");
 
-        BookIcon4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-book2.png"))); // NOI18N
         BookIcon4.setText("jLabel33");
 
         BorrowNowButton4.setText("Borrow Now");
@@ -798,7 +772,6 @@ public class WishlistMGMT extends javax.swing.JFrame {
         AvailableLabel4.setForeground(new java.awt.Color(153, 255, 153));
         AvailableLabel4.setText("Available");
 
-        BookIcon5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image (1).png"))); // NOI18N
         BookIcon5.setText("jLabel33");
 
         BorrowNowButton5.setText("Borrow Now");
@@ -847,7 +820,6 @@ public class WishlistMGMT extends javax.swing.JFrame {
         AvailableLabel5.setForeground(new java.awt.Color(255, 51, 51));
         AvailableLabel5.setText("Checked Out");
 
-        BookIcon6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-book4.png"))); // NOI18N
         BookIcon6.setText("jLabel33");
 
         BorrowNowButton6.setBackground(new java.awt.Color(204, 204, 204));

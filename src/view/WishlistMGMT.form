@@ -410,81 +410,51 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel19">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-wishlist.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="jLabel14"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel20">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-reviews.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="jLabel14"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel24">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-fine-payment.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="jLabel14"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel25">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-my-account.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="jLabel14"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel26">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-borrowing-history.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="jLabel14"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel27">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-dashboard.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="jLabel14"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel28">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-book-search.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="jLabel14"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel29">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-inventory.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="jLabel14"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel30">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-users.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="jLabel14"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel31">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-reports.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="jLabel14"/>
           </Properties>
         </Component>
@@ -769,11 +739,6 @@
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="NotificationButton">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-notification-bell.png"/>
-            </Property>
-          </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="NotificationButtonActionPerformed"/>
           </Events>
@@ -787,11 +752,6 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel32">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-book-search.png"/>
-            </Property>
-          </Properties>
         </Component>
       </SubComponents>
     </Container>
@@ -909,39 +869,16 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel14">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-borrowing-history.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="jLabel14"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel13">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-wishlist.png"/>
-            </Property>
-          </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel15">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-fine-payment.png"/>
-            </Property>
-          </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel16">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-edit-profile.png"/>
-            </Property>
-          </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel18">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-reviews.png"/>
-            </Property>
-          </Properties>
         </Component>
       </SubComponents>
     </Container>
@@ -1122,9 +1059,6 @@
             </Component>
             <Component class="javax.swing.JLabel" name="BookIcon1">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/image (1).png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="jLabel33"/>
               </Properties>
             </Component>
@@ -1210,9 +1144,6 @@
             </Component>
             <Component class="javax.swing.JLabel" name="BookIcon2">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/icon-book2.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="jLabel33"/>
               </Properties>
             </Component>
@@ -1298,9 +1229,6 @@
             </Component>
             <Component class="javax.swing.JLabel" name="BookIcon3">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/icon-book3.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="jLabel33"/>
               </Properties>
             </Component>
@@ -1386,9 +1314,6 @@
             </Component>
             <Component class="javax.swing.JLabel" name="BookIcon4">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/icon-book2.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="jLabel33"/>
               </Properties>
             </Component>
@@ -1474,9 +1399,6 @@
             </Component>
             <Component class="javax.swing.JLabel" name="BookIcon5">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/image (1).png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="jLabel33"/>
               </Properties>
             </Component>
@@ -1562,9 +1484,6 @@
             </Component>
             <Component class="javax.swing.JLabel" name="BookIcon6">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/icon-book4.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="jLabel33"/>
               </Properties>
             </Component>

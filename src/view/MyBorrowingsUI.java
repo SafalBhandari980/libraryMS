@@ -1,3 +1,5 @@
+
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -7,6 +9,8 @@
  *
  * @author user
  */
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 public class MyBorrowingsUI extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(MyBorrowingsUI.class.getName());
@@ -16,7 +20,9 @@ public class MyBorrowingsUI extends javax.swing.JFrame {
      */
     public MyBorrowingsUI() {
         initComponents();
+        populateFines();
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -97,7 +103,6 @@ public class MyBorrowingsUI extends javax.swing.JFrame {
         BookName4 = new javax.swing.JLabel();
         BookName5 = new javax.swing.JLabel();
         BookName6 = new javax.swing.JLabel();
-        BookName7 = new javax.swing.JLabel();
         BookName8 = new javax.swing.JLabel();
         BookName9 = new javax.swing.JLabel();
         AuthorName1 = new javax.swing.JLabel();
@@ -108,7 +113,6 @@ public class MyBorrowingsUI extends javax.swing.JFrame {
         AuthorName6 = new javax.swing.JLabel();
         AuthorName7 = new javax.swing.JLabel();
         AuthorName8 = new javax.swing.JLabel();
-        AuthorName9 = new javax.swing.JLabel();
         BorrowedDate1 = new javax.swing.JLabel();
         BorrowedDate2 = new javax.swing.JLabel();
         BorrowedDate3 = new javax.swing.JLabel();
@@ -116,7 +120,6 @@ public class MyBorrowingsUI extends javax.swing.JFrame {
         BorrowedDate5 = new javax.swing.JLabel();
         BorrowedDate6 = new javax.swing.JLabel();
         BorrowedDate7 = new javax.swing.JLabel();
-        BorrowedDate8 = new javax.swing.JLabel();
         ReturnedDate1 = new javax.swing.JLabel();
         BorrowedDate10 = new javax.swing.JLabel();
         ReturnedDate2 = new javax.swing.JLabel();
@@ -125,20 +128,24 @@ public class MyBorrowingsUI extends javax.swing.JFrame {
         ReturnedDate5 = new javax.swing.JLabel();
         ReturnedDate6 = new javax.swing.JLabel();
         ReturnedDate7 = new javax.swing.JLabel();
-        ReturnedDate8 = new javax.swing.JLabel();
         ReturnedDate9 = new javax.swing.JLabel();
         ActiveStatus1 = new java.awt.Label();
-        PriceTag = new java.awt.Label();
+        Fine7 = new java.awt.Label();
         ReturnedDate = new java.awt.Label();
         ActiveStatus2 = new java.awt.Label();
         ActiveStatus3 = new java.awt.Label();
         ReturnedStatus3 = new java.awt.Label();
         OverdueStatus2 = new java.awt.Label();
         OverDueLabel = new java.awt.Label();
-        PriceTag2 = new java.awt.Label();
-        ReturnedStatus4 = new java.awt.Label();
+        Fine2 = new java.awt.Label();
         ReturnedStatus2 = new java.awt.Label();
         filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(20, 0), new java.awt.Dimension(20, 0), new java.awt.Dimension(20, 32767));
+        Fine6 = new javax.swing.JLabel();
+        Fine8 = new javax.swing.JLabel();
+        Fine4 = new javax.swing.JLabel();
+        Fine5 = new javax.swing.JLabel();
+        Fine3 = new javax.swing.JLabel();
+        Fine1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -348,7 +355,7 @@ public class MyBorrowingsUI extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jButton11, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE)
                         .addGap(51, 51, 51)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(92, Short.MAX_VALUE))
         );
 
         jPanel2.setBackground(java.awt.Color.white);
@@ -495,7 +502,7 @@ public class MyBorrowingsUI extends javax.swing.JFrame {
                 .addComponent(jLabel32)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(SearchBar, javax.swing.GroupLayout.PREFERRED_SIZE, 498, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 322, Short.MAX_VALUE)
                 .addComponent(NotificationsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(26, 26, 26)
                 .addComponent(ProfileButton, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -639,9 +646,6 @@ public class MyBorrowingsUI extends javax.swing.JFrame {
         BookName6.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
         BookName6.setText("Clean Code");
 
-        BookName7.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
-        BookName7.setText("Clean Code");
-
         BookName8.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
         BookName8.setText("Clean Code");
 
@@ -672,9 +676,6 @@ public class MyBorrowingsUI extends javax.swing.JFrame {
         AuthorName8.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
         AuthorName8.setText("RC Martin");
 
-        AuthorName9.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
-        AuthorName9.setText("RC Martin");
-
         BorrowedDate1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
         BorrowedDate1.setText("May 26, 2026");
 
@@ -696,23 +697,20 @@ public class MyBorrowingsUI extends javax.swing.JFrame {
         BorrowedDate7.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
         BorrowedDate7.setText("May 26, 2026");
 
-        BorrowedDate8.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
-        BorrowedDate8.setText("May 26, 2026");
-
         ReturnedDate1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
-        ReturnedDate1.setText("May 30, 2026");
+        ReturnedDate1.setText("Sept 30, 2026");
 
         BorrowedDate10.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
         BorrowedDate10.setText("May 26, 2026");
 
         ReturnedDate2.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
-        ReturnedDate2.setText("May 30, 2026");
+        ReturnedDate2.setText("null");
 
         ReturnedDate3.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
-        ReturnedDate3.setText("May 30, 2026");
+        ReturnedDate3.setText("July 2, 2026");
 
         ReturnedDate4.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
-        ReturnedDate4.setText("May 30, 2026");
+        ReturnedDate4.setText("null");
 
         ReturnedDate5.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
         ReturnedDate5.setText("May 30, 2026");
@@ -721,58 +719,59 @@ public class MyBorrowingsUI extends javax.swing.JFrame {
         ReturnedDate6.setText("May 30, 2026");
 
         ReturnedDate7.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
-        ReturnedDate7.setText("May 30, 2026");
-
-        ReturnedDate8.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
-        ReturnedDate8.setText("May 30, 2026");
+        ReturnedDate7.setText("June 22, 2026");
 
         ReturnedDate9.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
-        ReturnedDate9.setText("May 30, 2026");
+        ReturnedDate9.setText("June 30, 2026");
 
-        ActiveStatus1.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         ActiveStatus1.setForeground(new java.awt.Color(255, 153, 51));
         ActiveStatus1.setText("Active");
 
-        PriceTag.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        PriceTag.setForeground(new java.awt.Color(255, 51, 51));
-        PriceTag.setText("Rs 75");
+        Fine7.setForeground(new java.awt.Color(255, 51, 51));
+        Fine7.setText("Rs 75");
 
-        ReturnedDate.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         ReturnedDate.setForeground(new java.awt.Color(0, 135, 90));
         ReturnedDate.setText("Returned");
 
-        ActiveStatus2.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         ActiveStatus2.setForeground(new java.awt.Color(255, 153, 51));
         ActiveStatus2.setText("Active");
 
-        ActiveStatus3.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         ActiveStatus3.setForeground(new java.awt.Color(255, 153, 51));
         ActiveStatus3.setText("Active");
 
-        ReturnedStatus3.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         ReturnedStatus3.setForeground(new java.awt.Color(0, 135, 90));
         ReturnedStatus3.setText("Returned");
 
-        OverdueStatus2.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         OverdueStatus2.setForeground(new java.awt.Color(255, 51, 51));
         OverdueStatus2.setName("Overdue"); // NOI18N
         OverdueStatus2.setText("Overdue");
 
-        OverDueLabel.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         OverDueLabel.setForeground(new java.awt.Color(255, 51, 51));
         OverDueLabel.setText("Overdue");
 
-        PriceTag2.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        PriceTag2.setForeground(new java.awt.Color(255, 51, 51));
-        PriceTag2.setText("Rs 50");
+        Fine2.setForeground(new java.awt.Color(255, 51, 51));
+        Fine2.setText("Rs 50");
 
-        ReturnedStatus4.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        ReturnedStatus4.setForeground(new java.awt.Color(0, 135, 90));
-        ReturnedStatus4.setText("Returned");
-
-        ReturnedStatus2.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         ReturnedStatus2.setForeground(new java.awt.Color(0, 135, 90));
         ReturnedStatus2.setText("Returned");
+
+        Fine6.setForeground(new java.awt.Color(0, 135, 90));
+        Fine6.setText("Rs 0");
+
+        Fine8.setForeground(new java.awt.Color(0, 135, 90));
+        Fine8.setText("Rs 0");
+
+        Fine4.setForeground(new java.awt.Color(0, 135, 90));
+        Fine4.setText("Rs 0");
+
+        Fine5.setForeground(new java.awt.Color(0, 135, 90));
+        Fine5.setText("Rs 0");
+
+        Fine3.setForeground(new java.awt.Color(0, 135, 90));
+        Fine3.setText("Rs 0");
+
+        Fine1.setForeground(new java.awt.Color(0, 135, 90));
+        Fine1.setText("Rs 0");
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -781,228 +780,204 @@ public class MyBorrowingsUI extends javax.swing.JFrame {
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGap(33, 33, 33)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addComponent(jLabel17)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(12, 12, 12)
-                        .addComponent(MembershipTypeLabel)
-                        .addGap(182, 182, 182)
-                        .addComponent(MembershipTypeLabel1)
-                        .addGap(87, 87, 87)
-                        .addComponent(MembershipTypeLabel2)
-                        .addGap(85, 85, 85)
-                        .addComponent(MembershipTypeLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(MembershipTypeLabel4)
-                        .addGap(91, 91, 91)
-                        .addComponent(MembershipTypeLabel5)
-                        .addGap(83, 83, 83))))
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(41, 41, 41)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(BookName1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BookName4, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BookName6, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BookName7, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BookName8, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BookName9, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BookName2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(BookName3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(BookName5, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(105, 105, 105)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(AuthorName1, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AuthorName2, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AuthorName3, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AuthorName4, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AuthorName5, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AuthorName6, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AuthorName7, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AuthorName8, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AuthorName9, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(35, 35, 35)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel17)
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addComponent(BorrowedDate3, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(ReturnedDate9, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(8, 8, 8)
+                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(BookName1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(BookName4, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(BookName8, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(BookName2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(BookName3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(BookName5, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(BookName6, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(BookName9, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(101, 101, 101)
+                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel6Layout.createSequentialGroup()
+                                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(AuthorName1, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(AuthorName2, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(AuthorName3, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(AuthorName4, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(AuthorName7, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(AuthorName8, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(AuthorName5, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(AuthorName6, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(35, 35, 35)
+                                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                                .addComponent(BorrowedDate1, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(ReturnedDate1, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addGroup(jPanel6Layout.createSequentialGroup()
+                                                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                            .addComponent(BorrowedDate3, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                            .addComponent(BorrowedDate5, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                            .addComponent(BorrowedDate6, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                            .addComponent(BorrowedDate10, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                            .addComponent(BorrowedDate4, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                            .addComponent(BorrowedDate7, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addGap(18, 18, 18))
+                                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                                                        .addComponent(BorrowedDate2, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addGap(18, 18, 18)))
+                                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(ReturnedDate5)
+                                                    .addComponent(ReturnedDate4, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(ReturnedDate7, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(ReturnedDate6, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(ReturnedDate3, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(ReturnedDate2, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(ReturnedDate9, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                    .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addComponent(BorrowedDate1, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(ReturnedDate1, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addComponent(BorrowedDate5, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(ReturnedDate3, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addComponent(BorrowedDate4, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(ReturnedDate4, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addComponent(BorrowedDate7, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(ReturnedDate5, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addComponent(BorrowedDate6, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(ReturnedDate6, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addComponent(BorrowedDate10, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(ReturnedDate7, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addComponent(BorrowedDate8, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(ReturnedDate8, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(52, 52, 52)
+                                .addGap(12, 12, 12)
+                                .addComponent(MembershipTypeLabel)
+                                .addGap(182, 182, 182)
+                                .addComponent(MembershipTypeLabel1)
+                                .addGap(87, 87, 87)
+                                .addComponent(MembershipTypeLabel2)
+                                .addGap(85, 85, 85)
+                                .addComponent(MembershipTypeLabel3)))
+                        .addGap(21, 21, 21)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(MembershipTypeLabel4)
+                            .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(OverDueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(ActiveStatus1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(ReturnedDate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(ActiveStatus2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(ActiveStatus3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(ReturnedStatus2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(OverdueStatus2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(ReturnedStatus3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(36, 36, 36)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(OverDueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(ActiveStatus3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(ActiveStatus2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(ReturnedDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(ActiveStatus1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(OverdueStatus2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
-                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(PriceTag2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(PriceTag, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(12, 12, 12))
-                            .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(ReturnedStatus4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(ReturnedStatus3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addComponent(ReturnedStatus2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addComponent(BorrowedDate2, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(ReturnedDate2, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())))
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(334, 334, 334)
-                .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                                .addComponent(MembershipTypeLabel5)
+                                .addGap(13, 13, 13))
+                            .addComponent(Fine1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Fine3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Fine4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Fine5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Fine6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Fine8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Fine7, javax.swing.GroupLayout.DEFAULT_SIZE, 47, Short.MAX_VALUE)
+                            .addComponent(Fine2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addComponent(jLabel17)
+                .addGap(46, 46, 46)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(MembershipTypeLabel)
+                    .addComponent(MembershipTypeLabel1)
+                    .addComponent(MembershipTypeLabel2)
+                    .addComponent(MembershipTypeLabel3)
+                    .addComponent(MembershipTypeLabel4)
+                    .addComponent(MembershipTypeLabel5))
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(BookName1))
+                        .addGroup(jPanel6Layout.createSequentialGroup()
+                            .addGap(17, 17, 17)
+                            .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(AuthorName1)
+                                    .addComponent(BorrowedDate1))
+                                .addComponent(ActiveStatus1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Fine1))))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(ReturnedDate1)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(BorrowedDate2, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(AuthorName4)
+                        .addComponent(BookName5))
+                    .addComponent(ReturnedDate2)
+                    .addComponent(OverDueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Fine2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(25, 25, 25)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(jPanel6Layout.createSequentialGroup()
-                                        .addComponent(jLabel17)
-                                        .addGap(46, 46, 46)
-                                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addGroup(jPanel6Layout.createSequentialGroup()
-                                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                    .addGroup(jPanel6Layout.createSequentialGroup()
-                                                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                            .addComponent(ReturnedDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                            .addGroup(jPanel6Layout.createSequentialGroup()
-                                                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                                    .addGroup(jPanel6Layout.createSequentialGroup()
-                                                                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                            .addComponent(MembershipTypeLabel)
-                                                                            .addComponent(MembershipTypeLabel1)
-                                                                            .addComponent(MembershipTypeLabel2)
-                                                                            .addComponent(MembershipTypeLabel3)
-                                                                            .addComponent(MembershipTypeLabel4)
-                                                                            .addComponent(MembershipTypeLabel5))
-                                                                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
-                                                                                .addComponent(PriceTag2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                            .addGroup(jPanel6Layout.createSequentialGroup()
-                                                                                .addGap(14, 14, 14)
-                                                                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                                    .addComponent(BookName1)
-                                                                                    .addComponent(AuthorName1)
-                                                                                    .addComponent(BorrowedDate1)
-                                                                                    .addComponent(ReturnedDate1))
-                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE))))
-                                                                    .addGroup(jPanel6Layout.createSequentialGroup()
-                                                                        .addComponent(ActiveStatus1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                        .addGap(18, 18, 18)
-                                                                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                                            .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                                .addComponent(AuthorName2)
-                                                                                .addComponent(BookName2)
-                                                                                .addComponent(BorrowedDate2)
-                                                                                .addComponent(ReturnedDate2))
-                                                                            .addComponent(OverDueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                                                .addGap(18, 18, 18)
-                                                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                    .addComponent(AuthorName3)
-                                                                    .addComponent(BookName3)
-                                                                    .addComponent(BorrowedDate3)
-                                                                    .addComponent(ReturnedDate9))
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                                            .addComponent(AuthorName4)
-                                                            .addComponent(BookName4)
-                                                            .addComponent(BorrowedDate5)
-                                                            .addComponent(ReturnedDate3)))
-                                                    .addComponent(ActiveStatus2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addGap(18, 18, 18)
-                                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                                    .addComponent(AuthorName5)
-                                                    .addComponent(BookName5)
-                                                    .addComponent(BorrowedDate4)
-                                                    .addComponent(ReturnedDate4)))
-                                            .addComponent(ActiveStatus3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(18, 18, 18)
-                                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(AuthorName6)
-                                            .addComponent(BorrowedDate7)
-                                            .addComponent(ReturnedDate5)))
-                                    .addGroup(jPanel6Layout.createSequentialGroup()
-                                        .addGap(0, 0, Short.MAX_VALUE)
-                                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(BookName6)
-                                            .addComponent(ReturnedStatus2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel6Layout.createSequentialGroup()
-                                        .addGap(22, 22, 22)
-                                        .addComponent(BookName7))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(OverdueStatus2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(PriceTag, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(AuthorName2)
                             .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(AuthorName7)
+                                .addComponent(BorrowedDate3)
+                                .addComponent(ReturnedDate9))
+                            .addComponent(BookName2, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(Fine3)
+                                .addComponent(ReturnedDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(BookName3)
+                            .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(AuthorName3)
+                                .addComponent(BorrowedDate5)
+                                .addComponent(ReturnedDate3))
+                            .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(Fine4)
+                                .addComponent(ActiveStatus2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(BookName4)
+                            .addComponent(AuthorName7)
+                            .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(BorrowedDate6)
-                                .addComponent(ReturnedDate6)))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(AuthorName8)
+                                .addComponent(ReturnedDate6))
+                            .addComponent(ActiveStatus3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(BookName8)
-                            .addComponent(BorrowedDate10)
-                            .addComponent(ReturnedDate7)))
+                            .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(AuthorName8)
+                                .addComponent(BorrowedDate10)
+                                .addComponent(ReturnedDate7)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(BookName6)
+                            .addComponent(AuthorName5)
+                            .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(BorrowedDate4)
+                                .addComponent(ReturnedDate4))))
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(ReturnedStatus3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGap(86, 86, 86)
+                        .addComponent(Fine5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(ReturnedStatus2, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Fine6))
+                        .addGap(21, 21, 21)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(OverdueStatus2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Fine7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(BookName9)
+                    .addComponent(AuthorName6)
                     .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(AuthorName9)
-                        .addComponent(BookName9)
-                        .addComponent(BorrowedDate8)
-                        .addComponent(ReturnedDate8))
-                    .addComponent(ReturnedStatus4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(28, Short.MAX_VALUE))
+                        .addComponent(BorrowedDate7)
+                        .addComponent(ReturnedDate5))
+                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(Fine8)
+                        .addComponent(ReturnedStatus3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
+                .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(31, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -1020,27 +995,178 @@ public class MyBorrowingsUI extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(41, 41, 41)
+                        .addGap(65, 65, 65)
                         .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 234, Short.MAX_VALUE))))
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(74, 74, 74)
+                .addGap(76, 76, 76)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(37, 37, 37)
+                        .addGap(35, 35, 35)
                         .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(84, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+// =====================================================================
+// HOW TO INTEGRATE FineCalculator INTO MyBorrowingsUI.java
+// Add the method below inside the MyBorrowingsUI class body,
+// then call it from your constructor or a "load data" method.
+// =====================================================================
+
+// ---------------------------------------------------------------------
+// 1.  Add this import at the top of MyBorrowingsUI.java
+// ---------------------------------------------------------------------
+// import java.time.LocalDate;
+// (java.time.* is available in Java 8+, no extra libraries needed)
+
+
+// ---------------------------------------------------------------------
+// 2.  Paste this method inside MyBorrowingsUI (below initComponents)
+// ---------------------------------------------------------------------
+
+/**
+ * Populates the Fine labels in jPanel6 for every borrowing row.
+ *
+ * Call this method after your borrowing data has been loaded, e.g.:
+ *   populateFines();          ← in constructor after initComponents()
+ *   OR after a DB fetch call.
+ *
+ * Replace the sample hard coded dates/return values with data from
+ * your database or data model.
+ */
+private void populateFines() {
+
+    // Display format used by the existing labels in the UI
+    java.time.format.DateTimeFormatter displayFmt =
+            java.time.format.DateTimeFormatter.ofPattern("MMM dd, yyyy");
+
+    // ------------------------------------------------------------------
+    // Borrowing data — replace with values from your DB query.
+    // returnedDateStr = null  →  book still active (fine accrues to today)
+    // ------------------------------------------------------------------
+    // Columns: borrowedDateStr | returnedDateStr | BorrowedDate label | ReturnedDate label | Fine label | Status label
+    Object[][] borrowings = {
+        { "2026-01-01", "2026-01-16",         BorrowedDate1,  ReturnedDate1,  Fine1,  ActiveStatus1  },
+        { "2026-05-20", "2026-06-01", BorrowedDate2,  ReturnedDate2,  Fine2,  OverDueLabel   },
+        { "2026-04-26", "2026-05-30", BorrowedDate3,  ReturnedDate9,  Fine3,  ReturnedDate   },  // ReturnedDate is the "Returned" status label
+        { "2026-04-26", null,         BorrowedDate5,  ReturnedDate3,  Fine4,  ActiveStatus2  },
+        { "2026-05-26", null,         BorrowedDate6,  ReturnedDate6,  Fine5,  null           },
+        { "2026-01-26", "2026-05-30", BorrowedDate4,  ReturnedDate4,  Fine6,  ReturnedStatus2 },
+        { "2026-03-26", "2026-05-30", BorrowedDate10, ReturnedDate7,  Fine7,  OverdueStatus2 },
+        { "2026-05-26", "2026-05-30", BorrowedDate7,  ReturnedDate5,  Fine8,  ReturnedStatus3 },
+    };
+
+    for (Object[] row : borrowings) {
+        String borrowedDateStr  = (String) row[0];
+        String returnedDateStr  = (String) row[1];   // null = not returned yet
+        Object borrowedLabel    = row[2];
+        Object returnedLabel    = row[3];
+        Object fineLabel        = row[4];
+        Object statusLabel      = row[5];
+
+        // --- Calculate fine ---
+        FineCalculator.FineResult result =
+                FineCalculator.calculate(borrowedDateStr, returnedDateStr);
+
+        // --- Update Borrowed Date label ---
+        String borrowedText = result.borrowedDate.format(displayFmt);
+        setLabelText(borrowedLabel, borrowedText);
+
+        // --- Update Returned Date label ---
+        // Show the actual returned date, or "—" if the book is still out
+        String returnedText = result.isActive
+                ? "\u2014"                                    // em-dash
+                : result.compareDate.format(displayFmt);
+        setLabelText(returnedLabel, returnedText);
+
+        // --- Update Fine label ---
+        String fineText = result.fineDisplayText();
+        setLabelText(fineLabel, fineText);
+
+        // Colour: red for any fine > 0, green for Rs 0
+        java.awt.Color fineColor = result.fineAmountRs > 0
+                ? new java.awt.Color(255, 51, 51)
+                : new java.awt.Color(0, 135, 90);
+        setLabelColor(fineLabel, fineColor);
+
+        // --- Update Status label ---
+        if (statusLabel != null) {
+            String statusText = result.statusText();
+            setLabelText(statusLabel, statusText);
+
+            java.awt.Color statusColor;
+            switch (statusText) {
+                case "Overdue":
+                    statusColor = new java.awt.Color(255, 51, 51);    // red
+                    break;
+                case "Active":
+                    statusColor = new java.awt.Color(255, 153, 51);   // orange (matches original)
+                    break;
+                default:                                               // Returned
+                    statusColor = new java.awt.Color(0, 135, 90);     // green
+                    break;
+            }
+            setLabelColor(statusLabel, statusColor);
+        }
+    }
+}
+
+// ------------------------------------------------------------------
+// Helper: set text on either javax.swing.JLabel or java.awt.Label
+// ------------------------------------------------------------------
+private void setLabelText(Object label, String text) {
+    if (label instanceof javax.swing.JLabel) {
+        ((javax.swing.JLabel) label).setText(text);
+    } else if (label instanceof java.awt.Label) {
+        ((java.awt.Label) label).setText(text);
+    }
+}
+
+// ------------------------------------------------------------------
+// Helper: set foreground colour on either JLabel or AWT Label
+// ------------------------------------------------------------------
+private void setLabelColor(Object label, java.awt.Color color) {
+    if (label instanceof javax.swing.JLabel) {
+        ((javax.swing.JLabel) label).setForeground(color);
+    } else if (label instanceof java.awt.Label) {
+        ((java.awt.Label) label).setForeground(color);
+    }
+}
+
+// ---------------------------------------------------------------------
+// 3.  Call it in the constructor — add ONE line after initComponents()
+// ---------------------------------------------------------------------
+// public MyBorrowingsUI() {
+//     initComponents();
+//     populateFines();   // ← add this
+// }
+
+
+// =====================================================================
+// QUICK USAGE EXAMPLES (standalone / unit-test style)
+// =====================================================================
+
+// Example A – active book that is overdue
+// FineCalculator.FineResult r = FineCalculator.calculate("2025-05-01", null);
+// System.out.println(r);
+// → Borrowed: 2025-05-01 | Due: 2025-05-15 | Today: 2025-06-04 | Days overdue: 20 | Fine: Rs 200
+
+// Example B – returned book, no overdue
+// FineCalculator.FineResult r = FineCalculator.calculate("2025-05-20", "2025-05-30");
+// System.out.println(r.fineDisplayText());  // → Rs 0
+
+// Example C – custom loan period (7 days)
+// FineCalculator.FineResult r = FineCalculator.calculate("2025-05-20", null, 7);
+// System.out.println(r.fineDisplayText());  // → Rs 180
 
     private void NotificationsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NotificationsButtonActionPerformed
         // TODO add your handling code here:
@@ -1087,14 +1213,12 @@ public class MyBorrowingsUI extends javax.swing.JFrame {
     private javax.swing.JLabel AuthorName6;
     private javax.swing.JLabel AuthorName7;
     private javax.swing.JLabel AuthorName8;
-    private javax.swing.JLabel AuthorName9;
     private javax.swing.JLabel BookName1;
     private javax.swing.JLabel BookName2;
     private javax.swing.JLabel BookName3;
     private javax.swing.JLabel BookName4;
     private javax.swing.JLabel BookName5;
     private javax.swing.JLabel BookName6;
-    private javax.swing.JLabel BookName7;
     private javax.swing.JLabel BookName8;
     private javax.swing.JLabel BookName9;
     private javax.swing.JButton BookSearchButton;
@@ -1106,11 +1230,18 @@ public class MyBorrowingsUI extends javax.swing.JFrame {
     private javax.swing.JLabel BorrowedDate5;
     private javax.swing.JLabel BorrowedDate6;
     private javax.swing.JLabel BorrowedDate7;
-    private javax.swing.JLabel BorrowedDate8;
     private javax.swing.JButton BorrowingButton;
     private javax.swing.JToggleButton BorrowingHistoryButton;
     private javax.swing.JButton DashboardButton;
     private javax.swing.JToggleButton EditProfileButton;
+    private javax.swing.JLabel Fine1;
+    private java.awt.Label Fine2;
+    private javax.swing.JLabel Fine3;
+    private javax.swing.JLabel Fine4;
+    private javax.swing.JLabel Fine5;
+    private javax.swing.JLabel Fine6;
+    private java.awt.Label Fine7;
+    private javax.swing.JLabel Fine8;
     private javax.swing.JButton FineButton;
     private javax.swing.JToggleButton FineButton2;
     private javax.swing.JButton InventoryButton;
@@ -1124,8 +1255,6 @@ public class MyBorrowingsUI extends javax.swing.JFrame {
     private javax.swing.JButton NotificationsButton;
     private java.awt.Label OverDueLabel;
     private java.awt.Label OverdueStatus2;
-    private java.awt.Label PriceTag;
-    private java.awt.Label PriceTag2;
     private javax.swing.JButton ProfileButton;
     private javax.swing.JButton ReportsButton;
     private java.awt.Label ReturnedDate;
@@ -1136,11 +1265,9 @@ public class MyBorrowingsUI extends javax.swing.JFrame {
     private javax.swing.JLabel ReturnedDate5;
     private javax.swing.JLabel ReturnedDate6;
     private javax.swing.JLabel ReturnedDate7;
-    private javax.swing.JLabel ReturnedDate8;
     private javax.swing.JLabel ReturnedDate9;
     private java.awt.Label ReturnedStatus2;
     private java.awt.Label ReturnedStatus3;
-    private java.awt.Label ReturnedStatus4;
     private javax.swing.JButton ReviewsButton;
     private javax.swing.JToggleButton ReviewsButton2;
     private javax.swing.JTextField SearchBar;
