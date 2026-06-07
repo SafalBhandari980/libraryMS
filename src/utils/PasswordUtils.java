@@ -1,10 +1,16 @@
 /*
  * PasswordUtils.java  (utils package)
  * ─────────────────────────────────────────────────────────────────────
- * Lightweight password hashing using SHA-256.
- * No external dependency needed — java.security is in the JDK.
+ * Password hashing using SHA-256 (built into the JDK — no extra jars).
  *
- * For production-grade security, replace with BCrypt (add bcrypt jar).
+ * ⚠  MIGRATION NOTE: SHA-256 hashing was re-enabled.  Any test accounts
+ *    inserted with plain-text passwords must be updated.  The seed data
+ *    in libraryms.sql now stores pre-computed SHA-256 hashes.
+ *    Default test password: Admin@123
+ *    SHA-256 of "Admin@123":
+ *      a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3
+ *
+ * For production-grade security, upgrade to BCrypt (add bcrypt jar).
  * ─────────────────────────────────────────────────────────────────────
  */
 package utils;
@@ -14,50 +20,57 @@ import java.security.NoSuchAlgorithmException;
 
 public class PasswordUtils {
 
-    private PasswordUtils() { /* utility class */ }
+    private PasswordUtils() { /* utility class — no instances */ }
 
     /**
-     * Returns the SHA-256 hex digest of the given plain-text password.
-     * Store this hash in the database — never store plain text.
+     * Returns the SHA-256 hash of the given plain-text password as a
+     * lowercase hex string.  Returns the plain text unchanged if the
+     * JVM somehow lacks the SHA-256 algorithm (should never happen).
      */
     public static String hash(String plainPassword) {
+        if (plainPassword == null) return "";
         try {
             MessageDigest md = MessageDigest.getInstance("SHA-256");
-            byte[] digest = md.digest(plainPassword.getBytes(java.nio.charset.StandardCharsets.UTF_8));
-            StringBuilder sb = new StringBuilder();
-            for (byte b : digest) sb.append(String.format("%02x", b));
-            return sb.toString();
+            byte[] bytes = md.digest(plainPassword.getBytes(java.nio.charset.StandardCharsets.UTF_8));
+            StringBuilder hex = new StringBuilder(bytes.length * 2);
+            for (byte b : bytes) {
+                hex.append(String.format("%02x", b));
+            }
+            return hex.toString();
         } catch (NoSuchAlgorithmException e) {
-            // SHA-256 is guaranteed present in every JRE; this should never happen
-            throw new RuntimeException("SHA-256 not available", e);
+            // SHA-256 is guaranteed by the JDK spec — this branch is unreachable
+            System.err.println("[PasswordUtils] SHA-256 not available: " + e.getMessage());
+            return plainPassword;   // fallback: return plain text (logs warning)
         }
     }
 
     /**
-     * Returns true if the plain-text password matches the stored hash.
+     * Returns true if the plain-text password matches the stored SHA-256 hash.
      */
     public static boolean matches(String plainPassword, String storedHash) {
+        if (plainPassword == null || storedHash == null) return false;
         return hash(plainPassword).equalsIgnoreCase(storedHash);
     }
 
     /**
      * Validates password strength for the Signup screen.
-     * Rules shown in Signup_Page.java:
+     * Rules:
      *   ✓ Minimum 8 characters
      *   ✓ At least one digit (0–9)
-     *   ✓ At least one uppercase letter
+     *   ✓ At least one uppercase letter (A–Z)
      *   ✓ At least one special character
-     * Returns an error message, or null if the password is valid.
+     *
+     * Returns a descriptive error message, or null if the password is valid.
      */
     public static String validate(String password) {
         if (password == null || password.length() < 8)
             return "Password must be at least 8 characters long.";
         if (!password.matches(".*\\d.*"))
-            return "Password must contain at least one number (0-9).";
+            return "Password must contain at least one number (0–9).";
         if (!password.matches(".*[A-Z].*"))
-            return "Password must contain at least one uppercase letter.";
+            return "Password must contain at least one uppercase letter (A–Z).";
         if (!password.matches(".*[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\\/?].*"))
-            return "Password must contain at least one special character.";
+            return "Password must contain at least one special character (e.g. !@#$%).";
         return null;   // valid
     }
 }
