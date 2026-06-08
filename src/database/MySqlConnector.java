@@ -16,7 +16,7 @@ public class MySqlConnector implements db {
     private static final String DB_URL  = "jdbc:mysql://localhost:3306/";
     private static final String DB_NAME = "libraryms";
     private static final String DB_USER = "root";
-    private static final String DB_PASS = "1234";
+    private static final String DB_PASS = "norman";
 
     // ── Singleton connection (reused across the whole session) ───────────────
     private static Connection sharedConn = null;
