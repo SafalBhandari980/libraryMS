@@ -29,10 +29,10 @@ public class payment extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        dashboard = new javax.swing.JButton();
+        myborrowings = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        booksearch = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
@@ -96,17 +96,17 @@ public class payment extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(27, 58, 107));
 
-        jButton1.setBackground(new java.awt.Color(27, 58, 107));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_house-removebg-preview (1).png"))); // NOI18N
-        jButton1.setText("Dashboard");
+        dashboard.setBackground(new java.awt.Color(27, 58, 107));
+        dashboard.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        dashboard.setForeground(new java.awt.Color(255, 255, 255));
+        dashboard.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_house-removebg-preview (1).png"))); // NOI18N
+        dashboard.setText("Dashboard");
 
-        jButton2.setBackground(new java.awt.Color(27, 58, 107));
-        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_borrowing-removebg-pre.png"))); // NOI18N
-        jButton2.setText("My borrowings");
+        myborrowings.setBackground(new java.awt.Color(27, 58, 107));
+        myborrowings.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        myborrowings.setForeground(new java.awt.Color(255, 255, 255));
+        myborrowings.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_borrowing-removebg-pre.png"))); // NOI18N
+        myborrowings.setText("My borrowings");
 
         jButton3.setBackground(new java.awt.Color(27, 58, 107));
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -114,11 +114,11 @@ public class payment extends javax.swing.JFrame {
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_wishlist-removebg-prev.png"))); // NOI18N
         jButton3.setText("Wishlist");
 
-        jButton4.setBackground(new java.awt.Color(27, 58, 107));
-        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_search-removebg-previe.png"))); // NOI18N
-        jButton4.setText("Book Search");
+        booksearch.setBackground(new java.awt.Color(27, 58, 107));
+        booksearch.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        booksearch.setForeground(new java.awt.Color(255, 255, 255));
+        booksearch.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_search-removebg-previe.png"))); // NOI18N
+        booksearch.setText("Book Search");
 
         jButton5.setBackground(new java.awt.Color(27, 58, 107));
         jButton5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -189,13 +189,13 @@ public class payment extends javax.swing.JFrame {
                     .addComponent(jButton16)
                     .addComponent(jButton15)
                     .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4)
+                    .addComponent(booksearch)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel1))
-                        .addComponent(jButton1))
-                    .addComponent(jButton2)
+                        .addComponent(dashboard))
+                    .addComponent(myborrowings)
                     .addComponent(jButton3)
                     .addComponent(jButton5)
                     .addComponent(jButton7)
@@ -217,11 +217,11 @@ public class payment extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
                 .addGap(32, 32, 32)
-                .addComponent(jButton1)
+                .addComponent(dashboard)
                 .addGap(30, 30, 30)
-                .addComponent(jButton4)
+                .addComponent(booksearch)
                 .addGap(29, 29, 29)
-                .addComponent(jButton2)
+                .addComponent(myborrowings)
                 .addGap(31, 31, 31)
                 .addComponent(jButton3)
                 .addGap(29, 29, 29)
@@ -724,7 +724,8 @@ public class payment extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton booksearch;
+    private javax.swing.JButton dashboard;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
@@ -735,10 +736,8 @@ public class payment extends javax.swing.JFrame {
     private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton18;
     private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton21;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
@@ -787,5 +786,6 @@ public class payment extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JButton myborrowings;
     // End of variables declaration//GEN-END:variables
 }
