@@ -3,6 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 
+package view;
+
 /**
  *
  * @author user
@@ -16,6 +18,8 @@ public class LMS_Login_Page extends javax.swing.JFrame {
      */
     public LMS_Login_Page() {
         initComponents();
+        setSize(1280, 800);
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -62,23 +66,23 @@ public class LMS_Login_Page extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(30, 58, 104));
 
         MSTitle.setFont(new java.awt.Font("Mongolian Baiti", 1, 36)); // NOI18N
-        MSTitle.setForeground(java.awt.Color.white);
+        MSTitle.setForeground(java.awt.Color.black);
         MSTitle.setText("Library MS");
 
         SmartFT.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
-        SmartFT.setForeground(java.awt.Color.white);
+        SmartFT.setForeground(java.awt.Color.black);
         SmartFT.setText("Many smart features ");
 
         Notif.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
-        Notif.setForeground(java.awt.Color.white);
+        Notif.setForeground(java.awt.Color.black);
         Notif.setText("Real-time notifications");
 
         Fine.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
-        Fine.setForeground(java.awt.Color.white);
+        Fine.setForeground(java.awt.Color.black);
         Fine.setText("Online fine payments");
 
         RecLabel.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
-        RecLabel.setForeground(java.awt.Color.white);
+        RecLabel.setForeground(java.awt.Color.black);
         RecLabel.setText("Personalized recommendations");
 
         join_prompt.setForeground(new java.awt.Color(249, 250, 251));
@@ -154,7 +158,7 @@ public class LMS_Login_Page extends javax.swing.JFrame {
         );
 
         panel3.setBackground(new java.awt.Color(242, 242, 242));
-        panel3.setForeground(java.awt.Color.white);
+        panel3.setForeground(java.awt.Color.black);
 
         welcomebacklabel.setFont(new java.awt.Font("Mongolian Baiti", 1, 36)); // NOI18N
         welcomebacklabel.setText("Welcome back!!");
@@ -359,33 +363,33 @@ public class LMS_Login_Page extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton ContinueWithGoogle;
-    private javax.swing.JButton CreateAnAccount;
-    private javax.swing.JLabel Email;
-    private java.awt.TextField EmailTextField;
-    private javax.swing.JLabel Fine;
-    private javax.swing.JToggleButton Forgotpasswordbutton;
-    private javax.swing.JLabel MSTitle;
-    private javax.swing.JLabel MainIcon;
-    private javax.swing.JLabel Newprompt;
-    private javax.swing.JLabel Notif;
-    private javax.swing.JLabel Password;
-    private java.awt.TextField PasswordTextField;
-    private javax.swing.JLabel RecLabel;
-    private javax.swing.JButton Signinbutton;
-    private javax.swing.JLabel SmartFT;
-    private java.awt.Checkbox checkbox1;
-    private javax.swing.JLabel crediticon;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JLabel join_prompt;
-    private javax.swing.JLabel noticon;
-    private javax.swing.JLabel or;
-    private java.awt.Panel panel1;
-    private java.awt.Panel panel3;
-    private javax.swing.JLabel prompt;
-    private javax.swing.JLabel rocket_icon;
-    private javax.swing.JLabel searchicon;
-    private javax.swing.JLabel softwarica_label;
-    private javax.swing.JLabel welcomebacklabel;
+    public javax.swing.JButton ContinueWithGoogle;
+    public javax.swing.JButton CreateAnAccount;
+    public javax.swing.JLabel Email;
+    public java.awt.TextField EmailTextField;
+    public javax.swing.JLabel Fine;
+    public javax.swing.JToggleButton Forgotpasswordbutton;
+    public javax.swing.JLabel MSTitle;
+    public javax.swing.JLabel MainIcon;
+    public javax.swing.JLabel Newprompt;
+    public javax.swing.JLabel Notif;
+    public javax.swing.JLabel Password;
+    public java.awt.TextField PasswordTextField;
+    public javax.swing.JLabel RecLabel;
+    public javax.swing.JButton Signinbutton;
+    public javax.swing.JLabel SmartFT;
+    public java.awt.Checkbox checkbox1;
+    public javax.swing.JLabel crediticon;
+    public javax.swing.JPanel jPanel1;
+    public javax.swing.JLabel join_prompt;
+    public javax.swing.JLabel noticon;
+    public javax.swing.JLabel or;
+    public java.awt.Panel panel1;
+    public java.awt.Panel panel3;
+    public javax.swing.JLabel prompt;
+    public javax.swing.JLabel rocket_icon;
+    public javax.swing.JLabel searchicon;
+    public javax.swing.JLabel softwarica_label;
+    public javax.swing.JLabel welcomebacklabel;
     // End of variables declaration//GEN-END:variables
 }

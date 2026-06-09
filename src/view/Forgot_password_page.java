@@ -1,3 +1,4 @@
+package view;
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -16,6 +17,8 @@ public class Forgot_password_page extends javax.swing.JFrame {
      */
     public Forgot_password_page() {
         initComponents();
+        setSize(1280, 800);
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -55,7 +58,7 @@ public class Forgot_password_page extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         panel3.setBackground(new java.awt.Color(242, 242, 242));
-        panel3.setForeground(java.awt.Color.white);
+        panel3.setForeground(java.awt.Color.black);
 
         ResetLabel.setFont(new java.awt.Font("Mongolian Baiti", 1, 36)); // NOI18N
         ResetLabel.setText("RESET PASSWORD");
@@ -170,23 +173,23 @@ public class Forgot_password_page extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(30, 58, 104));
 
         MS_title.setFont(new java.awt.Font("Mongolian Baiti", 1, 36)); // NOI18N
-        MS_title.setForeground(java.awt.Color.white);
+        MS_title.setForeground(java.awt.Color.black);
         MS_title.setText("Library MS");
 
         Feature1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
-        Feature1.setForeground(java.awt.Color.white);
+        Feature1.setForeground(java.awt.Color.black);
         Feature1.setText("Many smart features ");
 
         Feature2.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
-        Feature2.setForeground(java.awt.Color.white);
+        Feature2.setForeground(java.awt.Color.black);
         Feature2.setText("Real-time notifications");
 
         Feature3.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
-        Feature3.setForeground(java.awt.Color.white);
+        Feature3.setForeground(java.awt.Color.black);
         Feature3.setText("Online fine payments");
 
         Feature4.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
-        Feature4.setForeground(java.awt.Color.white);
+        Feature4.setForeground(java.awt.Color.black);
         Feature4.setText("Personalized recommendations");
 
         DontWorrylabel.setForeground(new java.awt.Color(249, 250, 251));
@@ -323,29 +326,29 @@ public class Forgot_password_page extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton BackToLoginButton;
-    private javax.swing.JLabel CardIcon;
-    private javax.swing.JLabel DidntReceieveLabel;
-    private javax.swing.JLabel DontWorrylabel;
-    private java.awt.TextField EmailTextField;
-    private javax.swing.JLabel EnterLabel;
-    private javax.swing.JLabel Feature1;
-    private javax.swing.JLabel Feature2;
-    private javax.swing.JLabel Feature3;
-    private javax.swing.JLabel Feature4;
-    private javax.swing.JLabel Icon;
-    private javax.swing.JLabel MSIcon;
-    private javax.swing.JLabel MS_title;
-    private javax.swing.JLabel NotifIcon;
-    private javax.swing.JLabel RegisterLabel;
-    private javax.swing.JToggleButton ResendOTP;
-    private javax.swing.JLabel ResetLabel;
-    private javax.swing.JLabel RocketIcon;
-    private javax.swing.JLabel SearchIcon;
-    private javax.swing.JButton SendOTp;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JPanel jPanel1;
-    private java.awt.Panel panel1;
-    private java.awt.Panel panel3;
+    public javax.swing.JButton BackToLoginButton;
+    public javax.swing.JLabel CardIcon;
+    public javax.swing.JLabel DidntReceieveLabel;
+    public javax.swing.JLabel DontWorrylabel;
+    public java.awt.TextField EmailTextField;
+    public javax.swing.JLabel EnterLabel;
+    public javax.swing.JLabel Feature1;
+    public javax.swing.JLabel Feature2;
+    public javax.swing.JLabel Feature3;
+    public javax.swing.JLabel Feature4;
+    public javax.swing.JLabel Icon;
+    public javax.swing.JLabel MSIcon;
+    public javax.swing.JLabel MS_title;
+    public javax.swing.JLabel NotifIcon;
+    public javax.swing.JLabel RegisterLabel;
+    public javax.swing.JToggleButton ResendOTP;
+    public javax.swing.JLabel ResetLabel;
+    public javax.swing.JLabel RocketIcon;
+    public javax.swing.JLabel SearchIcon;
+    public javax.swing.JButton SendOTp;
+    public javax.swing.JLabel jLabel14;
+    public javax.swing.JPanel jPanel1;
+    public java.awt.Panel panel1;
+    public java.awt.Panel panel3;
     // End of variables declaration//GEN-END:variables
 }
