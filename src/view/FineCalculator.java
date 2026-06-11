@@ -14,8 +14,8 @@ public class FineCalculator {
     // ---------------------------------------------------------------
     // Constants
     // ---------------------------------------------------------------
-    public static final int    FINE_PER_DAY_RS  = 10;
-    public static final int    DEFAULT_LOAN_DAYS = 14;
+    public static final int   FINE_PER_DAY_RS  = 10;
+    public static final int   DEFAULT_LOAN_DAYS = 14;
     public static final String DATE_FORMAT       = "yyyy-MM-dd"; // adjust to match your DB format
 
     private static final DateTimeFormatter FORMATTER =
