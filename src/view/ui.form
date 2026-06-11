@@ -33,10 +33,15 @@
                           <Component id="jPanel7" min="-2" max="-2" attributes="0"/>
                           <Component id="jPanel13" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jPanel14" max="32767" attributes="0"/>
-                          <Component id="jPanel8" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
+                              <Component id="jPanel8" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                              <Component id="jPanel14" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -52,12 +57,12 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="recommendedforu" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
+                                      <EmptySpace pref="1073" max="32767" attributes="0"/>
                                       <Component id="seemore" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="currentlyborrowed" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace pref="1015" max="32767" attributes="0"/>
+                                      <EmptySpace pref="1115" max="32767" attributes="0"/>
                                       <Component id="viewall" min="-2" pref="53" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -92,7 +97,7 @@
                   <Component id="jPanel3" alignment="0" max="32767" attributes="0"/>
                   <Component id="jPanel5" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="currentlyborrowed" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="viewall" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -114,7 +119,7 @@
                   <Component id="jPanel15" alignment="0" max="32767" attributes="0"/>
                   <Component id="jPanel13" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="36" max="32767" attributes="0"/>
+              <EmptySpace pref="35" max="32767" attributes="0"/>
           </Group>
           <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
       </Group>
@@ -1032,7 +1037,7 @@
                       <Component id="jLabel26" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel31" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="78" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
