@@ -60,7 +60,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Component id="jPanel2" min="-2" pref="248" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                       <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Component id="jPanel6" min="-2" max="-2" attributes="0"/>
@@ -208,7 +208,7 @@
                           <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="105" max="32767" attributes="0"/>
+                  <EmptySpace pref="107" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -1238,9 +1238,9 @@
                       <Component id="BookIcon3" min="-2" pref="51" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="BorrowNowButton3" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="JoinWaitlistButton1" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="BookName3" alignment="0" min="-2" pref="200" max="-2" attributes="0"/>
-                          <Component id="AvailableLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="CheckedOutLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="AuthorName3" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="52" max="32767" attributes="0"/>
@@ -1258,11 +1258,11 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="AuthorName3" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="AvailableLabel2" min="-2" pref="11" max="-2" attributes="0"/>
+                              <Component id="CheckedOutLabel2" min="-2" pref="11" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="BorrowNowButton3" min="-2" max="-2" attributes="0"/>
+                      <Component id="JoinWaitlistButton1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -1288,12 +1288,12 @@
                 <Property name="text" type="java.lang.String" value="Prerak Shrestha"/>
               </Properties>
             </Component>
-            <Component class="java.awt.Label" name="AvailableLabel2">
+            <Component class="java.awt.Label" name="CheckedOutLabel2">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="99" green="ff" red="99" type="rgb"/>
+                  <Color blue="33" green="33" red="ff" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Available"/>
+                <Property name="text" type="java.lang.String" value="Checked Out"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="BookIcon3">
@@ -1304,9 +1304,9 @@
                 <Property name="text" type="java.lang.String" value="jLabel33"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="BorrowNowButton3">
+            <Component class="javax.swing.JButton" name="JoinWaitlistButton1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Borrow Now"/>
+                <Property name="text" type="java.lang.String" value="Join Waitlist"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -1502,9 +1502,9 @@
                       <Component id="BookIcon6" min="-2" pref="51" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="BorrowNowButton6" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="JoinWaitListButton" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="BookName6" alignment="0" min="-2" pref="200" max="-2" attributes="0"/>
-                          <Component id="AvailableLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="CheckedOutLabel" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="AuthorName6" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="52" max="32767" attributes="0"/>
@@ -1522,12 +1522,12 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="AuthorName6" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="AvailableLabel5" min="-2" pref="11" max="-2" attributes="0"/>
+                              <Component id="CheckedOutLabel" min="-2" pref="11" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="BorrowNowButton6" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="JoinWaitListButton" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="8" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1552,7 +1552,7 @@
                 <Property name="text" type="java.lang.String" value="Rojan Koju"/>
               </Properties>
             </Component>
-            <Component class="java.awt.Label" name="AvailableLabel5">
+            <Component class="java.awt.Label" name="CheckedOutLabel">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="33" green="33" red="ff" type="rgb"/>
@@ -1568,12 +1568,12 @@
                 <Property name="text" type="java.lang.String" value="jLabel33"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="BorrowNowButton6">
+            <Component class="javax.swing.JButton" name="JoinWaitListButton">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="cc" green="cc" red="cc" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Borrow Now"/>
+                <Property name="text" type="java.lang.String" value="Join Waitlist"/>
               </Properties>
             </Component>
           </SubComponents>

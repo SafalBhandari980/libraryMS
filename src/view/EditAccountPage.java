@@ -7,14 +7,14 @@
  *
  * @author user
  */
-public class WishlistMGMT extends javax.swing.JFrame {
+public class EditAccountPage extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(WishlistMGMT.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(EditAccountPage.class.getName());
 
     /**
-     * Creates new form WishlistMGMT
+     * Creates new form EditAccountPage
      */
-    public WishlistMGMT() {
+    public EditAccountPage() {
         initComponents();
     }
 
@@ -27,7 +27,6 @@ public class WishlistMGMT extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel34 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         DashboardButton = new javax.swing.JButton();
@@ -72,7 +71,7 @@ public class WishlistMGMT extends javax.swing.JFrame {
         SearchBar = new javax.swing.JTextField();
         NotificationButton = new javax.swing.JButton();
         ProfileButton = new javax.swing.JButton();
-        jLabel32 = new javax.swing.JLabel();
+        SearchIcon2 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         BorrowingButton2 = new javax.swing.JToggleButton();
         WishlistButton2 = new javax.swing.JToggleButton();
@@ -85,46 +84,23 @@ public class WishlistMGMT extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
-        jLabel17 = new javax.swing.JLabel();
-        filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(20, 0), new java.awt.Dimension(20, 0), new java.awt.Dimension(20, 32767));
-        BookPanel1 = new javax.swing.JPanel();
-        BookName1 = new javax.swing.JLabel();
-        AuthorName1 = new javax.swing.JLabel();
-        AvailableLabel = new java.awt.Label();
-        BookIcon1 = new javax.swing.JLabel();
-        BorrowNowButton1 = new javax.swing.JButton();
-        BookPanel2 = new javax.swing.JPanel();
-        BookName2 = new javax.swing.JLabel();
-        AuthorName2 = new javax.swing.JLabel();
-        AvailableLabel1 = new java.awt.Label();
-        BookIcon2 = new javax.swing.JLabel();
-        BorrowNowButton2 = new javax.swing.JButton();
-        BookPanel3 = new javax.swing.JPanel();
-        BookName3 = new javax.swing.JLabel();
-        AuthorName3 = new javax.swing.JLabel();
-        CheckedOutLabel2 = new java.awt.Label();
-        BookIcon3 = new javax.swing.JLabel();
-        JoinWaitlistButton1 = new javax.swing.JButton();
-        BookPanel4 = new javax.swing.JPanel();
-        BookName4 = new javax.swing.JLabel();
-        AuthorName4 = new javax.swing.JLabel();
-        AvailableLabel3 = new java.awt.Label();
-        BookIcon4 = new javax.swing.JLabel();
-        BorrowNowButton4 = new javax.swing.JButton();
-        BookPanel5 = new javax.swing.JPanel();
-        BookName5 = new javax.swing.JLabel();
-        AuthorName5 = new javax.swing.JLabel();
-        AvailableLabel4 = new java.awt.Label();
-        BookIcon5 = new javax.swing.JLabel();
-        BorrowNowButton5 = new javax.swing.JButton();
-        BookPanel6 = new javax.swing.JPanel();
-        BookName6 = new javax.swing.JLabel();
-        AuthorName6 = new javax.swing.JLabel();
-        CheckedOutLabel = new java.awt.Label();
-        BookIcon6 = new javax.swing.JLabel();
-        JoinWaitListButton = new javax.swing.JButton();
-
-        jLabel34.setText("jLabel34");
+        LabelEditProfile = new javax.swing.JLabel();
+        LabelName = new javax.swing.JLabel();
+        FullNameTextBox = new javax.swing.JTextField();
+        LabelMembership = new javax.swing.JLabel();
+        MembershipIDTextBox = new javax.swing.JTextField();
+        LabelEmail = new javax.swing.JLabel();
+        EmailTextBox = new javax.swing.JTextField();
+        LabelPhone = new javax.swing.JLabel();
+        PhoneNumberTextBox = new javax.swing.JTextField();
+        LabelCurrentPass = new javax.swing.JLabel();
+        CurrentPasswordTextBox = new javax.swing.JTextField();
+        LabelNewPass = new javax.swing.JLabel();
+        NewPasswordTextBox = new javax.swing.JTextField();
+        LabelConfirmPass = new javax.swing.JLabel();
+        ConfirmPasswordTextBox = new javax.swing.JTextField();
+        SaveChangesButton = new javax.swing.JButton();
+        jLabel33 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -334,7 +310,7 @@ public class WishlistMGMT extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jButton11, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE)
                         .addGap(51, 51, 51)))
-                .addContainerGap(107, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel2.setBackground(java.awt.Color.white);
@@ -394,7 +370,7 @@ public class WishlistMGMT extends javax.swing.JFrame {
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
                         .addComponent(jLabel11)
-                        .addContainerGap(21, Short.MAX_VALUE))
+                        .addContainerGap(23, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel8)
                         .addGap(41, 41, 41))))
@@ -468,7 +444,7 @@ public class WishlistMGMT extends javax.swing.JFrame {
         ProfileButton.setBackground(new java.awt.Color(0, 255, 102));
         ProfileButton.setText("SB");
 
-        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-book-search.png"))); // NOI18N
+        SearchIcon2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-book-search.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -478,10 +454,10 @@ public class WishlistMGMT extends javax.swing.JFrame {
                 .addGap(24, 24, 24)
                 .addComponent(jLabel12)
                 .addGap(261, 261, 261)
-                .addComponent(jLabel32)
+                .addComponent(SearchIcon2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(SearchBar, javax.swing.GroupLayout.PREFERRED_SIZE, 498, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 651, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 207, Short.MAX_VALUE)
                 .addComponent(NotificationButton, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(26, 26, 26)
                 .addComponent(ProfileButton, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -499,7 +475,7 @@ public class WishlistMGMT extends javax.swing.JFrame {
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jLabel32, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(SearchIcon2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addComponent(ProfileButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
@@ -587,356 +563,142 @@ public class WishlistMGMT extends javax.swing.JFrame {
 
         jPanel6.setBackground(java.awt.Color.white);
 
-        jLabel17.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
-        jLabel17.setText("My Wishlist ( 6 Books )");
+        LabelEditProfile.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
+        LabelEditProfile.setText("Edit profile");
 
-        BookPanel1.setBackground(new java.awt.Color(27, 58, 107));
+        LabelName.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        LabelName.setForeground(new java.awt.Color(122, 134, 154));
+        LabelName.setText("FULL NAME");
 
-        BookName1.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
-        BookName1.setForeground(java.awt.Color.white);
-        BookName1.setText("Aamisham's life");
+        FullNameTextBox.setText("Prerak Shrestha");
 
-        AuthorName1.setForeground(new java.awt.Color(204, 204, 204));
-        AuthorName1.setText("Prerak Shrestha");
+        LabelMembership.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        LabelMembership.setForeground(new java.awt.Color(122, 134, 154));
+        LabelMembership.setText("MEMBERSHIP ID");
 
-        AvailableLabel.setForeground(new java.awt.Color(153, 255, 153));
-        AvailableLabel.setText("Available");
+        MembershipIDTextBox.setForeground(new java.awt.Color(153, 153, 153));
+        MembershipIDTextBox.setText("LIB - 02 - 123");
 
-        BookIcon1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image (1).png"))); // NOI18N
-        BookIcon1.setText("jLabel33");
+        LabelEmail.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        LabelEmail.setForeground(new java.awt.Color(122, 134, 154));
+        LabelEmail.setText("EMAIL ADDRESS");
 
-        BorrowNowButton1.setText("Borrow Now");
+        EmailTextBox.setText("prerakadmin123@gmail.com");
 
-        javax.swing.GroupLayout BookPanel1Layout = new javax.swing.GroupLayout(BookPanel1);
-        BookPanel1.setLayout(BookPanel1Layout);
-        BookPanel1Layout.setHorizontalGroup(
-            BookPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BookPanel1Layout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addComponent(BookIcon1, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(45, 45, 45)
-                .addGroup(BookPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(BorrowNowButton1)
-                    .addComponent(BookName1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AvailableLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AuthorName1))
-                .addContainerGap(52, Short.MAX_VALUE))
-        );
-        BookPanel1Layout.setVerticalGroup(
-            BookPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BookPanel1Layout.createSequentialGroup()
-                .addGap(9, 9, 9)
-                .addGroup(BookPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(BookIcon1)
-                    .addGroup(BookPanel1Layout.createSequentialGroup()
-                        .addComponent(BookName1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(AuthorName1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(AvailableLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(BorrowNowButton1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        LabelPhone.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        LabelPhone.setForeground(new java.awt.Color(122, 134, 154));
+        LabelPhone.setText("PHONE NUMBER");
 
-        BookPanel2.setBackground(new java.awt.Color(27, 58, 107));
+        PhoneNumberTextBox.setText("9841021821");
 
-        BookName2.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
-        BookName2.setForeground(java.awt.Color.white);
-        BookName2.setText("Aamisham's life");
+        LabelCurrentPass.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        LabelCurrentPass.setForeground(new java.awt.Color(122, 134, 154));
+        LabelCurrentPass.setText("CURRENT PASSWORD");
 
-        AuthorName2.setForeground(new java.awt.Color(204, 204, 204));
-        AuthorName2.setText("Prerak Shrestha");
+        LabelNewPass.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        LabelNewPass.setForeground(new java.awt.Color(122, 134, 154));
+        LabelNewPass.setText("NEW PASSWORD");
 
-        AvailableLabel1.setForeground(new java.awt.Color(153, 255, 153));
-        AvailableLabel1.setText("Available");
+        LabelConfirmPass.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
+        LabelConfirmPass.setForeground(new java.awt.Color(122, 134, 154));
+        LabelConfirmPass.setText("CONFIRM PASSWORD");
 
-        BookIcon2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-book2.png"))); // NOI18N
-        BookIcon2.setText("jLabel33");
+        SaveChangesButton.setBackground(new java.awt.Color(30, 58, 104));
+        SaveChangesButton.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 14)); // NOI18N
+        SaveChangesButton.setForeground(java.awt.Color.white);
+        SaveChangesButton.setText("Save Changes");
+        SaveChangesButton.addActionListener(this::SaveChangesButtonActionPerformed);
 
-        BorrowNowButton2.setText("Borrow Now");
-
-        javax.swing.GroupLayout BookPanel2Layout = new javax.swing.GroupLayout(BookPanel2);
-        BookPanel2.setLayout(BookPanel2Layout);
-        BookPanel2Layout.setHorizontalGroup(
-            BookPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BookPanel2Layout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addComponent(BookIcon2, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(45, 45, 45)
-                .addGroup(BookPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(BorrowNowButton2)
-                    .addComponent(BookName2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AvailableLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AuthorName2))
-                .addContainerGap(52, Short.MAX_VALUE))
-        );
-        BookPanel2Layout.setVerticalGroup(
-            BookPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BookPanel2Layout.createSequentialGroup()
-                .addGap(9, 9, 9)
-                .addGroup(BookPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(BookIcon2)
-                    .addGroup(BookPanel2Layout.createSequentialGroup()
-                        .addComponent(BookName2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(AuthorName2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(AvailableLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(BorrowNowButton2)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        BookPanel3.setBackground(new java.awt.Color(27, 58, 107));
-
-        BookName3.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
-        BookName3.setForeground(java.awt.Color.white);
-        BookName3.setText("Aamisham's life");
-
-        AuthorName3.setForeground(new java.awt.Color(204, 204, 204));
-        AuthorName3.setText("Prerak Shrestha");
-
-        CheckedOutLabel2.setForeground(new java.awt.Color(255, 51, 51));
-        CheckedOutLabel2.setText("Checked Out");
-
-        BookIcon3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-book3.png"))); // NOI18N
-        BookIcon3.setText("jLabel33");
-
-        JoinWaitlistButton1.setText("Join Waitlist");
-
-        javax.swing.GroupLayout BookPanel3Layout = new javax.swing.GroupLayout(BookPanel3);
-        BookPanel3.setLayout(BookPanel3Layout);
-        BookPanel3Layout.setHorizontalGroup(
-            BookPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BookPanel3Layout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addComponent(BookIcon3, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(45, 45, 45)
-                .addGroup(BookPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(JoinWaitlistButton1)
-                    .addComponent(BookName3, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(CheckedOutLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AuthorName3))
-                .addContainerGap(52, Short.MAX_VALUE))
-        );
-        BookPanel3Layout.setVerticalGroup(
-            BookPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BookPanel3Layout.createSequentialGroup()
-                .addGap(9, 9, 9)
-                .addGroup(BookPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(BookIcon3)
-                    .addGroup(BookPanel3Layout.createSequentialGroup()
-                        .addComponent(BookName3, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(AuthorName3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(CheckedOutLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(JoinWaitlistButton1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        BookPanel4.setBackground(new java.awt.Color(27, 58, 107));
-
-        BookName4.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
-        BookName4.setForeground(java.awt.Color.white);
-        BookName4.setText("Aamisham's life");
-
-        AuthorName4.setForeground(new java.awt.Color(204, 204, 204));
-        AuthorName4.setText("Prerak Shrestha");
-
-        AvailableLabel3.setForeground(new java.awt.Color(153, 255, 153));
-        AvailableLabel3.setText("Available");
-
-        BookIcon4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-book2.png"))); // NOI18N
-        BookIcon4.setText("jLabel33");
-
-        BorrowNowButton4.setText("Borrow Now");
-
-        javax.swing.GroupLayout BookPanel4Layout = new javax.swing.GroupLayout(BookPanel4);
-        BookPanel4.setLayout(BookPanel4Layout);
-        BookPanel4Layout.setHorizontalGroup(
-            BookPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BookPanel4Layout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addComponent(BookIcon4, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(45, 45, 45)
-                .addGroup(BookPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(BorrowNowButton4)
-                    .addComponent(BookName4, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AvailableLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AuthorName4))
-                .addContainerGap(52, Short.MAX_VALUE))
-        );
-        BookPanel4Layout.setVerticalGroup(
-            BookPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BookPanel4Layout.createSequentialGroup()
-                .addGap(9, 9, 9)
-                .addGroup(BookPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(BookIcon4)
-                    .addGroup(BookPanel4Layout.createSequentialGroup()
-                        .addComponent(BookName4, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(AuthorName4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(AvailableLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(BorrowNowButton4)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        BookPanel5.setBackground(new java.awt.Color(27, 58, 107));
-
-        BookName5.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
-        BookName5.setForeground(java.awt.Color.white);
-        BookName5.setText("Aamisham's life");
-
-        AuthorName5.setForeground(new java.awt.Color(204, 204, 204));
-        AuthorName5.setText("Prerak Shrestha");
-
-        AvailableLabel4.setForeground(new java.awt.Color(153, 255, 153));
-        AvailableLabel4.setText("Available");
-
-        BookIcon5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image (1).png"))); // NOI18N
-        BookIcon5.setText("jLabel33");
-
-        BorrowNowButton5.setText("Borrow Now");
-
-        javax.swing.GroupLayout BookPanel5Layout = new javax.swing.GroupLayout(BookPanel5);
-        BookPanel5.setLayout(BookPanel5Layout);
-        BookPanel5Layout.setHorizontalGroup(
-            BookPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BookPanel5Layout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addComponent(BookIcon5, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(45, 45, 45)
-                .addGroup(BookPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(BorrowNowButton5)
-                    .addComponent(BookName5, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AvailableLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AuthorName5))
-                .addContainerGap(52, Short.MAX_VALUE))
-        );
-        BookPanel5Layout.setVerticalGroup(
-            BookPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BookPanel5Layout.createSequentialGroup()
-                .addGap(9, 9, 9)
-                .addGroup(BookPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(BookIcon5)
-                    .addGroup(BookPanel5Layout.createSequentialGroup()
-                        .addComponent(BookName5, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(AuthorName5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(AvailableLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(BorrowNowButton5)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        BookPanel6.setBackground(new java.awt.Color(27, 58, 107));
-
-        BookName6.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
-        BookName6.setForeground(java.awt.Color.white);
-        BookName6.setText("Aamisham's life PT 2");
-
-        AuthorName6.setForeground(new java.awt.Color(204, 204, 204));
-        AuthorName6.setText("Rojan Koju");
-
-        CheckedOutLabel.setForeground(new java.awt.Color(255, 51, 51));
-        CheckedOutLabel.setText("Checked Out");
-
-        BookIcon6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-book4.png"))); // NOI18N
-        BookIcon6.setText("jLabel33");
-
-        JoinWaitListButton.setBackground(new java.awt.Color(204, 204, 204));
-        JoinWaitListButton.setText("Join Waitlist");
-
-        javax.swing.GroupLayout BookPanel6Layout = new javax.swing.GroupLayout(BookPanel6);
-        BookPanel6.setLayout(BookPanel6Layout);
-        BookPanel6Layout.setHorizontalGroup(
-            BookPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BookPanel6Layout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addComponent(BookIcon6, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(45, 45, 45)
-                .addGroup(BookPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(JoinWaitListButton)
-                    .addComponent(BookName6, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(CheckedOutLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AuthorName6))
-                .addContainerGap(52, Short.MAX_VALUE))
-        );
-        BookPanel6Layout.setVerticalGroup(
-            BookPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BookPanel6Layout.createSequentialGroup()
-                .addGap(9, 9, 9)
-                .addGroup(BookPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(BookIcon6)
-                    .addGroup(BookPanel6Layout.createSequentialGroup()
-                        .addComponent(BookName6, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(AuthorName6)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(CheckedOutLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(JoinWaitListButton)
-                .addContainerGap(8, Short.MAX_VALUE))
-        );
+        jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-my-account.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(33, 33, 33)
+                .addGap(36, 36, 36)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addComponent(BookPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(598, 598, 598))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel17)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(BookPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(BookPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(82, 82, 82)
+                                    .addComponent(LabelNewPass)
+                                    .addComponent(NewPasswordTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
                                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(BookPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(BookPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(BookPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                    .addGroup(jPanel6Layout.createSequentialGroup()
+                                        .addComponent(LabelConfirmPass)
+                                        .addGap(0, 0, Short.MAX_VALUE))
+                                    .addComponent(ConfirmPasswordTextBox)))
+                            .addComponent(CurrentPasswordTextBox, javax.swing.GroupLayout.Alignment.LEADING))
+                        .addGap(37, 37, 37))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(LabelCurrentPass)
+                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                .addComponent(LabelEditProfile)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel33)))
+                        .addGap(0, 575, Short.MAX_VALUE))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(FullNameTextBox)
+                                .addComponent(LabelEmail, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(EmailTextBox, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 373, Short.MAX_VALUE))
+                            .addComponent(LabelName))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(PhoneNumberTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(LabelPhone)
+                            .addComponent(MembershipIDTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(LabelMembership))
+                        .addGap(34, 34, 34))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(SaveChangesButton, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(223, 223, 223))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(jLabel17)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(21, 21, 21)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(LabelEditProfile)
+                    .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(42, 42, 42)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(LabelName)
+                    .addComponent(LabelMembership))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(FullNameTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MembershipIDTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(36, 36, 36)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(LabelEmail)
+                    .addComponent(LabelPhone))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(EmailTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(PhoneNumberTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(36, 36, 36)
+                .addComponent(LabelCurrentPass)
+                .addGap(18, 18, 18)
+                .addComponent(CurrentPasswordTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(37, 37, 37)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(LabelConfirmPass)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(ConfirmPasswordTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addComponent(BookPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(48, 48, 48)
-                                .addComponent(BookPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(58, 58, 58)
-                                .addComponent(BookPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addComponent(BookPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(48, 48, 48)
-                                .addComponent(BookPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(58, 58, 58)
-                                .addComponent(BookPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(56, Short.MAX_VALUE))))
+                        .addComponent(LabelNewPass)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(NewPasswordTextBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(SaveChangesButton, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(39, 39, 39))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -948,29 +710,31 @@ public class WishlistMGMT extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(54, 54, 54)
+                        .addGap(66, 66, 66)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(37, 37, 37)
-                        .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 878, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))))
+                            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(96, 96, 96)
+                        .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(12, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 758, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(74, 74, 74)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(73, 73, 73)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(40, 40, 40)
+                        .addGap(41, 41, 41)
                         .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(188, Short.MAX_VALUE))
+                    .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -987,6 +751,10 @@ public class WishlistMGMT extends javax.swing.JFrame {
     private void EditProfileButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EditProfileButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_EditProfileButtonActionPerformed
+
+    private void SaveChangesButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SaveChangesButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SaveChangesButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1010,65 +778,45 @@ public class WishlistMGMT extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new WishlistMGMT().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new EditAccountPage().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel AuthorName1;
-    private javax.swing.JLabel AuthorName2;
-    private javax.swing.JLabel AuthorName3;
-    private javax.swing.JLabel AuthorName4;
-    private javax.swing.JLabel AuthorName5;
-    private javax.swing.JLabel AuthorName6;
-    private java.awt.Label AvailableLabel;
-    private java.awt.Label AvailableLabel1;
-    private java.awt.Label AvailableLabel3;
-    private java.awt.Label AvailableLabel4;
-    private javax.swing.JLabel BookIcon1;
-    private javax.swing.JLabel BookIcon2;
-    private javax.swing.JLabel BookIcon3;
-    private javax.swing.JLabel BookIcon4;
-    private javax.swing.JLabel BookIcon5;
-    private javax.swing.JLabel BookIcon6;
-    private javax.swing.JLabel BookName1;
-    private javax.swing.JLabel BookName2;
-    private javax.swing.JLabel BookName3;
-    private javax.swing.JLabel BookName4;
-    private javax.swing.JLabel BookName5;
-    private javax.swing.JLabel BookName6;
-    private javax.swing.JPanel BookPanel1;
-    private javax.swing.JPanel BookPanel2;
-    private javax.swing.JPanel BookPanel3;
-    private javax.swing.JPanel BookPanel4;
-    private javax.swing.JPanel BookPanel5;
-    private javax.swing.JPanel BookPanel6;
     private javax.swing.JButton BookSearchButton;
-    private javax.swing.JButton BorrowNowButton1;
-    private javax.swing.JButton BorrowNowButton2;
-    private javax.swing.JButton BorrowNowButton4;
-    private javax.swing.JButton BorrowNowButton5;
     private javax.swing.JButton BorrowingButton;
     private javax.swing.JToggleButton BorrowingButton2;
-    private java.awt.Label CheckedOutLabel;
-    private java.awt.Label CheckedOutLabel2;
+    private javax.swing.JTextField ConfirmPasswordTextBox;
+    private javax.swing.JTextField CurrentPasswordTextBox;
     private javax.swing.JButton DashboardButton;
     private javax.swing.JToggleButton EditProfileButton;
+    private javax.swing.JTextField EmailTextBox;
     private javax.swing.JButton FineButton;
     private javax.swing.JToggleButton FineButton2;
+    private javax.swing.JTextField FullNameTextBox;
     private javax.swing.JButton InventoryButton;
-    private javax.swing.JButton JoinWaitListButton;
-    private javax.swing.JButton JoinWaitlistButton1;
+    private javax.swing.JLabel LabelConfirmPass;
+    private javax.swing.JLabel LabelCurrentPass;
+    private javax.swing.JLabel LabelEditProfile;
+    private javax.swing.JLabel LabelEmail;
+    private javax.swing.JLabel LabelMembership;
+    private javax.swing.JLabel LabelName;
+    private javax.swing.JLabel LabelNewPass;
+    private javax.swing.JLabel LabelPhone;
+    private javax.swing.JTextField MembershipIDTextBox;
     private javax.swing.JButton MyAccountButton;
+    private javax.swing.JTextField NewPasswordTextBox;
     private javax.swing.JButton NotificationButton;
+    private javax.swing.JTextField PhoneNumberTextBox;
     private javax.swing.JButton ProfileButton;
     private javax.swing.JButton ReportsButton;
     private javax.swing.JButton ReviewsButton;
     private javax.swing.JToggleButton ReviewsButton2;
+    private javax.swing.JButton SaveChangesButton;
     private javax.swing.JTextField SearchBar;
+    private javax.swing.JLabel SearchIcon2;
     private javax.swing.JButton UsersButton;
     private javax.swing.JButton WishlistButton;
     private javax.swing.JToggleButton WishlistButton2;
-    private javax.swing.Box.Filler filler1;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
     private javax.swing.JLabel jLabel1;
@@ -1079,7 +827,6 @@ public class WishlistMGMT extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
@@ -1096,8 +843,7 @@ public class WishlistMGMT extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
