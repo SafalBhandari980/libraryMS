@@ -1,3 +1,4 @@
+package view;
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -16,6 +17,74 @@ public class FinePayment extends javax.swing.JFrame {
      */
     public FinePayment() {
         initComponents();
+        setSize(1280, 800);
+        setLocationRelativeTo(null);
+        loadFineData();
+    }
+
+    /**
+     * Loads real fine data from the database for the current session user.
+     * Replaces all the hardcoded labels with live values.
+     */
+    public void loadFineData() {
+        try {
+            // Load session-based name/email
+            String fullName = utils.Session.getFullName();
+            String membershipId = utils.Session.getMembershipId();
+            String memberType  = utils.Session.getMembershipType();
+
+            if (fullName != null && !fullName.isEmpty()) {
+                jLabel2.setText(fullName);
+                jLabel22.setText(fullName);
+                String initials = getInitials(fullName);
+                jButton11.setText(initials);
+                jButton12.setText(initials);
+            }
+            if (membershipId != null) {
+                jLabel3.setText("ID : " + membershipId + " - " + (memberType != null ? memberType.toUpperCase() : "MEMBER"));
+                jLabel23.setText((memberType != null ? memberType.substring(0,1).toUpperCase() + memberType.substring(1) : "Member") + " Member");
+            }
+
+            // Load outstanding fine from DB using the existing method
+            double fine = dao.data.getTotalFines(utils.Session.getMemberId());
+            if (fine <= 0) {
+                OverDueBalance.setText("Rs 0.00");
+                OverDueBalance.setForeground(new java.awt.Color(34, 197, 94));
+                BookName.setText("No overdue books ✓");
+                DueDate.setText("—");
+                OverdueDays.setText("0 Days");
+                FineRate.setText("Rs 10 / Day");
+                GracePeriod.setText("3 Days (FREE)");
+                ChargeableDays.setText("Rs 0.00");
+                PayNowButton.setEnabled(false);
+                PayNowButton.setBackground(new java.awt.Color(150, 150, 150));
+                PayNowButton.setForeground(java.awt.Color.WHITE);
+            } else {
+                OverDueBalance.setText(String.format("Rs %.2f", fine));
+                OverDueBalance.setForeground(new java.awt.Color(255, 51, 51));
+                PayNowButton.setEnabled(true);
+                PayNowButton.setBackground(new java.awt.Color(255, 51, 51));
+            }
+
+            // Show borrowing stats
+            int borrowed = dao.data.getCurrentlyBorrowedCount(utils.Session.getMemberId());
+            int returned = dao.data.getReturnedBooksCount(utils.Session.getMemberId());
+            int reserved = dao.data.getReservationCount(utils.Session.getMemberId());
+            jLabel6.setText(String.valueOf(returned));
+            jLabel7.setText(String.valueOf(borrowed));
+            jLabel8.setText(String.valueOf(reserved));
+
+        } catch (Exception ex) {
+            // Gracefully fail – keep the UI looking good
+            OverDueBalance.setText("Rs 0.00");
+            OverDueBalance.setForeground(new java.awt.Color(34, 197, 94));
+        }
+    }
+
+    private String getInitials(String fullName) {
+        String[] parts = fullName.trim().split("\\s+");
+        if (parts.length >= 2) return ("" + parts[0].charAt(0) + parts[parts.length-1].charAt(0)).toUpperCase();
+        return fullName.length() >= 2 ? fullName.substring(0, 2).toUpperCase() : fullName.toUpperCase();
     }
 
     /**
@@ -695,11 +764,11 @@ public class FinePayment extends javax.swing.JFrame {
 
         PaymentDate2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         PaymentDate2.setForeground(new java.awt.Color(122, 134, 154));
-        PaymentDate2.setText("Mar 24 , 2024");
+        PaymentDate2.setText("June 26, 2026");
 
         PaymentDate.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         PaymentDate.setForeground(new java.awt.Color(122, 134, 154));
-        PaymentDate.setText("Mar 26 , 2024");
+        PaymentDate.setText("June 23 , 2026");
 
         PaidAmount.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
         PaidAmount.setForeground(new java.awt.Color(51, 255, 51));
@@ -799,9 +868,63 @@ public class FinePayment extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_EditProfileButtonActionPerformed
 
-    private void PayNowButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PayNowButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_PayNowButtonActionPerformed
+    private void PayNowButtonActionPerformed(java.awt.event.ActionEvent evt) {
+        int memberId = utils.Session.getMemberId();
+        if (memberId <= 0) {
+            javax.swing.JOptionPane.showMessageDialog(this,
+                "Session expired. Please log in again.", "Error", javax.swing.JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+
+        double outstanding = dao.data.getTotalFines(memberId);
+        if (outstanding <= 0) {
+            javax.swing.JOptionPane.showMessageDialog(this,
+                "You have no outstanding fines.", "No Fines", javax.swing.JOptionPane.INFORMATION_MESSAGE);
+            return;
+        }
+
+        // Show payment confirmation with amount
+        int confirm = javax.swing.JOptionPane.showConfirmDialog(this,
+            String.format(
+                "<html><b>Outstanding Fine: Rs %.2f</b><br><br>" +
+                "You will be redirected to Google Play to complete payment.<br>" +
+                "After paying, click OK to mark your fine as cleared.</html>",
+                outstanding),
+            "Pay Fine – Rs " + String.format("%.2f", outstanding),
+            javax.swing.JOptionPane.YES_NO_OPTION,
+            javax.swing.JOptionPane.QUESTION_MESSAGE);
+        if (confirm != javax.swing.JOptionPane.YES_OPTION) return;
+
+        // Open Google Play in the default browser
+        try {
+            String url = "https://play.google.com/store/paymentmethods";
+            java.awt.Desktop.getDesktop().browse(new java.net.URI(url));
+        } catch (Exception ex) {
+            javax.swing.JOptionPane.showMessageDialog(this,
+                "Could not open browser automatically.\n" +
+                "Please visit https://play.google.com/store/paymentmethods to complete your payment.",
+                "Browser Error", javax.swing.JOptionPane.WARNING_MESSAGE);
+        }
+
+        // Ask if payment was completed so we can clear the fine in the DB
+        int paid = javax.swing.JOptionPane.showConfirmDialog(this,
+            "<html>Have you completed the payment on Google Play?<br>" +
+            "Click <b>Yes</b> to mark your fine as cleared.</html>",
+            "Confirm Payment", javax.swing.JOptionPane.YES_NO_OPTION,
+            javax.swing.JOptionPane.QUESTION_MESSAGE);
+        if (paid == javax.swing.JOptionPane.YES_OPTION) {
+            if (dao.data.payFines(memberId)) {
+                javax.swing.JOptionPane.showMessageDialog(this,
+                    "✅ Payment confirmed! Your fines have been cleared.",
+                    "Payment Complete", javax.swing.JOptionPane.INFORMATION_MESSAGE);
+                this.loadFineData();
+            } else {
+                javax.swing.JOptionPane.showMessageDialog(this,
+                    "Failed to clear fines in the system. Please contact the library.",
+                    "Error", javax.swing.JOptionPane.ERROR_MESSAGE);
+            }
+        }
+    }
 
     /**
      * @param args the command line arguments
@@ -830,18 +953,18 @@ public class FinePayment extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel BookName;
-    private javax.swing.JButton BookSearchButton;
-    private javax.swing.JButton BorrowingButton;
+    public javax.swing.JButton BookSearchButton;
+    public javax.swing.JButton BorrowingButton;
     private javax.swing.JToggleButton BorrowingButton2;
     private javax.swing.JLabel ChargeableDays;
-    private javax.swing.JButton DashboardButton;
+    public javax.swing.JButton DashboardButton;
     private javax.swing.JLabel DueDate;
     private javax.swing.JToggleButton EditProfileButton;
-    private javax.swing.JButton FineButton;
+    public javax.swing.JButton FineButton;
     private javax.swing.JToggleButton FineButton2;
     private javax.swing.JLabel FineRate;
     private javax.swing.JLabel GracePeriod;
-    private javax.swing.JButton InventoryButton;
+    public javax.swing.JButton InventoryButton;
     private javax.swing.JLabel LabelCurrentPass;
     private javax.swing.JLabel LabelCurrentPass1;
     private javax.swing.JLabel LabelCurrentPass2;
@@ -851,27 +974,27 @@ public class FinePayment extends javax.swing.JFrame {
     private javax.swing.JLabel LabelEmail;
     private javax.swing.JLabel LabelName;
     private javax.swing.JLabel LabelNewPass;
-    private javax.swing.JButton LogOutButton;
-    private javax.swing.JButton MyAccountButton;
-    private javax.swing.JButton NotificationButton;
+    public javax.swing.JButton LogOutButton;
+    public javax.swing.JButton MyAccountButton;
+    public javax.swing.JButton NotificationButton;
     private javax.swing.JLabel OverDueBalance;
     private javax.swing.JLabel OverdueDays;
     private javax.swing.JLabel PaidAmount;
     private javax.swing.JLabel PaidAmount2;
-    private javax.swing.JButton PayNowButton;
+    public javax.swing.JButton PayNowButton;
     private javax.swing.JLabel PaymentDate;
     private javax.swing.JLabel PaymentDate2;
-    private javax.swing.JButton ProfileButton;
-    private javax.swing.JButton ReportsButton;
-    private javax.swing.JButton ReviewsButton;
+    public javax.swing.JButton ProfileButton;
+    public javax.swing.JButton ReportsButton;
+    public javax.swing.JButton ReviewsButton;
     private javax.swing.JToggleButton ReviewsButton2;
     private javax.swing.JTextField SearchBar;
     private javax.swing.JLabel SearchIcon2;
-    private javax.swing.JButton UsersButton;
-    private javax.swing.JButton WishlistButton;
+    public javax.swing.JButton UsersButton;
+    public javax.swing.JButton WishlistButton;
     private javax.swing.JToggleButton WishlistButton2;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
+    public javax.swing.JButton jButton11;
+    public javax.swing.JButton jButton12;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

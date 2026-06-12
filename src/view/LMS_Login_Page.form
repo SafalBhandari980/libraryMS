@@ -376,7 +376,7 @@
                 <Property name="text" type="java.lang.String" value="PASSWORD"/>
               </Properties>
             </Component>
-            <Component class="java.awt.TextField" name="EmailTextField">
+            <Component class="javax.swing.JTextField" name="EmailTextField">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Dialog" size="14" style="0"/>
@@ -389,7 +389,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="EmailTextFieldActionPerformed"/>
               </Events>
             </Component>
-            <Component class="java.awt.TextField" name="PasswordTextField">
+            <Component class="javax.swing.JPasswordField" name="PasswordTextField">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Dialog" size="14" style="0"/>
@@ -506,3 +506,4 @@
     </Container>
   </SubComponents>
 </Form>
+

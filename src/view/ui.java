@@ -27,6 +27,8 @@ public class ui extends javax.swing.JFrame {
      */
     public ui() {
         initComponents();
+        setSize(1280, 800);
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -149,7 +151,7 @@ public class ui extends javax.swing.JFrame {
 
         dashboard.setBackground(new java.awt.Color(27, 58, 107));
         dashboard.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        dashboard.setForeground(new java.awt.Color(255, 255, 255));
+        dashboard.setForeground(new java.awt.Color(30, 40, 60));
         dashboard.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_house-removebg-preview (1).png"))); // NOI18N
         dashboard.setText(" Dashboard");
 
@@ -158,43 +160,43 @@ public class ui extends javax.swing.JFrame {
 
         booksearch.setBackground(new java.awt.Color(27, 58, 107));
         booksearch.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        booksearch.setForeground(new java.awt.Color(255, 255, 255));
+        booksearch.setForeground(new java.awt.Color(30, 40, 60));
         booksearch.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_search-removebg-previe.png"))); // NOI18N
         booksearch.setText(" Book Search");
 
         myborrowings.setBackground(new java.awt.Color(27, 58, 107));
         myborrowings.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        myborrowings.setForeground(new java.awt.Color(255, 255, 255));
+        myborrowings.setForeground(new java.awt.Color(30, 40, 60));
         myborrowings.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_borrowing-removebg-pre.png"))); // NOI18N
         myborrowings.setText(" My Borrowings");
 
         wishlist.setBackground(new java.awt.Color(27, 58, 107));
         wishlist.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        wishlist.setForeground(new java.awt.Color(255, 255, 255));
+        wishlist.setForeground(new java.awt.Color(30, 40, 60));
         wishlist.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_wishlist-removebg-prev.png"))); // NOI18N
         wishlist.setText(" Wishlist");
 
         reviews.setBackground(new java.awt.Color(27, 58, 107));
         reviews.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        reviews.setForeground(new java.awt.Color(255, 255, 255));
+        reviews.setForeground(new java.awt.Color(30, 40, 60));
         reviews.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_reviews-removebg-previ.png"))); // NOI18N
         reviews.setText(" Reviews");
 
         finepayment.setBackground(new java.awt.Color(27, 58, 107));
         finepayment.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        finepayment.setForeground(new java.awt.Color(255, 255, 255));
+        finepayment.setForeground(new java.awt.Color(30, 40, 60));
         finepayment.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_fine-removebg-preview (1).png"))); // NOI18N
         finepayment.setText(" Fine Payment");
 
         myaccount.setBackground(new java.awt.Color(27, 58, 107));
         myaccount.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        myaccount.setForeground(new java.awt.Color(255, 255, 255));
+        myaccount.setForeground(new java.awt.Color(30, 40, 60));
         myaccount.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colorful_my_account-removebg-pre.png"))); // NOI18N
         myaccount.setText(" My Account");
 
         inventory.setBackground(new java.awt.Color(27, 58, 107));
         inventory.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        inventory.setForeground(new java.awt.Color(255, 255, 255));
+        inventory.setForeground(new java.awt.Color(30, 40, 60));
         inventory.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_inv_98-removebg-previe.png"))); // NOI18N
         inventory.setText("Inventory");
 
@@ -203,13 +205,13 @@ public class ui extends javax.swing.JFrame {
 
         users.setBackground(new java.awt.Color(27, 58, 107));
         users.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        users.setForeground(new java.awt.Color(255, 255, 255));
+        users.setForeground(new java.awt.Color(30, 40, 60));
         users.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_users-removebg-preview (1).png"))); // NOI18N
         users.setText(" users");
 
         reports.setBackground(new java.awt.Color(27, 58, 107));
         reports.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        reports.setForeground(new java.awt.Color(255, 255, 255));
+        reports.setForeground(new java.awt.Color(30, 40, 60));
         reports.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_reports-removebg-previ.png"))); // NOI18N
         reports.setText("Reports");
 
@@ -1197,103 +1199,103 @@ public class ui extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton BorrowButton;
-    private javax.swing.JButton JoinWaitlistButton;
-    private javax.swing.JButton RenewButton;
-    private javax.swing.JButton RenewButton2;
-    private javax.swing.JLabel Reservation;
-    private javax.swing.JButton ReserveButton;
-    private javax.swing.JButton ReturnButton;
-    private javax.swing.JLabel admin;
-    private javax.swing.JLabel booksborrowe;
-    private javax.swing.JButton booksearch;
-    private javax.swing.JLabel booksread;
-    private javax.swing.JLabel cleancode;
-    private javax.swing.JLabel currentlyborrowed;
-    private javax.swing.JButton dashboard;
-    private javax.swing.JLabel dashyybo;
-    private javax.swing.JLabel duemaytwentyfive;
-    private javax.swing.JLabel duesoon;
-    private javax.swing.JButton finepayment;
-    private javax.swing.JButton inventory;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel34;
-    private javax.swing.JLabel jLabel35;
-    private javax.swing.JLabel jLabel38;
-    private javax.swing.JLabel jLabel39;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel40;
-    private javax.swing.JLabel jLabel43;
-    private javax.swing.JLabel jLabel44;
-    private javax.swing.JLabel jLabel45;
-    private javax.swing.JLabel jLabel46;
-    private javax.swing.JLabel jLabel47;
-    private javax.swing.JLabel jLabel48;
-    private javax.swing.JLabel jLabel49;
-    private javax.swing.JLabel jLabel50;
-    private javax.swing.JLabel jLabel51;
-    private javax.swing.JLabel jLabel52;
-    private javax.swing.JLabel jLabel53;
-    private javax.swing.JLabel jLabel54;
-    private javax.swing.JLabel jLabel58;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel10;
-    private javax.swing.JPanel jPanel11;
-    private javax.swing.JPanel jPanel12;
-    private javax.swing.JPanel jPanel13;
-    private javax.swing.JPanel jPanel14;
-    private javax.swing.JPanel jPanel15;
-    private javax.swing.JPanel jPanel16;
-    private javax.swing.JPanel jPanel17;
-    private javax.swing.JPanel jPanel18;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JLabel libraryMs;
-    private javax.swing.JLabel member;
-    private javax.swing.JButton myaccount;
-    private javax.swing.JButton myborrowings;
-    private javax.swing.JLabel notification;
-    private javax.swing.JLabel oneoverduebook;
-    private javax.swing.JLabel onereadyforpickup;
-    private javax.swing.JButton payfine;
-    private javax.swing.JLabel recommendedforu;
-    private javax.swing.JButton reports;
-    private javax.swing.JButton reviews;
-    private javax.swing.JLabel robertcmartin;
-    private javax.swing.JLabel rsfourtyfive;
-    private javax.swing.JLabel safal;
-    private javax.swing.JButton sb;
-    private javax.swing.JButton sbsidebar;
-    private javax.swing.JButton secondreturn;
-    private javax.swing.JLabel seemore;
-    private javax.swing.JLabel student;
-    private javax.swing.JLabel thissemester;
-    private javax.swing.JLabel three;
-    private javax.swing.JLabel twentyfour;
-    private javax.swing.JLabel two;
-    private javax.swing.JLabel twoduethisweek;
-    private javax.swing.JButton users;
-    private javax.swing.JLabel viewall;
-    private javax.swing.JButton wishlist;
+    public javax.swing.JButton BorrowButton;
+    public javax.swing.JButton JoinWaitlistButton;
+    public javax.swing.JButton RenewButton;
+    public javax.swing.JButton RenewButton2;
+    public javax.swing.JLabel Reservation;
+    public javax.swing.JButton ReserveButton;
+    public javax.swing.JButton ReturnButton;
+    public javax.swing.JLabel admin;
+    public javax.swing.JLabel booksborrowe;
+    public javax.swing.JButton booksearch;
+    public javax.swing.JLabel booksread;
+    public javax.swing.JLabel cleancode;
+    public javax.swing.JLabel currentlyborrowed;
+    public javax.swing.JButton dashboard;
+    public javax.swing.JLabel dashyybo;
+    public javax.swing.JLabel duemaytwentyfive;
+    public javax.swing.JLabel duesoon;
+    public javax.swing.JButton finepayment;
+    public javax.swing.JButton inventory;
+    public javax.swing.JButton jButton13;
+    public javax.swing.JLabel jLabel1;
+    public javax.swing.JLabel jLabel2;
+    public javax.swing.JLabel jLabel24;
+    public javax.swing.JLabel jLabel25;
+    public javax.swing.JLabel jLabel26;
+    public javax.swing.JLabel jLabel27;
+    public javax.swing.JLabel jLabel28;
+    public javax.swing.JLabel jLabel29;
+    public javax.swing.JLabel jLabel3;
+    public javax.swing.JLabel jLabel31;
+    public javax.swing.JLabel jLabel32;
+    public javax.swing.JLabel jLabel33;
+    public javax.swing.JLabel jLabel34;
+    public javax.swing.JLabel jLabel35;
+    public javax.swing.JLabel jLabel38;
+    public javax.swing.JLabel jLabel39;
+    public javax.swing.JLabel jLabel4;
+    public javax.swing.JLabel jLabel40;
+    public javax.swing.JLabel jLabel43;
+    public javax.swing.JLabel jLabel44;
+    public javax.swing.JLabel jLabel45;
+    public javax.swing.JLabel jLabel46;
+    public javax.swing.JLabel jLabel47;
+    public javax.swing.JLabel jLabel48;
+    public javax.swing.JLabel jLabel49;
+    public javax.swing.JLabel jLabel50;
+    public javax.swing.JLabel jLabel51;
+    public javax.swing.JLabel jLabel52;
+    public javax.swing.JLabel jLabel53;
+    public javax.swing.JLabel jLabel54;
+    public javax.swing.JLabel jLabel58;
+    public javax.swing.JLabel jLabel8;
+    public javax.swing.JPanel jPanel1;
+    public javax.swing.JPanel jPanel10;
+    public javax.swing.JPanel jPanel11;
+    public javax.swing.JPanel jPanel12;
+    public javax.swing.JPanel jPanel13;
+    public javax.swing.JPanel jPanel14;
+    public javax.swing.JPanel jPanel15;
+    public javax.swing.JPanel jPanel16;
+    public javax.swing.JPanel jPanel17;
+    public javax.swing.JPanel jPanel18;
+    public javax.swing.JPanel jPanel2;
+    public javax.swing.JPanel jPanel3;
+    public javax.swing.JPanel jPanel4;
+    public javax.swing.JPanel jPanel5;
+    public javax.swing.JPanel jPanel6;
+    public javax.swing.JPanel jPanel7;
+    public javax.swing.JPanel jPanel8;
+    public javax.swing.JPanel jPanel9;
+    public javax.swing.JTextField jTextField1;
+    public javax.swing.JLabel libraryMs;
+    public javax.swing.JLabel member;
+    public javax.swing.JButton myaccount;
+    public javax.swing.JButton myborrowings;
+    public javax.swing.JLabel notification;
+    public javax.swing.JLabel oneoverduebook;
+    public javax.swing.JLabel onereadyforpickup;
+    public javax.swing.JButton payfine;
+    public javax.swing.JLabel recommendedforu;
+    public javax.swing.JButton reports;
+    public javax.swing.JButton reviews;
+    public javax.swing.JLabel robertcmartin;
+    public javax.swing.JLabel rsfourtyfive;
+    public javax.swing.JLabel safal;
+    public javax.swing.JButton sb;
+    public javax.swing.JButton sbsidebar;
+    public javax.swing.JButton secondreturn;
+    public javax.swing.JLabel seemore;
+    public javax.swing.JLabel student;
+    public javax.swing.JLabel thissemester;
+    public javax.swing.JLabel three;
+    public javax.swing.JLabel twentyfour;
+    public javax.swing.JLabel two;
+    public javax.swing.JLabel twoduethisweek;
+    public javax.swing.JButton users;
+    public javax.swing.JLabel viewall;
+    public javax.swing.JButton wishlist;
     // End of variables declaration//GEN-END:variables
 }

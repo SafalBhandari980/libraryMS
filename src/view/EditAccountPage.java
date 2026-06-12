@@ -1,3 +1,4 @@
+package view;
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -16,6 +17,8 @@ public class EditAccountPage extends javax.swing.JFrame {
      */
     public EditAccountPage() {
         initComponents();
+        setSize(1280, 800);
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -177,6 +180,7 @@ public class EditAccountPage extends javax.swing.JFrame {
         jButton11.setBackground(new java.awt.Color(0, 255, 102));
         jButton11.setText("SB");
 
+<<<<<<< HEAD
         jLabel19.setText("jLabel14");
 
         jLabel20.setText("jLabel14");
@@ -195,6 +199,36 @@ public class EditAccountPage extends javax.swing.JFrame {
 
         jLabel30.setText("jLabel14");
 
+=======
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon-wishlist.png"))); // NOI18N
+        jLabel19.setText("jLabel14");
+
+        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon-reviews.png"))); // NOI18N
+        jLabel20.setText("jLabel14");
+
+        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon-fine-payment.png"))); // NOI18N
+        jLabel24.setText("jLabel14");
+
+        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon-my-account.png"))); // NOI18N
+        jLabel25.setText("jLabel14");
+
+        jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon-borrowing-history.png"))); // NOI18N
+        jLabel26.setText("jLabel14");
+
+        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon-dashboard.png"))); // NOI18N
+        jLabel27.setText("jLabel14");
+
+        jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon-book-search.png"))); // NOI18N
+        jLabel28.setText("jLabel14");
+
+        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon-inventory.png"))); // NOI18N
+        jLabel29.setText("jLabel14");
+
+        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon-users.png"))); // NOI18N
+        jLabel30.setText("jLabel14");
+
+        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon-reports.png"))); // NOI18N
+>>>>>>> 5ff2ac5cf0aef835269632f730567bed9aa729d7
         jLabel31.setText("jLabel14");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -428,11 +462,20 @@ public class EditAccountPage extends javax.swing.JFrame {
         SearchBar.setText("Search books, authors, ISBN....");
         SearchBar.addActionListener(this::SearchBarActionPerformed);
 
+<<<<<<< HEAD
+=======
+        NotificationButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon-notification-bell.png"))); // NOI18N
+>>>>>>> 5ff2ac5cf0aef835269632f730567bed9aa729d7
         NotificationButton.addActionListener(this::NotificationButtonActionPerformed);
 
         ProfileButton.setBackground(new java.awt.Color(0, 255, 102));
         ProfileButton.setText("SB");
 
+<<<<<<< HEAD
+=======
+        SearchIcon2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon-book-search.png"))); // NOI18N
+
+>>>>>>> 5ff2ac5cf0aef835269632f730567bed9aa729d7
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
@@ -488,8 +531,22 @@ public class EditAccountPage extends javax.swing.JFrame {
         EditProfileButton.setText("Edit profile");
         EditProfileButton.addActionListener(this::EditProfileButtonActionPerformed);
 
+<<<<<<< HEAD
         jLabel14.setText("jLabel14");
 
+=======
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon-borrowing-history.png"))); // NOI18N
+        jLabel14.setText("jLabel14");
+
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon-wishlist.png"))); // NOI18N
+
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon-fine-payment.png"))); // NOI18N
+
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon-edit-profile.png"))); // NOI18N
+
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon-reviews.png"))); // NOI18N
+
+>>>>>>> 5ff2ac5cf0aef835269632f730567bed9aa729d7
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
@@ -587,6 +644,11 @@ public class EditAccountPage extends javax.swing.JFrame {
         SaveChangesButton.setText("Save Changes");
         SaveChangesButton.addActionListener(this::SaveChangesButtonActionPerformed);
 
+<<<<<<< HEAD
+=======
+        jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon-my-account.png"))); // NOI18N
+
+>>>>>>> 5ff2ac5cf0aef835269632f730567bed9aa729d7
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
@@ -759,79 +821,79 @@ public class EditAccountPage extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton BookSearchButton;
-    private javax.swing.JButton BorrowingButton;
-    private javax.swing.JToggleButton BorrowingButton2;
-    private javax.swing.JTextField ConfirmPasswordTextBox;
-    private javax.swing.JTextField CurrentPasswordTextBox;
-    private javax.swing.JButton DashboardButton;
-    private javax.swing.JToggleButton EditProfileButton;
-    private javax.swing.JTextField EmailTextBox;
-    private javax.swing.JButton FineButton;
-    private javax.swing.JToggleButton FineButton2;
-    private javax.swing.JTextField FullNameTextBox;
-    private javax.swing.JButton InventoryButton;
-    private javax.swing.JLabel LabelConfirmPass;
-    private javax.swing.JLabel LabelCurrentPass;
-    private javax.swing.JLabel LabelEditProfile;
-    private javax.swing.JLabel LabelEmail;
-    private javax.swing.JLabel LabelMembership;
-    private javax.swing.JLabel LabelName;
-    private javax.swing.JLabel LabelNewPass;
-    private javax.swing.JLabel LabelPhone;
-    private javax.swing.JTextField MembershipIDTextBox;
-    private javax.swing.JButton MyAccountButton;
-    private javax.swing.JTextField NewPasswordTextBox;
-    private javax.swing.JButton NotificationButton;
-    private javax.swing.JTextField PhoneNumberTextBox;
-    private javax.swing.JButton ProfileButton;
-    private javax.swing.JButton ReportsButton;
-    private javax.swing.JButton ReviewsButton;
-    private javax.swing.JToggleButton ReviewsButton2;
-    private javax.swing.JButton SaveChangesButton;
-    private javax.swing.JTextField SearchBar;
-    private javax.swing.JLabel SearchIcon2;
-    private javax.swing.JButton UsersButton;
-    private javax.swing.JButton WishlistButton;
-    private javax.swing.JToggleButton WishlistButton2;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
+    public javax.swing.JButton BookSearchButton;
+    public javax.swing.JButton BorrowingButton;
+    public javax.swing.JToggleButton BorrowingButton2;
+    public javax.swing.JTextField ConfirmPasswordTextBox;
+    public javax.swing.JTextField CurrentPasswordTextBox;
+    public javax.swing.JButton DashboardButton;
+    public javax.swing.JToggleButton EditProfileButton;
+    public javax.swing.JTextField EmailTextBox;
+    public javax.swing.JButton FineButton;
+    public javax.swing.JToggleButton FineButton2;
+    public javax.swing.JTextField FullNameTextBox;
+    public javax.swing.JButton InventoryButton;
+    public javax.swing.JLabel LabelConfirmPass;
+    public javax.swing.JLabel LabelCurrentPass;
+    public javax.swing.JLabel LabelEditProfile;
+    public javax.swing.JLabel LabelEmail;
+    public javax.swing.JLabel LabelMembership;
+    public javax.swing.JLabel LabelName;
+    public javax.swing.JLabel LabelNewPass;
+    public javax.swing.JLabel LabelPhone;
+    public javax.swing.JTextField MembershipIDTextBox;
+    public javax.swing.JButton MyAccountButton;
+    public javax.swing.JTextField NewPasswordTextBox;
+    public javax.swing.JButton NotificationButton;
+    public javax.swing.JTextField PhoneNumberTextBox;
+    public javax.swing.JButton ProfileButton;
+    public javax.swing.JButton ReportsButton;
+    public javax.swing.JButton ReviewsButton;
+    public javax.swing.JToggleButton ReviewsButton2;
+    public javax.swing.JButton SaveChangesButton;
+    public javax.swing.JTextField SearchBar;
+    public javax.swing.JLabel SearchIcon2;
+    public javax.swing.JButton UsersButton;
+    public javax.swing.JButton WishlistButton;
+    public javax.swing.JToggleButton WishlistButton2;
+    public javax.swing.JButton jButton11;
+    public javax.swing.JButton jButton12;
+    public javax.swing.JLabel jLabel1;
+    public javax.swing.JLabel jLabel10;
+    public javax.swing.JLabel jLabel11;
+    public javax.swing.JLabel jLabel12;
+    public javax.swing.JLabel jLabel13;
+    public javax.swing.JLabel jLabel14;
+    public javax.swing.JLabel jLabel15;
+    public javax.swing.JLabel jLabel16;
+    public javax.swing.JLabel jLabel18;
+    public javax.swing.JLabel jLabel19;
+    public javax.swing.JLabel jLabel2;
+    public javax.swing.JLabel jLabel20;
+    public javax.swing.JLabel jLabel21;
+    public javax.swing.JLabel jLabel22;
+    public javax.swing.JLabel jLabel23;
+    public javax.swing.JLabel jLabel24;
+    public javax.swing.JLabel jLabel25;
+    public javax.swing.JLabel jLabel26;
+    public javax.swing.JLabel jLabel27;
+    public javax.swing.JLabel jLabel28;
+    public javax.swing.JLabel jLabel29;
+    public javax.swing.JLabel jLabel3;
+    public javax.swing.JLabel jLabel30;
+    public javax.swing.JLabel jLabel31;
+    public javax.swing.JLabel jLabel33;
+    public javax.swing.JLabel jLabel4;
+    public javax.swing.JLabel jLabel5;
+    public javax.swing.JLabel jLabel6;
+    public javax.swing.JLabel jLabel7;
+    public javax.swing.JLabel jLabel8;
+    public javax.swing.JLabel jLabel9;
+    public javax.swing.JPanel jPanel1;
+    public javax.swing.JPanel jPanel2;
+    public javax.swing.JPanel jPanel3;
+    public javax.swing.JPanel jPanel4;
+    public javax.swing.JPanel jPanel5;
+    public javax.swing.JPanel jPanel6;
     // End of variables declaration//GEN-END:variables
 }
