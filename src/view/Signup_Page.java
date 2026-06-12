@@ -77,7 +77,7 @@ public class Signup_Page extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         panel3.setBackground(new java.awt.Color(242, 242, 242));
-        panel3.setForeground(java.awt.Color.black);
+        panel3.setForeground(java.awt.Color.white);
 
         CreateAccountTitle.setFont(new java.awt.Font("Mongolian Baiti", 1, 36)); // NOI18N
         CreateAccountTitle.setText("CREATE ACCOUNT");
@@ -206,7 +206,7 @@ public class Signup_Page extends javax.swing.JFrame {
                         .addGap(74, 74, 74))
                     .addGroup(panel3Layout.createSequentialGroup()
                         .addComponent(StudentMembership, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(57, 57, 57)
+                        .addGap(49, 49, 49)
                         .addComponent(FactultyMembership, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(PublicMembership, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -315,30 +315,25 @@ public class Signup_Page extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(30, 58, 104));
 
         Title.setFont(new java.awt.Font("Mongolian Baiti", 1, 36)); // NOI18N
-        Title.setForeground(java.awt.Color.black);
+        Title.setForeground(java.awt.Color.white);
         Title.setText("Library MS");
 
         FeaturePrompt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
-        FeaturePrompt.setForeground(java.awt.Color.black);
+        FeaturePrompt.setForeground(java.awt.Color.white);
         FeaturePrompt.setText("Many smart features ");
 
         NotifPrompt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
-        NotifPrompt.setForeground(java.awt.Color.black);
+        NotifPrompt.setForeground(java.awt.Color.white);
         NotifPrompt.setText("Real-time notifications");
 
         PaymentPrompt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
-        PaymentPrompt.setForeground(java.awt.Color.black);
+        PaymentPrompt.setForeground(java.awt.Color.white);
         PaymentPrompt.setText("Online fine payments");
 
         RecPrompt.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
-        RecPrompt.setForeground(java.awt.Color.black);
+        RecPrompt.setForeground(java.awt.Color.white);
         RecPrompt.setText("Personalized recommendations");
 
-<<<<<<< HEAD
-=======
-        MSIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logo-libraryms.png"))); // NOI18N
-
->>>>>>> 5ff2ac5cf0aef835269632f730567bed9aa729d7
         CreatePrompt.setForeground(new java.awt.Color(249, 250, 251));
         CreatePrompt.setText("Create your account and start borrowing books today!");
 
@@ -346,17 +341,6 @@ public class Signup_Page extends javax.swing.JFrame {
         jLabel14.setForeground(new java.awt.Color(122, 134, 154));
         jLabel14.setText("© 2026 Softwarica College of IT & E-commerce · Coventry University");
 
-<<<<<<< HEAD
-=======
-        Notificon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon-notification-bell.png"))); // NOI18N
-
-        SearchIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon-book-search.png"))); // NOI18N
-
-        RocketIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon-stat-reservations.png"))); // NOI18N
-
-        CreditIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon-fine-payment.png"))); // NOI18N
-
->>>>>>> 5ff2ac5cf0aef835269632f730567bed9aa729d7
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -480,47 +464,47 @@ public class Signup_Page extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JLabel AlreadyLabel;
-    public javax.swing.JLabel ConfirmPasswordLabel;
-    public javax.swing.JTextField ConfirmPasswordTextField;
-    public javax.swing.JButton CreateAccountButton;
-    public javax.swing.JLabel CreateAccountTitle;
-    public javax.swing.JLabel CreatePrompt;
-    public javax.swing.JLabel CreditIcon;
-    public javax.swing.JLabel EmailLabel;
-    public javax.swing.JTextField EmailTextField;
-    public javax.swing.JToggleButton FactultyMembership;
-    public javax.swing.JLabel FeaturePrompt;
-    public javax.swing.JLabel FillInPrompt;
-    public javax.swing.JLabel Ft1;
-    public javax.swing.JLabel Ft2;
-    public javax.swing.JLabel Ft3;
-    public javax.swing.JLabel Ft4;
-    public javax.swing.JLabel MSIcon;
-    public javax.swing.JLabel MembershipIDLabel;
-    public javax.swing.JTextField MembershipIDTextField;
-    public javax.swing.JLabel MembershipTypeLabel;
-    public javax.swing.JLabel NameLabel;
-    public javax.swing.JTextField NameTextField;
-    public javax.swing.JLabel NotifPrompt;
-    public javax.swing.JLabel Notificon;
-    public javax.swing.JLabel PasswordLabel;
-    public javax.swing.JTextField PasswordTextField;
-    public javax.swing.JLabel PaymentPrompt;
-    public javax.swing.JLabel PhNumberLabel;
-    public javax.swing.JTextField PhNumberTextField;
-    public javax.swing.JToggleButton PublicMembership;
-    public javax.swing.JLabel RecPrompt;
-    public javax.swing.JLabel RocketIcon;
-    public javax.swing.JLabel SearchIcon;
-    public javax.swing.JToggleButton SignInButton;
-    public javax.swing.JToggleButton StudentMembership;
-    public javax.swing.JCheckBox TermsAndServicesBox;
-    public javax.swing.JLabel Title;
-    public javax.swing.JLabel jLabel10;
-    public javax.swing.JLabel jLabel14;
-    public javax.swing.JPanel jPanel1;
-    public java.awt.Panel panel1;
-    public java.awt.Panel panel3;
+    private javax.swing.JLabel AlreadyLabel;
+    private javax.swing.JLabel ConfirmPasswordLabel;
+    private javax.swing.JTextField ConfirmPasswordTextField;
+    private javax.swing.JButton CreateAccountButton;
+    private javax.swing.JLabel CreateAccountTitle;
+    private javax.swing.JLabel CreatePrompt;
+    private javax.swing.JLabel CreditIcon;
+    private javax.swing.JLabel EmailLabel;
+    private javax.swing.JTextField EmailTextField;
+    private javax.swing.JToggleButton FactultyMembership;
+    private javax.swing.JLabel FeaturePrompt;
+    private javax.swing.JLabel FillInPrompt;
+    private javax.swing.JLabel Ft1;
+    private javax.swing.JLabel Ft2;
+    private javax.swing.JLabel Ft3;
+    private javax.swing.JLabel Ft4;
+    private javax.swing.JLabel MSIcon;
+    private javax.swing.JLabel MembershipIDLabel;
+    private javax.swing.JTextField MembershipIDTextField;
+    private javax.swing.JLabel MembershipTypeLabel;
+    private javax.swing.JLabel NameLabel;
+    private javax.swing.JTextField NameTextField;
+    private javax.swing.JLabel NotifPrompt;
+    private javax.swing.JLabel Notificon;
+    private javax.swing.JLabel PasswordLabel;
+    private javax.swing.JTextField PasswordTextField;
+    private javax.swing.JLabel PaymentPrompt;
+    private javax.swing.JLabel PhNumberLabel;
+    private javax.swing.JTextField PhNumberTextField;
+    private javax.swing.JToggleButton PublicMembership;
+    private javax.swing.JLabel RecPrompt;
+    private javax.swing.JLabel RocketIcon;
+    private javax.swing.JLabel SearchIcon;
+    private javax.swing.JToggleButton SignInButton;
+    private javax.swing.JToggleButton StudentMembership;
+    private javax.swing.JCheckBox TermsAndServicesBox;
+    private javax.swing.JLabel Title;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JPanel jPanel1;
+    private java.awt.Panel panel1;
+    private java.awt.Panel panel3;
     // End of variables declaration//GEN-END:variables
 }
