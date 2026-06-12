@@ -85,6 +85,7 @@ public class Forgot_password_page extends javax.swing.JFrame {
         BackToLoginButton.setFont(new java.awt.Font("Yu Gothic UI", 1, 12)); // NOI18N
         BackToLoginButton.setForeground(new java.awt.Color(30, 58, 104));
         BackToLoginButton.setText("<- Back to Login");
+        BackToLoginButton.addActionListener(this::BackToLoginButtonActionPerformed);
 
         SendOTp.setBackground(new java.awt.Color(30, 58, 104));
         SendOTp.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 14)); // NOI18N
@@ -298,6 +299,10 @@ public class Forgot_password_page extends javax.swing.JFrame {
     private void SendOTpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SendOTpActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_SendOTpActionPerformed
+
+    private void BackToLoginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackToLoginButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BackToLoginButtonActionPerformed
 
     /**
      * @param args the command line arguments
