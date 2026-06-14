@@ -182,9 +182,11 @@ public class LMS_Login_Page extends javax.swing.JFrame {
         checkbox1.setForeground(new java.awt.Color(122, 134, 154));
         checkbox1.setLabel("Remember me");
 
+        Forgotpasswordbutton.setBackground(new java.awt.Color(242, 242, 242));
         Forgotpasswordbutton.setFont(new java.awt.Font("SimSun-ExtG", 0, 14)); // NOI18N
         Forgotpasswordbutton.setForeground(new java.awt.Color(0, 135, 90));
         Forgotpasswordbutton.setText("Forgot password?");
+        Forgotpasswordbutton.setBorder(null);
 
         Signinbutton.setBackground(new java.awt.Color(30, 58, 104));
         Signinbutton.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 14)); // NOI18N
