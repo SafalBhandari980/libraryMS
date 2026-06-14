@@ -206,9 +206,11 @@ public class LMS_Login_Page extends javax.swing.JFrame {
         Newprompt.setForeground(new java.awt.Color(122, 134, 154));
         Newprompt.setText("New to Library MS?");
 
+        CreateAnAccount.setBackground(new java.awt.Color(242, 242, 242));
         CreateAnAccount.setFont(new java.awt.Font("Yu Gothic UI", 1, 12)); // NOI18N
         CreateAnAccount.setForeground(new java.awt.Color(0, 135, 90));
         CreateAnAccount.setText("Create an account");
+        CreateAnAccount.setBorder(null);
         CreateAnAccount.addActionListener(this::CreateAnAccountActionPerformed);
 
         javax.swing.GroupLayout panel3Layout = new javax.swing.GroupLayout(panel3);
