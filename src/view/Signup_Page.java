@@ -134,9 +134,11 @@ public class Signup_Page extends javax.swing.JFrame {
         AlreadyLabel.setForeground(new java.awt.Color(122, 134, 154));
         AlreadyLabel.setText("Already have an account? ");
 
+        SignInButton.setBackground(new java.awt.Color(242, 242, 242));
         SignInButton.setFont(new java.awt.Font("SimSun-ExtG", 0, 14)); // NOI18N
         SignInButton.setForeground(new java.awt.Color(0, 135, 90));
         SignInButton.setText("Sign in");
+        SignInButton.setBorder(null);
         SignInButton.addActionListener(this::SignInButtonActionPerformed);
 
         MembershipTypeLabel.setForeground(new java.awt.Color(122, 134, 154));
@@ -328,22 +330,12 @@ public class Signup_Page extends javax.swing.JFrame {
         RecPrompt.setForeground(java.awt.Color.white);
         RecPrompt.setText("Personalized recommendations");
 
-        MSIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/logo-libraryms.png"))); // NOI18N
-
         CreatePrompt.setForeground(new java.awt.Color(249, 250, 251));
         CreatePrompt.setText("Create your account and start borrowing books today!");
 
         jLabel14.setFont(new java.awt.Font("Yu Gothic", 0, 12)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(122, 134, 154));
         jLabel14.setText("© 2026 Softwarica College of IT & E-commerce · Coventry University");
-
-        Notificon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-notification-bell.png"))); // NOI18N
-
-        SearchIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-book-search.png"))); // NOI18N
-
-        RocketIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-stat-reservations.png"))); // NOI18N
-
-        CreditIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-fine-payment.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
