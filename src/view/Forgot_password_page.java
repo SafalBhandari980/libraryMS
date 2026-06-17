@@ -71,9 +71,11 @@ public class Forgot_password_page extends javax.swing.JFrame {
         EmailTextField.setForeground(java.awt.Color.gray);
         EmailTextField.addActionListener(this::EmailTextFieldActionPerformed);
 
+        ResendOTP.setBackground(new java.awt.Color(242, 242, 242));
         ResendOTP.setFont(new java.awt.Font("SimSun-ExtG", 0, 14)); // NOI18N
         ResendOTP.setForeground(new java.awt.Color(0, 135, 90));
         ResendOTP.setText("Resend OTP");
+        ResendOTP.setBorder(null);
         ResendOTP.addActionListener(this::ResendOTPActionPerformed);
 
         DidntReceieveLabel.setFont(new java.awt.Font("Segoe UI Semilight", 0, 14)); // NOI18N
@@ -118,11 +120,11 @@ public class Forgot_password_page extends javax.swing.JFrame {
                         .addComponent(Icon))
                     .addGroup(panel3Layout.createSequentialGroup()
                         .addGap(135, 135, 135)
-                        .addGroup(panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(SendOTp, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(panel3Layout.createSequentialGroup()
                                 .addComponent(DidntReceieveLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(ResendOTP, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(111, Short.MAX_VALUE))
         );
@@ -139,9 +141,9 @@ public class Forgot_password_page extends javax.swing.JFrame {
                 .addComponent(RegisterLabel)
                 .addGap(20, 20, 20)
                 .addComponent(EmailTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
+                .addGap(27, 27, 27)
                 .addComponent(SendOTp, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
+                .addGap(27, 27, 27)
                 .addGroup(panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ResendOTP)
                     .addComponent(DidntReceieveLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
