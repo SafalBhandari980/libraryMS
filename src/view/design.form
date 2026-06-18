@@ -38,19 +38,20 @@
                           <Component id="jPanel2" max="32767" attributes="0"/>
                       </Group>
                   </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                      <Component id="back" min="-2" pref="106" max="-2" attributes="0"/>
+                  </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="back" min="-2" pref="106" max="-2" attributes="0"/>
-                          <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                              <Component id="jPanel6" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
+                      <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jPanel6" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="124" max="32767" attributes="0"/>
+              <EmptySpace pref="174" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -61,9 +62,9 @@
                   <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
                   <Group type="102" attributes="0">
                       <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Component id="back" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                       <Component id="jPanel6" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -99,26 +100,34 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="22" pref="22" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="loanperiod" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="renewableallowed" min="-2" pref="116" max="-2" attributes="0"/>
                       <Component id="fineperday" min="-2" max="-2" attributes="0"/>
                       <Component id="graceperiod" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="loanperiod" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="renewableallowed" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="190" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="rupeesfiveperday" min="-2" pref="57" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="twotimes" min="-2" pref="43" max="-2" attributes="0"/>
-                          <Component id="fourteendays" min="-2" pref="43" max="-2" attributes="0"/>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="daytwo" min="-2" pref="57" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="daytwo" min="-2" pref="57" max="-2" attributes="0"/>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="twotimes" alignment="0" max="32767" attributes="0"/>
+                              <Component id="fourteendays" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Component id="rupeesfiveperday" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
                   </Group>
-                  <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                   <Component id="borrowinginfo" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -156,35 +165,47 @@
         <Component class="javax.swing.JLabel" name="borrowinginfo">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI Black" size="14" style="1"/>
+              <Font name="Segoe UI Black" size="18" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Borrowing info"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="loanperiod">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="0"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Loan  Period"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="renewableallowed">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="0"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Renewable Allowed"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="fineperday">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="0"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Fine per day"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="graceperiod">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="0"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Grace Period "/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="fourteendays">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="12" style="1"/>
+              <Font name="Segoe UI" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="14 days"/>
           </Properties>
@@ -192,7 +213,7 @@
         <Component class="javax.swing.JLabel" name="twotimes">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="12" style="1"/>
+              <Font name="Segoe UI" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="2 times"/>
           </Properties>
@@ -200,7 +221,7 @@
         <Component class="javax.swing.JLabel" name="rupeesfiveperday">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="12" style="1"/>
+              <Font name="Segoe UI" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Rs.5/day"/>
           </Properties>
@@ -208,7 +229,7 @@
         <Component class="javax.swing.JLabel" name="daytwo">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="12" style="1"/>
+              <Font name="Segoe UI" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="2 days"/>
           </Properties>
@@ -226,7 +247,7 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
                       <Group type="103" alignment="1" groupAlignment="0" attributes="0">
                           <Component id="users" min="-2" max="-2" attributes="0"/>
@@ -246,13 +267,13 @@
                           </Group>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
-                          <Component id="SB" min="-2" pref="55" max="-2" attributes="0"/>
+                          <Component id="SB" min="-2" pref="52" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="safalbhandari" min="-2" pref="100" max="-2" attributes="0"/>
                               <Component id="studentnumber" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace pref="29" max="32767" attributes="0"/>
@@ -289,13 +310,13 @@
                   <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                   <Component id="reports" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="SB" min="-2" pref="43" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
                       <Group type="102" attributes="0">
                           <Component id="safalbhandari" min="-2" pref="24" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
                           <Component id="studentnumber" min="-2" max="-2" attributes="0"/>
                       </Group>
+                      <Component id="SB" min="-2" pref="43" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="618" max="32767" attributes="0"/>
               </Group>
@@ -559,18 +580,20 @@
                       <Group type="102" alignment="1" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
-                                  <Component id="publisher" max="32767" attributes="0"/>
+                                  <Component id="publisher" pref="63" max="32767" attributes="0"/>
                                   <EmptySpace min="-2" pref="532" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="edition" min="-2" pref="43" max="-2" attributes="0"/>
-                                      <Component id="language" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                                           <Component id="availabel" alignment="0" max="32767" attributes="0"/>
                                           <Component id="totalcopies" alignment="0" max="32767" attributes="0"/>
                                       </Group>
                                       <Component id="currentlyborrowed" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                          <Component id="edition" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="language" alignment="0" max="32767" attributes="0"/>
+                                      </Group>
                                   </Group>
                                   <EmptySpace max="32767" attributes="0"/>
                               </Group>
@@ -579,23 +602,23 @@
                               <Component id="three" min="-2" pref="43" max="-2" attributes="0"/>
                               <Component id="two" min="-2" pref="43" max="-2" attributes="0"/>
                               <Component id="five" min="-2" pref="43" max="-2" attributes="0"/>
-                              <Component id="englan" min="-2" pref="43" max="-2" attributes="0"/>
                               <Component id="prenticehall" max="32767" attributes="0"/>
                               <Component id="firstedition" alignment="0" max="32767" attributes="0"/>
+                              <Component id="englan" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="onwaitlist" min="-2" pref="67" max="-2" attributes="0"/>
+                          <Component id="onwaitlist" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                           <Component id="zero" min="-2" pref="43" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="timesborrowed" min="-2" pref="102" max="-2" attributes="0"/>
+                          <Component id="timesborrowed" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                           <Component id="onetwoeight" min="-2" pref="43" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -659,55 +682,79 @@
         <Component class="javax.swing.JLabel" name="books">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="14" style="1"/>
+              <Font name="Segoe UI Black" size="18" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Book Details"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="publisher">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="0"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Publisher"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="edition">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="0"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Edition"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="language">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="0"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Language"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="totalcopies">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="0"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Total Copies"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="availabel">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="0"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Available"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="currentlyborrowed">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="0"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Currently Borrowed"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="onwaitlist">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="0"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="On Waitlist"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="timesborrowed">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="0"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Times Borrowed"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="prenticehall">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="12" style="1"/>
+              <Font name="Segoe UI" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Prentice Hall"/>
           </Properties>
@@ -715,7 +762,7 @@
         <Component class="javax.swing.JLabel" name="firstedition">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="12" style="1"/>
+              <Font name="Segoe UI" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="1st Edition"/>
           </Properties>
@@ -723,7 +770,7 @@
         <Component class="javax.swing.JLabel" name="englan">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="12" style="1"/>
+              <Font name="Segoe UI" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="English"/>
           </Properties>
@@ -731,7 +778,7 @@
         <Component class="javax.swing.JLabel" name="five">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="12" style="1"/>
+              <Font name="Segoe UI" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="5"/>
           </Properties>
@@ -739,7 +786,7 @@
         <Component class="javax.swing.JLabel" name="two">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="12" style="1"/>
+              <Font name="Segoe UI" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="2"/>
           </Properties>
@@ -747,7 +794,7 @@
         <Component class="javax.swing.JLabel" name="three">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="12" style="1"/>
+              <Font name="Segoe UI" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="3"/>
           </Properties>
@@ -755,7 +802,7 @@
         <Component class="javax.swing.JLabel" name="zero">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="12" style="1"/>
+              <Font name="Segoe UI" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
@@ -763,7 +810,7 @@
         <Component class="javax.swing.JLabel" name="onetwoeight">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="12" style="1"/>
+              <Font name="Segoe UI" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="128"/>
           </Properties>
@@ -787,29 +834,26 @@
                           <Component id="robertdai" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-                          <Component id="martindai" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="theprogramaticprogrammer" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                          <Component id="andrewdai" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                          <Component id="stevedai" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="redactoring" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="martindai" alignment="1" min="-2" pref="93" max="-2" attributes="0"/>
+                              <Component id="redactoring" alignment="0" min="-2" pref="110" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-                              <Component id="stevedai" min="-2" pref="95" max="-2" attributes="0"/>
-                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                          <Component id="andrewdai" min="-2" pref="93" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="216" max="32767" attributes="0"/>
               </Group>
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
@@ -852,7 +896,7 @@
         <Component class="javax.swing.JLabel" name="similarbooks">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI Black" size="14" style="1"/>
+              <Font name="Segoe UI Black" size="18" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Similar Books"/>
           </Properties>
@@ -867,6 +911,9 @@
         </Component>
         <Component class="javax.swing.JLabel" name="robertdai">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="0"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Robert C.Martin"/>
           </Properties>
         </Component>
@@ -880,6 +927,9 @@
         </Component>
         <Component class="javax.swing.JLabel" name="stevedai">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="0"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Steve McConnell"/>
           </Properties>
         </Component>
@@ -893,6 +943,9 @@
         </Component>
         <Component class="javax.swing.JLabel" name="martindai">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="0"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Martin Fowler"/>
           </Properties>
         </Component>
@@ -906,6 +959,9 @@
         </Component>
         <Component class="javax.swing.JLabel" name="andrewdai">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="0"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Andrew Hunt"/>
           </Properties>
         </Component>
@@ -924,25 +980,40 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="bookdetail" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="278" max="-2" attributes="0"/>
-                  <Component id="searchbooks" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="446" max="32767" attributes="0"/>
-                  <Component id="jLabel54" min="-2" pref="28" max="-2" attributes="0"/>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="269" max="-2" attributes="0"/>
+                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jTextField1" min="-2" pref="320" max="-2" attributes="0"/>
+                  <EmptySpace pref="364" max="32767" attributes="0"/>
+                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="SBB" min="-2" pref="50" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="searchbooks" alignment="3" pref="50" max="32767" attributes="0"/>
-                      <Component id="bookdetail" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="SBB" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel54" alignment="3" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="bookdetail" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                  <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel1" alignment="1" min="-2" pref="31" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jButton1" max="32767" attributes="0"/>
+                              <Component id="SBB" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -958,17 +1029,6 @@
             <Property name="text" type="java.lang.String" value="Book Detail"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="searchbooks">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="18" style="0"/>
-            </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/images/yoyo-removebg-preview (1).png"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Search books , authors ,ISBN"/>
-          </Properties>
-        </Component>
         <Component class="javax.swing.JButton" name="SBB">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -980,12 +1040,26 @@
             <Property name="text" type="java.lang.String" value="SB"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel54">
+        <Component class="javax.swing.JTextField" name="jTextField1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI Black" size="18" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Search Books , authors , ISBN"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/images/rangg (1).png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="jLabel54"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/images/colourful_search-removebg-previe.png"/>
+            </Property>
           </Properties>
         </Component>
       </SubComponents>
@@ -1044,7 +1118,7 @@
                           <Component id="learntowrite" min="-2" pref="459" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="162" max="32767" attributes="0"/>
+                  <EmptySpace pref="112" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -1280,7 +1354,6 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/images/grey heart (1).png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="jButton4"/>
           </Properties>
         </Component>
       </SubComponents>
@@ -1296,55 +1369,51 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="1" attributes="0">
-                      <Group type="102" alignment="1" attributes="0">
-                          <Component id="membreview" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="43" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="prerak" alignment="0" min="-2" pref="66" max="-2" attributes="0"/>
+                      <Component id="norman" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="jLabel65" min="-2" pref="43" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace min="0" pref="20" max="32767" attributes="0"/>
+                      <Component id="prerakreview" alignment="0" min="-2" pref="376" max="-2" attributes="0"/>
+                      <Component id="amishamreview" min="-2" pref="408" max="-2" attributes="0"/>
+                      <Component id="normanreview" alignment="0" min="-2" pref="384" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="amisham" max="32767" attributes="0"/>
+                              <Component id="fourpointeight" max="32767" attributes="0"/>
+                          </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="prerak" alignment="0" min="-2" pref="66" max="-2" attributes="0"/>
-                              <Component id="norman" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
-                                  <Component id="jLabel65" min="-2" pref="43" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jLabel57" min="-2" pref="224" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="prerakreview" alignment="0" min="-2" pref="376" max="-2" attributes="0"/>
-                              <Component id="amishamreview" min="-2" pref="408" max="-2" attributes="0"/>
-                              <Component id="normanreview" alignment="0" min="-2" pref="384" max="-2" attributes="0"/>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                      <Component id="amisham" max="32767" attributes="0"/>
-                                      <Component id="fourpointeight" max="32767" attributes="0"/>
-                                  </Group>
+                                  <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" attributes="0">
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jLabel57" min="-2" pref="224" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jLabel58" min="-2" pref="43" max="-2" attributes="0"/>
-                                              <Component id="threefourtworeview" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="484" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                              <Component id="feb" max="32767" attributes="0"/>
-                                              <Component id="march" max="32767" attributes="0"/>
-                                              <Component id="april" max="32767" attributes="0"/>
-                                          </Group>
-                                      </Group>
+                                      <Component id="jLabel58" min="-2" pref="43" max="-2" attributes="0"/>
+                                      <Component id="threefourtworeview" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="484" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="feb" max="32767" attributes="0"/>
+                                      <Component id="march" max="32767" attributes="0"/>
+                                      <Component id="april" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
-                          <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
                       </Group>
                   </Group>
+                  <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                  <Component id="membreview" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -1398,7 +1467,7 @@
         <Component class="javax.swing.JLabel" name="membreview">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI Black" size="14" style="1"/>
+              <Font name="Segoe UI Black" size="18" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Members Review"/>
           </Properties>
