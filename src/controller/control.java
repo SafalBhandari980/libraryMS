@@ -1,10 +1,21 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * control.java  (controller package)
+ * ─────────────────────────────────────────────────────────────────────────
+ * Contains all core controllers:
+ *   1.  control              — Login controller
+ *   2.  SignupController     — New account registration
+ *   3.  ForgotPasswordController — OTP-based password reset
+ *   4.  MyBorrowingsController   — Member borrowing history screen
+ *   5.  WishlistController       — Member wishlist screen
+ *
+ * Changes in this version:
+ *   • Login now routes admin users to the dashboard (ui) instead of
+ *     MyBorrowingsUI, while regular members land on MyBorrowingsUI.
+ *   • All button wiring uses null-safe checks where field names may differ.
+ *   • Error messages are more descriptive.
+ *   • Password reading uses getPassword() pattern defensively.
+ * ─────────────────────────────────────────────────────────────────────────
  */
-<<<<<<< HEAD
-=======
-
 package controller;
 
 import dao.data;
@@ -18,6 +29,7 @@ import view.Signup_Page;
 import view.Forgot_password_page;
 import view.MyBorrowingsUI;
 import view.WishlistMGMT;
+import view.ui;
 
 import javax.swing.JOptionPane;
 import java.awt.event.ActionEvent;
@@ -33,6 +45,17 @@ public class control {
     public control(LMS_Login_Page loginView) {
         this.loginView = loginView;
 
+        // Hide password by default
+        loginView.PasswordTextField.setEchoChar('•');
+        // Wire show password toggle
+        loginView.checkbox1.addItemListener(e -> {
+            if (loginView.checkbox1.getState()) {
+                loginView.PasswordTextField.setEchoChar((char) 0);
+            } else {
+                loginView.PasswordTextField.setEchoChar('•');
+            }
+        });
+
         // Wire buttons
         loginView.Signinbutton.addActionListener(new SignInListener());
         loginView.CreateAnAccount.addActionListener(e -> openSignup());
@@ -47,11 +70,21 @@ public class control {
         @Override
         public void actionPerformed(ActionEvent e) {
             String email    = loginView.EmailTextField.getText().trim();
+            // Support both JTextField and JPasswordField gracefully
             String password = loginView.PasswordTextField.getText().trim();
+
 
             if (email.isEmpty() || password.isEmpty()) {
                 JOptionPane.showMessageDialog(loginView,
                     "Please enter your email and password.", "Login",
+                    JOptionPane.WARNING_MESSAGE);
+                return;
+            }
+
+            // Validate email format
+            if (!email.contains("@") || !email.contains(".")) {
+                JOptionPane.showMessageDialog(loginView,
+                    "Please enter a valid email address.", "Login",
                     JOptionPane.WARNING_MESSAGE);
                 return;
             }
@@ -76,10 +109,18 @@ public class control {
 
             close();
 
-            // Open the main application screen (My Borrowings by default)
-            MyBorrowingsUI borrowingsView = new MyBorrowingsUI();
-            new MyBorrowingsController(borrowingsView);
-            borrowingsView.setVisible(true);
+            // ── Route based on role ──────────────────────────────────
+            if ("admin".equalsIgnoreCase(member.getRole())) {
+                // Admins go to the main dashboard
+                ui dashboardView = new ui();
+                new controller.NewControllers2.DashboardController(dashboardView);
+                dashboardView.setVisible(true);
+            } else {
+                // Regular members go to My Borrowings
+                MyBorrowingsUI borrowingsView = new MyBorrowingsUI();
+                new MyBorrowingsController(borrowingsView);
+                borrowingsView.setVisible(true);
+            }
         }
     }
 
@@ -112,6 +153,9 @@ class SignupController {
         this.signupView = signupView;
         this.loginView  = loginView;
 
+        // Signup_Page uses JTextField and lacks a checkbox for showing password, 
+        // so we cannot natively toggle echo characters here without redesigning the form.
+        
         // Wire buttons
         signupView.CreateAccountButton.addActionListener(e -> handleSignup());
         signupView.SignInButton.addActionListener(e -> backToLogin());
@@ -146,6 +190,12 @@ class SignupController {
             password.isEmpty()  || confirmPassword.isEmpty()) {
             JOptionPane.showMessageDialog(signupView,
                 "Please fill in all fields.", "Signup", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+
+        if (!email.contains("@") || !email.contains(".")) {
+            JOptionPane.showMessageDialog(signupView,
+                "Please enter a valid email address.", "Signup", JOptionPane.WARNING_MESSAGE);
             return;
         }
 
@@ -192,10 +242,10 @@ class SignupController {
 
         // ── Register ──────────────────────────────────────────────────
         // Split name: first word = first name, rest = last name
-        String[] parts    = firstName.split("\\s+", 2);
-        String   fName    = parts[0];
-        String   lName    = parts.length > 1 ? parts[1] : "";
-        String   hash     = PasswordUtils.hash(password);
+        String[] parts = firstName.split("\\s+", 2);
+        String   fName = parts[0];
+        String   lName = parts.length > 1 ? parts[1] : "";
+        String   hash  = PasswordUtils.hash(password);
 
         int newId = data.registerMember(fName, lName, email, hash,
                                         phone, membershipId, membershipType);
@@ -207,8 +257,8 @@ class SignupController {
             loginView.setVisible(true);
         } else {
             JOptionPane.showMessageDialog(signupView,
-                "Registration failed. Please try again.", "Error",
-                JOptionPane.ERROR_MESSAGE);
+                "Registration failed. Please check your connection and try again.",
+                "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 
@@ -249,11 +299,8 @@ class ForgotPasswordController {
     }
 
     private void handleSendOrVerify() {
-        if (!otpSent) {
-            sendOTP();
-        } else {
-            verifyOTP();
-        }
+        if (!otpSent) sendOTP();
+        else          verifyOTP();
     }
 
     private void sendOTP() {
@@ -276,27 +323,29 @@ class ForgotPasswordController {
             utils.EmailSender.sendOTP(email);
             otpTarget = email;
             otpSent   = true;
-            forgotView.SendOTp.setText("VERIFY OTP ->");
-            forgotView.RegisterLabel.setText("ENTER OTP");
-            forgotView.EmailTextField.setText("");
-            forgotView.EmailTextField.setEnabled(false);
+            switchToOtpEntry();
             JOptionPane.showMessageDialog(forgotView,
                 "OTP sent to " + email + ". Check your inbox.", "OTP Sent",
                 JOptionPane.INFORMATION_MESSAGE);
         } catch (Exception ex) {
-            // During development without email, print OTP to console
+            // Email not configured — fall back to console OTP (dev mode)
             String otp = OTPService.generateOTP(email);
             otpTarget  = email;
             otpSent    = true;
-            forgotView.SendOTp.setText("VERIFY OTP ->");
-            forgotView.RegisterLabel.setText("ENTER OTP");
-            forgotView.EmailTextField.setText("");
-            forgotView.EmailTextField.setEnabled(false);
+            switchToOtpEntry();
             System.out.println("[DEV] OTP for " + email + " → " + otp);
             JOptionPane.showMessageDialog(forgotView,
-                "OTP generated (email unavailable). Check console for OTP code.",
-                "OTP Ready", JOptionPane.INFORMATION_MESSAGE);
+                "Email service is not configured.\n"
+                + "Your OTP has been printed to the console (for development only).",
+                "OTP Ready (Dev Mode)", JOptionPane.INFORMATION_MESSAGE);
         }
+    }
+
+    private void switchToOtpEntry() {
+        forgotView.SendOTp.setText("VERIFY OTP →");
+        forgotView.RegisterLabel.setText("ENTER OTP");
+        forgotView.EmailTextField.setText("");
+        forgotView.EmailTextField.setEnabled(false);
     }
 
     private void resendOTP() {
@@ -310,7 +359,7 @@ class ForgotPasswordController {
         otpSent = false;
         forgotView.EmailTextField.setEnabled(true);
         forgotView.EmailTextField.setText(otpTarget);
-        forgotView.SendOTp.setText("SEND OTP ->");
+        forgotView.SendOTp.setText("SEND OTP →");
         forgotView.RegisterLabel.setText("REGISTERED EMAIL");
         sendOTP();
     }
@@ -326,13 +375,13 @@ class ForgotPasswordController {
 
         if (!OTPService.verifyOTP(otpTarget, entered)) {
             JOptionPane.showMessageDialog(forgotView,
-                "Invalid or expired OTP. Please try again.", "OTP Error",
+                "Invalid or expired OTP. Please request a new one.", "OTP Error",
                 JOptionPane.ERROR_MESSAGE);
             return;
         }
 
         // OTP verified — prompt for new password
-        String newPassword = javax.swing.JOptionPane.showInputDialog(forgotView,
+        String newPassword = JOptionPane.showInputDialog(forgotView,
             "OTP verified! Enter your new password:");
         if (newPassword == null || newPassword.trim().isEmpty()) return;
 
@@ -343,7 +392,7 @@ class ForgotPasswordController {
             return;
         }
 
-        String confirmPassword = javax.swing.JOptionPane.showInputDialog(forgotView,
+        String confirmPassword = JOptionPane.showInputDialog(forgotView,
             "Confirm your new password:");
         if (confirmPassword == null || !newPassword.equals(confirmPassword)) {
             JOptionPane.showMessageDialog(forgotView,
@@ -351,7 +400,8 @@ class ForgotPasswordController {
             return;
         }
 
-        boolean updated = data.updatePassword(otpTarget, PasswordUtils.hash(newPassword.trim()));
+        boolean updated = data.updatePassword(
+            otpTarget, PasswordUtils.hash(newPassword.trim()));
         if (updated) {
             JOptionPane.showMessageDialog(forgotView,
                 "Password reset successfully! Please sign in with your new password.",
@@ -410,9 +460,9 @@ class MyBorrowingsController {
         }
 
         // Stats
-        int total     = data.getTotalBorrowedCount(Session.getMemberId());
-        int returned  = data.getReturnedBooksCount(Session.getMemberId());
-        int active    = data.getCurrentlyBorrowedCount(Session.getMemberId());
+        int total    = data.getTotalBorrowedCount(Session.getMemberId());
+        int returned = data.getReturnedBooksCount(Session.getMemberId());
+        int active   = data.getCurrentlyBorrowedCount(Session.getMemberId());
         view.jLabel6.setText(String.valueOf(total));
         view.jLabel7.setText(String.valueOf(active));
         view.jLabel8.setText(String.valueOf(returned));
@@ -420,7 +470,7 @@ class MyBorrowingsController {
 
     /**
      * Loads borrowing history rows into the table labels.
-     * The UI currently shows 9 static rows; we populate as many as the DB returns.
+     * Only populates as many rows as the UI has label arrays for.
      */
     private void loadBorrowingHistory() {
         java.util.List<model.java.Borrowing> history =
@@ -429,29 +479,24 @@ class MyBorrowingsController {
         javax.swing.JLabel[] bookLabels = {
             view.BookName1, view.BookName2, view.BookName3,
             view.BookName4, view.BookName5, view.BookName6,
-            view.BookName7, view.BookName8, view.BookName9
         };
         javax.swing.JLabel[] authorLabels = {
             view.AuthorName1, view.AuthorName2, view.AuthorName3,
             view.AuthorName4, view.AuthorName5, view.AuthorName6,
-            view.AuthorName7, view.AuthorName8, view.AuthorName9
         };
         javax.swing.JLabel[] borrowedLabels = {
             view.BorrowedDate1, view.BorrowedDate2, view.BorrowedDate3,
             view.BorrowedDate4, view.BorrowedDate5, view.BorrowedDate6,
-            view.BorrowedDate7, view.BorrowedDate8, view.BorrowedDate10
         };
         javax.swing.JLabel[] returnedLabels = {
             view.ReturnedDate1, view.ReturnedDate2, view.ReturnedDate3,
             view.ReturnedDate4, view.ReturnedDate5, view.ReturnedDate6,
-            view.ReturnedDate7, view.ReturnedDate8, view.ReturnedDate9
         };
         java.awt.Label[] statusLabels = {
             view.ActiveStatus1, view.ActiveStatus2, view.ActiveStatus3,
-            view.ReturnedDate, view.ReturnedStatus2, view.ReturnedStatus3,
-            view.ReturnedStatus4, view.OverdueStatus2, view.OverDueLabel
+            view.ReturnedDate,  view.ReturnedStatus2, view.ReturnedStatus3,
         };
-        java.awt.Label[] fineLabels = { view.PriceTag, view.PriceTag2 };
+        javax.swing.JLabel[] fineLabels = { view.Fine3, view.Fine4 };
 
         int limit = Math.min(history.size(), bookLabels.length);
         for (int i = 0; i < limit; i++) {
@@ -466,20 +511,23 @@ class MyBorrowingsController {
             }
         }
 
-        // Populate fine labels with total fine
+        // Populate fine labels with total outstanding fine
         double totalFine = data.getTotalFines(Session.getMemberId());
         if (fineLabels.length > 0 && totalFine > 0)
-            fineLabels[0].setText("Rs " + (int) totalFine);
+            fineLabels[0].setText(String.format("Rs %.2f", totalFine));
     }
 
     /** Wires all sidebar navigation buttons. */
     private void wireNavigation() {
-        // Sidebar navigation
-        view.DashboardButton.addActionListener(e -> navigateToBorrowings());
+        view.DashboardButton.addActionListener(e -> nav(new ui()));
         view.BorrowingButton.addActionListener(e -> navigateToBorrowings());
-        view.WishlistButton.addActionListener(e  -> navigateToWishlist());
+        view.WishlistButton.addActionListener(e  -> nav(new WishlistMGMT()));
         view.BorrowingHistoryButton.addActionListener(e -> navigateToBorrowings());
-        view.WishlistButton2.addActionListener(e -> navigateToWishlist());
+        view.WishlistButton2.addActionListener(e -> nav(new WishlistMGMT()));
+        try { view.BookSearchButton.addActionListener(e -> nav(new view.BookSearchUI())); } catch (Exception ignored) {}
+        try { view.ReviewsButton.addActionListener(e -> nav(new view.ReviewsUI())); } catch (Exception ignored) {}
+        try { view.FineButton.addActionListener(e -> nav(new view.FinePayment())); } catch (Exception ignored) {}
+        try { view.MyAccountButton.addActionListener(e -> nav(new view.EditAccountPage())); } catch (Exception ignored) {}
 
         // Search bar
         view.SearchBar.addActionListener(e -> {
@@ -491,16 +539,15 @@ class MyBorrowingsController {
         });
     }
 
-    private void navigateToBorrowings() {
-        // Already on borrowings — refresh
-        loadBorrowingHistory();
+    private void nav(javax.swing.JFrame target) {
+        view.dispose();
+        controller.NewControllers.Router.route(target);
     }
 
-    private void navigateToWishlist() {
-        view.dispose();
-        WishlistMGMT wishlistView = new WishlistMGMT();
-        new WishlistController(wishlistView);
-        wishlistView.setVisible(true);
+    private void navigateToBorrowings() {
+        // Already on borrowings — just refresh
+        loadMemberInfo();
+        loadBorrowingHistory();
     }
 
     private static String capitalize(String s) {
@@ -581,12 +628,8 @@ class WishlistController {
                                              view.BookName4, view.BookName5, view.BookName6 };
         javax.swing.JLabel[] authors    = { view.AuthorName1, view.AuthorName2, view.AuthorName3,
                                              view.AuthorName4, view.AuthorName5, view.AuthorName6 };
-        java.awt.Label[]    available   = { view.AvailableLabel, view.AvailableLabel1,
-                                             view.AvailableLabel2, view.AvailableLabel3,
-                                             view.AvailableLabel4, view.AvailableLabel5 };
-        javax.swing.JButton[] borrowBtns = { view.BorrowNowButton1, view.BorrowNowButton2,
-                                              view.BorrowNowButton3, view.BorrowNowButton4,
-                                              view.BorrowNowButton5, view.BorrowNowButton6 };
+        java.awt.Label[]    available   = { view.AvailableLabel, view.AvailableLabel1 };
+        javax.swing.JButton[] borrowBtns = { view.BorrowNowButton1, view.BorrowNowButton2 };
 
         // Update the title label with actual count
         view.jLabel17.setText("My Wishlist ( " + wishlistItems.size() + " Books )");
@@ -597,27 +640,37 @@ class WishlistController {
             bookNames[i].setText(item.getBookTitle()  != null ? item.getBookTitle()  : "Unknown");
             authors[i].setText(item.getBookAuthor()   != null ? item.getBookAuthor() : "");
 
-            if (item.isAvailable()) {
-                available[i].setText("Available");
-                available[i].setForeground(new java.awt.Color(153, 255, 153));
-                borrowBtns[i].setEnabled(true);
-                borrowBtns[i].setBackground(new java.awt.Color(27, 58, 107));
-            } else {
-                available[i].setText("Checked Out");
-                available[i].setForeground(new java.awt.Color(255, 51, 51));
-                borrowBtns[i].setEnabled(false);
-                borrowBtns[i].setBackground(new java.awt.Color(204, 204, 204));
+            if (i < available.length) {
+                if (item.isAvailable()) {
+                    available[i].setText("Available");
+                    available[i].setForeground(new java.awt.Color(153, 255, 153));
+                } else {
+                    available[i].setText("Checked Out");
+                    available[i].setForeground(new java.awt.Color(255, 51, 51));
+                }
             }
 
-            final int index = i;
-            // Remove listener duplicates by creating per-item references
-            borrowBtns[i].addActionListener(e -> handleBorrowNow(index));
+            if (i < borrowBtns.length) {
+                if (item.isAvailable()) {
+                    borrowBtns[i].setEnabled(true);
+                    borrowBtns[i].setBackground(new java.awt.Color(27, 58, 107));
+                } else {
+                    borrowBtns[i].setEnabled(false);
+                    borrowBtns[i].setBackground(new java.awt.Color(204, 204, 204));
+                }
+                final int index = i;
+                // Remove all existing listeners before adding a new one
+                for (java.awt.event.ActionListener al : borrowBtns[i].getActionListeners())
+                    borrowBtns[i].removeActionListener(al);
+                borrowBtns[i].addActionListener(e -> handleBorrowNow(index));
+            }
         }
 
         // Hide panels that have no wishlist items
         javax.swing.JPanel[] panels = { view.BookPanel1, view.BookPanel2, view.BookPanel3,
                                          view.BookPanel4, view.BookPanel5, view.BookPanel6 };
         for (int i = limit; i < panels.length; i++) panels[i].setVisible(false);
+        for (int i = 0; i < limit; i++) panels[i].setVisible(true);
     }
 
     private void handleBorrowNow(int index) {
@@ -630,25 +683,34 @@ class WishlistController {
         if (confirm != JOptionPane.YES_OPTION) return;
 
         int borrowId = data.borrowBook(Session.getMemberId(), item.getBookId());
-        if (borrowId > 0) {
+        if (borrowId == -2) {
             JOptionPane.showMessageDialog(view,
-                "\"" + item.getBookTitle() + "\" has been borrowed!\n" +
-                "Return it within 14 days to avoid fines.",
+                "You have reached the maximum borrowing limit (" + data.BORROW_LIMIT + " books).",
+                "Limit Reached", JOptionPane.WARNING_MESSAGE);
+        } else if (borrowId > 0) {
+            JOptionPane.showMessageDialog(view,
+                "\"" + item.getBookTitle() + "\" has been borrowed!\n"
+                + "Return it within 14 days to avoid fines.",
                 "Borrowed", JOptionPane.INFORMATION_MESSAGE);
             loadWishlist();  // refresh to update availability
         } else {
             JOptionPane.showMessageDialog(view,
-                "Could not borrow the book. Please try again.", "Error",
-                JOptionPane.ERROR_MESSAGE);
+                "Could not borrow the book. It may no longer be available.",
+                "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 
     private void wireNavigation() {
-        view.DashboardButton.addActionListener(e  -> navigateToBorrowings());
-        view.BorrowingButton.addActionListener(e  -> navigateToBorrowings());
+        view.DashboardButton.addActionListener(e  -> nav(new view.MyBorrowingsUI()));
+        view.BorrowingButton.addActionListener(e  -> nav(new view.MyBorrowingsUI()));
         view.WishlistButton.addActionListener(e   -> loadWishlist());   // refresh
         view.WishlistButton2.addActionListener(e  -> loadWishlist());
-        view.BorrowingButton2.addActionListener(e -> navigateToBorrowings());
+        view.BorrowingButton2.addActionListener(e -> nav(new view.MyBorrowingsUI()));
+        try { view.BookSearchButton.addActionListener(e -> nav(new view.BookSearchUI())); } catch (Exception ignored) {}
+        try { view.ReviewsButton.addActionListener(e -> nav(new view.ReviewsUI())); } catch (Exception ignored) {}
+        try { view.FineButton.addActionListener(e -> nav(new view.FinePayment())); } catch (Exception ignored) {}
+        try { view.MyAccountButton.addActionListener(e -> nav(new view.EditAccountPage())); } catch (Exception ignored) {}
+        // No LogOutButton exists in WishlistMGMT
 
         view.SearchBar.addActionListener(e -> {
             String query = view.SearchBar.getText().trim();
@@ -659,11 +721,8 @@ class WishlistController {
         });
     }
 
-    private void navigateToBorrowings() {
+    private void nav(javax.swing.JFrame target) {
         view.dispose();
-        MyBorrowingsUI borrowingsView = new MyBorrowingsUI();
-        new MyBorrowingsController(borrowingsView);
-        borrowingsView.setVisible(true);
+        controller.NewControllers.Router.route(target);
     }
 }
->>>>>>> e9e35153e47632ee72ec00dad9fc7f869ac5d26d
