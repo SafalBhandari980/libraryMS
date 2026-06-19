@@ -403,81 +403,51 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel19">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-wishlist.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="jLabel14"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel20">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-reviews.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="jLabel14"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel24">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-fine-payment.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="jLabel14"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel25">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-my-account.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="jLabel14"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel26">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-borrowing-history.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="jLabel14"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel27">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-dashboard.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="jLabel14"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel28">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-book-search.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="jLabel14"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel29">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-inventory.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="jLabel14"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel30">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-users.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="jLabel14"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel31">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-reports.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="jLabel14"/>
           </Properties>
         </Component>
@@ -762,11 +732,6 @@
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="NotificationsButton">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-notification-bell.png"/>
-            </Property>
-          </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="NotificationsButtonActionPerformed"/>
           </Events>
@@ -780,11 +745,6 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel32">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-book-search.png"/>
-            </Property>
-          </Properties>
         </Component>
       </SubComponents>
     </Container>
@@ -899,39 +859,16 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel14">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-borrowing-history.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="jLabel14"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel13">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-wishlist.png"/>
-            </Property>
-          </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel15">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-fine-payment.png"/>
-            </Property>
-          </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel16">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-edit-profile.png"/>
-            </Property>
-          </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel18">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/icon-reviews.png"/>
-            </Property>
-          </Properties>
         </Component>
       </SubComponents>
     </Container>
@@ -950,83 +887,77 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jLabel17" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="BookName1" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                                  <Component id="BookName4" min="-2" pref="75" max="-2" attributes="0"/>
+                                  <Component id="BookName8" min="-2" pref="75" max="-2" attributes="0"/>
+                                  <Component id="BookName2" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="BookName3" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="BookName5" alignment="0" min="-2" pref="93" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="BookName6" min="-2" pref="75" max="-2" attributes="0"/>
+                              <Component id="BookName9" min="-2" pref="75" max="-2" attributes="0"/>
+                              <Component id="MembershipTypeLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="101" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="filler1" alignment="0" min="-2" pref="30" max="-2" attributes="0"/>
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="BookName1" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
-                                          <Component id="BookName4" min="-2" pref="75" max="-2" attributes="0"/>
-                                          <Component id="BookName8" min="-2" pref="75" max="-2" attributes="0"/>
-                                          <Component id="BookName2" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="BookName3" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="BookName5" alignment="0" min="-2" pref="93" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Component id="BookName6" min="-2" pref="75" max="-2" attributes="0"/>
-                                      <Component id="BookName9" min="-2" pref="75" max="-2" attributes="0"/>
+                                      <Component id="AuthorName1" alignment="0" min="-2" pref="88" max="-2" attributes="0"/>
+                                      <Component id="AuthorName2" alignment="0" min="-2" pref="88" max="-2" attributes="0"/>
+                                      <Component id="AuthorName3" alignment="0" min="-2" pref="88" max="-2" attributes="0"/>
+                                      <Component id="AuthorName4" alignment="0" min="-2" pref="88" max="-2" attributes="0"/>
+                                      <Component id="AuthorName7" alignment="0" min="-2" pref="88" max="-2" attributes="0"/>
+                                      <Component id="AuthorName8" alignment="0" min="-2" pref="88" max="-2" attributes="0"/>
+                                      <Component id="AuthorName5" min="-2" pref="88" max="-2" attributes="0"/>
+                                      <Component id="AuthorName6" min="-2" pref="88" max="-2" attributes="0"/>
+                                      <Component id="MembershipTypeLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="-2" pref="101" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="AuthorName1" alignment="0" min="-2" pref="88" max="-2" attributes="0"/>
-                                              <Component id="AuthorName2" alignment="0" min="-2" pref="88" max="-2" attributes="0"/>
-                                              <Component id="AuthorName3" alignment="0" min="-2" pref="88" max="-2" attributes="0"/>
-                                              <Component id="AuthorName4" alignment="0" min="-2" pref="88" max="-2" attributes="0"/>
-                                              <Component id="AuthorName7" alignment="0" min="-2" pref="88" max="-2" attributes="0"/>
-                                              <Component id="AuthorName8" alignment="0" min="-2" pref="88" max="-2" attributes="0"/>
-                                              <Component id="AuthorName5" min="-2" pref="88" max="-2" attributes="0"/>
-                                              <Component id="AuthorName6" min="-2" pref="88" max="-2" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="BorrowedDate1" min="-2" pref="106" max="-2" attributes="0"/>
+                                              <Group type="102" attributes="0">
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="BorrowedDate3" alignment="0" min="-2" pref="106" max="-2" attributes="0"/>
+                                                      <Component id="BorrowedDate5" alignment="0" min="-2" pref="106" max="-2" attributes="0"/>
+                                                      <Component id="BorrowedDate6" alignment="0" min="-2" pref="106" max="-2" attributes="0"/>
+                                                      <Component id="BorrowedDate10" alignment="0" min="-2" pref="106" max="-2" attributes="0"/>
+                                                      <Component id="BorrowedDate4" alignment="0" min="-2" pref="106" max="-2" attributes="0"/>
+                                                      <Component id="BorrowedDate7" alignment="0" min="-2" pref="106" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <Component id="BorrowedDate2" min="-2" pref="106" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="ReturnedDate1" min="-2" pref="106" max="-2" attributes="0"/>
                                               </Group>
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Group type="102" attributes="0">
-                                                          <Group type="103" groupAlignment="0" attributes="0">
-                                                              <Component id="BorrowedDate3" alignment="0" min="-2" pref="106" max="-2" attributes="0"/>
-                                                              <Component id="BorrowedDate5" alignment="0" min="-2" pref="106" max="-2" attributes="0"/>
-                                                              <Component id="BorrowedDate6" alignment="0" min="-2" pref="106" max="-2" attributes="0"/>
-                                                              <Component id="BorrowedDate10" alignment="0" min="-2" pref="106" max="-2" attributes="0"/>
-                                                              <Component id="BorrowedDate4" alignment="0" min="-2" pref="106" max="-2" attributes="0"/>
-                                                              <Component id="BorrowedDate7" alignment="0" min="-2" pref="106" max="-2" attributes="0"/>
-                                                          </Group>
-                                                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <Group type="102" alignment="1" attributes="0">
-                                                          <Component id="BorrowedDate2" min="-2" pref="106" max="-2" attributes="0"/>
-                                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                      </Group>
-                                                  </Group>
-                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Component id="ReturnedDate5" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="ReturnedDate4" min="-2" pref="106" max="-2" attributes="0"/>
-                                                      <Component id="ReturnedDate7" min="-2" pref="106" max="-2" attributes="0"/>
-                                                      <Component id="ReturnedDate6" min="-2" pref="106" max="-2" attributes="0"/>
-                                                      <Component id="ReturnedDate3" min="-2" pref="106" max="-2" attributes="0"/>
-                                                      <Component id="ReturnedDate2" min="-2" pref="106" max="-2" attributes="0"/>
-                                                      <Component id="ReturnedDate9" min="-2" pref="106" max="-2" attributes="0"/>
-                                                  </Group>
-                                              </Group>
+                                          </Group>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="ReturnedDate5" min="-2" max="-2" attributes="0"/>
+                                              <Component id="ReturnedDate4" min="-2" pref="106" max="-2" attributes="0"/>
+                                              <Component id="ReturnedDate7" min="-2" pref="106" max="-2" attributes="0"/>
+                                              <Component id="ReturnedDate6" min="-2" pref="106" max="-2" attributes="0"/>
+                                              <Component id="ReturnedDate3" min="-2" pref="106" max="-2" attributes="0"/>
+                                              <Component id="ReturnedDate2" min="-2" pref="106" max="-2" attributes="0"/>
+                                              <Component id="ReturnedDate9" min="-2" pref="106" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
-                                      <Component id="filler1" alignment="0" min="-2" pref="30" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="BorrowedDate1" alignment="0" min="-2" pref="106" max="-2" attributes="0"/>
+                                              <Component id="MembershipTypeLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="MembershipTypeLabel3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="ReturnedDate1" min="-2" pref="106" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
                                   </Group>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                                  <Component id="MembershipTypeLabel" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="182" max="-2" attributes="0"/>
-                                  <Component id="MembershipTypeLabel1" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
-                                  <Component id="MembershipTypeLabel2" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="85" max="-2" attributes="0"/>
-                                  <Component id="MembershipTypeLabel3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
@@ -1067,38 +998,36 @@
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                  <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="MembershipTypeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="MembershipTypeLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="MembershipTypeLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="MembershipTypeLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="MembershipTypeLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="MembershipTypeLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="103" groupAlignment="1" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="BookName1" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                          <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="MembershipTypeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="MembershipTypeLabel3" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="MembershipTypeLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="MembershipTypeLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="AuthorName1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="BorrowedDate1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="ActiveStatus1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="Fine1" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
+                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                          <Component id="BookName1" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="ReturnedDate1" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="101" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="MembershipTypeLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="MembershipTypeLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="AuthorName1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="BorrowedDate1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ReturnedDate1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="ActiveStatus1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="Fine1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
