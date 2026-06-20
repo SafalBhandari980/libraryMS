@@ -29,19 +29,19 @@ public class booksearch extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
-        jButton17 = new javax.swing.JButton();
-        jButton18 = new javax.swing.JButton();
-        jButton19 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jButton16 = new javax.swing.JButton();
+        dashboard = new javax.swing.JButton();
+        booksearch = new javax.swing.JButton();
+        myborrowings = new javax.swing.JButton();
+        wishlist = new javax.swing.JButton();
+        reviews = new javax.swing.JButton();
+        finepayment = new javax.swing.JButton();
+        myaccount = new javax.swing.JButton();
+        inventory = new javax.swing.JButton();
+        users = new javax.swing.JButton();
+        reports = new javax.swing.JButton();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
+        admin = new javax.swing.JLabel();
         jButton26 = new javax.swing.JButton();
         jLabel66 = new javax.swing.JLabel();
         jLabel67 = new javax.swing.JLabel();
@@ -137,65 +137,65 @@ public class booksearch extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(27, 58, 107));
 
-        jButton10.setBackground(new java.awt.Color(27, 58, 107));
-        jButton10.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton10.setForeground(new java.awt.Color(255, 255, 255));
-        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_house-removebg-preview (1).png"))); // NOI18N
-        jButton10.setText("Dashboard");
+        dashboard.setBackground(new java.awt.Color(27, 58, 107));
+        dashboard.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        dashboard.setForeground(new java.awt.Color(255, 255, 255));
+        dashboard.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_house-removebg-preview (1).png"))); // NOI18N
+        dashboard.setText("Dashboard");
 
-        jButton11.setBackground(new java.awt.Color(27, 58, 107));
-        jButton11.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton11.setForeground(new java.awt.Color(255, 255, 255));
-        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_search-removebg-previe.png"))); // NOI18N
-        jButton11.setText("Book Search");
+        booksearch.setBackground(new java.awt.Color(27, 58, 107));
+        booksearch.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        booksearch.setForeground(new java.awt.Color(255, 255, 255));
+        booksearch.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_search-removebg-previe.png"))); // NOI18N
+        booksearch.setText("Book Search");
 
-        jButton12.setBackground(new java.awt.Color(27, 58, 107));
-        jButton12.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton12.setForeground(new java.awt.Color(255, 255, 255));
-        jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_borrowing-removebg-pre.png"))); // NOI18N
-        jButton12.setText("My Borrowings");
+        myborrowings.setBackground(new java.awt.Color(27, 58, 107));
+        myborrowings.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        myborrowings.setForeground(new java.awt.Color(255, 255, 255));
+        myborrowings.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_borrowing-removebg-pre.png"))); // NOI18N
+        myborrowings.setText("My Borrowings");
 
-        jButton14.setBackground(new java.awt.Color(27, 58, 107));
-        jButton14.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton14.setForeground(new java.awt.Color(255, 255, 255));
-        jButton14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_wishlist-removebg-prev.png"))); // NOI18N
-        jButton14.setText("Wishlist");
+        wishlist.setBackground(new java.awt.Color(27, 58, 107));
+        wishlist.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        wishlist.setForeground(new java.awt.Color(255, 255, 255));
+        wishlist.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_wishlist-removebg-prev.png"))); // NOI18N
+        wishlist.setText("Wishlist");
 
-        jButton15.setBackground(new java.awt.Color(27, 58, 107));
-        jButton15.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton15.setForeground(new java.awt.Color(255, 255, 255));
-        jButton15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_reviews-removebg-previ.png"))); // NOI18N
-        jButton15.setText("Reviews");
+        reviews.setBackground(new java.awt.Color(27, 58, 107));
+        reviews.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        reviews.setForeground(new java.awt.Color(255, 255, 255));
+        reviews.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_reviews-removebg-previ.png"))); // NOI18N
+        reviews.setText("Reviews");
 
-        jButton17.setBackground(new java.awt.Color(27, 58, 107));
-        jButton17.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton17.setForeground(new java.awt.Color(255, 255, 255));
-        jButton17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_fine-removebg-preview (1).png"))); // NOI18N
-        jButton17.setText("Fine Payment");
+        finepayment.setBackground(new java.awt.Color(27, 58, 107));
+        finepayment.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        finepayment.setForeground(new java.awt.Color(255, 255, 255));
+        finepayment.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_fine-removebg-preview (1).png"))); // NOI18N
+        finepayment.setText("Fine Payment");
 
-        jButton18.setBackground(new java.awt.Color(27, 58, 107));
-        jButton18.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton18.setForeground(new java.awt.Color(255, 255, 255));
-        jButton18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colorful_my_account-removebg-pre.png"))); // NOI18N
-        jButton18.setText("My Account'");
+        myaccount.setBackground(new java.awt.Color(27, 58, 107));
+        myaccount.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        myaccount.setForeground(new java.awt.Color(255, 255, 255));
+        myaccount.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colorful_my_account-removebg-pre.png"))); // NOI18N
+        myaccount.setText("My Account'");
 
-        jButton19.setBackground(new java.awt.Color(27, 58, 107));
-        jButton19.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton19.setForeground(new java.awt.Color(255, 255, 255));
-        jButton19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_inv_98-removebg-previe.png"))); // NOI18N
-        jButton19.setText("Inventory");
+        inventory.setBackground(new java.awt.Color(27, 58, 107));
+        inventory.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        inventory.setForeground(new java.awt.Color(255, 255, 255));
+        inventory.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_inv_98-removebg-previe.png"))); // NOI18N
+        inventory.setText("Inventory");
 
-        jButton13.setBackground(new java.awt.Color(27, 58, 107));
-        jButton13.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton13.setForeground(new java.awt.Color(255, 255, 255));
-        jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_users-removebg-preview (1).png"))); // NOI18N
-        jButton13.setText("Users");
+        users.setBackground(new java.awt.Color(27, 58, 107));
+        users.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        users.setForeground(new java.awt.Color(255, 255, 255));
+        users.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_users-removebg-preview (1).png"))); // NOI18N
+        users.setText("Users");
 
-        jButton16.setBackground(new java.awt.Color(27, 58, 107));
-        jButton16.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton16.setForeground(new java.awt.Color(255, 255, 255));
-        jButton16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_reports-removebg-previ.png"))); // NOI18N
-        jButton16.setText("Reports");
+        reports.setBackground(new java.awt.Color(27, 58, 107));
+        reports.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        reports.setForeground(new java.awt.Color(255, 255, 255));
+        reports.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/colourful_reports-removebg-previ.png"))); // NOI18N
+        reports.setText("Reports");
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
@@ -206,9 +206,9 @@ public class booksearch extends javax.swing.JFrame {
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("MEMBER");
 
-        jLabel15.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel15.setText("ADMIN");
+        admin.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        admin.setForeground(new java.awt.Color(255, 255, 255));
+        admin.setText("ADMIN");
 
         jButton26.setBackground(new java.awt.Color(0, 255, 51));
         jButton26.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -231,20 +231,20 @@ public class booksearch extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(28, 28, 28)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton16)
-                            .addComponent(jButton13)
-                            .addComponent(jButton19)
-                            .addComponent(jButton12)
-                            .addComponent(jButton14)
-                            .addComponent(jButton15)
-                            .addComponent(jButton17)
-                            .addComponent(jButton18)
-                            .addComponent(jButton11)
+                            .addComponent(reports)
+                            .addComponent(users)
+                            .addComponent(inventory)
+                            .addComponent(myborrowings)
+                            .addComponent(wishlist)
+                            .addComponent(reviews)
+                            .addComponent(finepayment)
+                            .addComponent(myaccount)
+                            .addComponent(booksearch)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jButton10)
+                                .addComponent(dashboard)
                                 .addComponent(jLabel14, javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jLabel13, javax.swing.GroupLayout.Alignment.LEADING))
-                            .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(admin, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(17, 17, 17)
                         .addComponent(jButton26, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -262,27 +262,27 @@ public class booksearch extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel14)
                 .addGap(18, 18, 18)
-                .addComponent(jButton10)
+                .addComponent(dashboard)
                 .addGap(26, 26, 26)
-                .addComponent(jButton11)
+                .addComponent(booksearch)
                 .addGap(29, 29, 29)
-                .addComponent(jButton12)
+                .addComponent(myborrowings)
                 .addGap(31, 31, 31)
-                .addComponent(jButton14)
+                .addComponent(wishlist)
                 .addGap(34, 34, 34)
-                .addComponent(jButton15)
+                .addComponent(reviews)
                 .addGap(28, 28, 28)
-                .addComponent(jButton17)
+                .addComponent(finepayment)
                 .addGap(33, 33, 33)
-                .addComponent(jButton18)
+                .addComponent(myaccount)
                 .addGap(26, 26, 26)
-                .addComponent(jLabel15)
+                .addComponent(admin)
                 .addGap(18, 18, 18)
-                .addComponent(jButton19)
+                .addComponent(inventory)
                 .addGap(31, 31, 31)
-                .addComponent(jButton13)
+                .addComponent(users)
                 .addGap(30, 30, 30)
-                .addComponent(jButton16)
+                .addComponent(reports)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -1089,17 +1089,12 @@ public class booksearch extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel admin;
+    private javax.swing.JButton booksearch;
+    private javax.swing.JButton dashboard;
+    private javax.swing.JButton finepayment;
+    private javax.swing.JButton inventory;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton20;
     private javax.swing.JButton jButton21;
@@ -1121,7 +1116,6 @@ public class booksearch extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
@@ -1193,5 +1187,11 @@ public class booksearch extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel9;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JButton myaccount;
+    private javax.swing.JButton myborrowings;
+    private javax.swing.JButton reports;
+    private javax.swing.JButton reviews;
+    private javax.swing.JButton users;
+    private javax.swing.JButton wishlist;
     // End of variables declaration//GEN-END:variables
 }
