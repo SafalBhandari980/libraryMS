@@ -578,5 +578,14 @@ public class data {
         return list;
     }
 
-   
+   private static List<Borrowing> fetchBorrowings(Connection conn, String sql, Object... params) {
+        List<Borrowing> list = new ArrayList<>();
+        try {
+            ResultSet rs = mysql.preparedQuery(conn, sql, params);
+            while (rs != null && rs.next()) list.add(mapBorrowing(rs));
+        } catch (Exception e) {
+            System.err.println("fetchBorrowings error: " + e.getMessage());
+        }
+        return list;
+    }
 }
