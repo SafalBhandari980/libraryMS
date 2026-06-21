@@ -641,7 +641,21 @@ class WishlistController {
         }
     }
 
-    
+    private void wireNavigation() {
+        view.DashboardButton.addActionListener(e  -> navigateToBorrowings());
+        view.BorrowingButton.addActionListener(e  -> navigateToBorrowings());
+        view.WishlistButton.addActionListener(e   -> loadWishlist());   // refresh
+        view.WishlistButton2.addActionListener(e  -> loadWishlist());
+        view.BorrowingButton2.addActionListener(e -> navigateToBorrowings());
+
+        view.SearchBar.addActionListener(e -> {
+            String query = view.SearchBar.getText().trim();
+            if (!query.isEmpty() && !query.equals("Search books, authors, ISBN...."))
+                JOptionPane.showMessageDialog(view,
+                    "Search for: \"" + query + "\"",
+                    "Search", JOptionPane.INFORMATION_MESSAGE);
+        });
+    }
 
     private void navigateToBorrowings() {
         view.dispose();
