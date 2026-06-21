@@ -461,7 +461,11 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jTextField1" min="-2" pref="387" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
+<<<<<<< HEAD
                   <Component id="jButton2" min="-2" pref="37" max="-2" attributes="0"/>
+=======
+                  <Component id="notification" min="-2" pref="30" max="-2" attributes="0"/>
+>>>>>>> a5cde2a5e3d1b6888ea5e29bf3922b1529638eee
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="sb" min="-2" pref="56" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
@@ -470,20 +474,36 @@
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< HEAD
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
                       <Component id="jButton2" pref="36" max="32767" attributes="0"/>
                       <Component id="sb" alignment="0" max="32767" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
+=======
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="sb" alignment="0" max="32767" attributes="0"/>
+                      <Group type="102" attributes="0">
+>>>>>>> a5cde2a5e3d1b6888ea5e29bf3922b1529638eee
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jTextField1" min="-2" max="-2" attributes="0"/>
                               <Group type="103" alignment="0" groupAlignment="3" attributes="0">
                                   <Component id="dashyybo" alignment="3" min="-2" max="-2" attributes="0"/>
+<<<<<<< HEAD
                                   <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+=======
+                                  <Component id="notification" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="0" pref="3" max="32767" attributes="0"/>
+>>>>>>> a5cde2a5e3d1b6888ea5e29bf3922b1529638eee
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
@@ -500,6 +520,17 @@
             <Property name="text" type="java.lang.String" value="Dashboard"/>
           </Properties>
         </Component>
+<<<<<<< HEAD
+=======
+        <Component class="javax.swing.JLabel" name="notification">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/images/rangg (1).png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="jLabel3"/>
+          </Properties>
+        </Component>
+>>>>>>> a5cde2a5e3d1b6888ea5e29bf3922b1529638eee
         <Component class="javax.swing.JButton" name="sb">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -524,6 +555,7 @@
             <Property name="text" type="java.lang.String" value="jLabel4"/>
           </Properties>
         </Component>
+<<<<<<< HEAD
         <Component class="javax.swing.JButton" name="jButton2">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
@@ -531,6 +563,8 @@
             </Property>
           </Properties>
         </Component>
+=======
+>>>>>>> a5cde2a5e3d1b6888ea5e29bf3922b1529638eee
       </SubComponents>
     </Container>
     <Container class="javax.swing.JPanel" name="jPanel3">
@@ -865,7 +899,11 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <EmptySpace min="-2" pref="128" max="-2" attributes="0"/>
+<<<<<<< HEAD
                           <Component id="renew" min="-2" max="-2" attributes="0"/>
+=======
+                          <Component id="RenewButton" min="-2" max="-2" attributes="0"/>
+>>>>>>> a5cde2a5e3d1b6888ea5e29bf3922b1529638eee
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="jButton13" min="-2" max="-2" attributes="0"/>
                       </Group>
@@ -904,7 +942,11 @@
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jButton13" alignment="3" min="-2" max="-2" attributes="0"/>
+<<<<<<< HEAD
                       <Component id="renew" alignment="3" min="-2" max="-2" attributes="0"/>
+=======
+                      <Component id="RenewButton" alignment="3" min="-2" max="-2" attributes="0"/>
+>>>>>>> a5cde2a5e3d1b6888ea5e29bf3922b1529638eee
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
@@ -936,7 +978,11 @@
             <Property name="text" type="java.lang.String" value="Due : may 25, 2026"/>
           </Properties>
         </Component>
+<<<<<<< HEAD
         <Component class="javax.swing.JButton" name="renew">
+=======
+        <Component class="javax.swing.JButton" name="RenewButton">
+>>>>>>> a5cde2a5e3d1b6888ea5e29bf3922b1529638eee
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="f7" green="f2" red="ee" type="rgb"/>
@@ -1022,7 +1068,11 @@
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
+<<<<<<< HEAD
                           <Component id="secondrenew" min="-2" max="-2" attributes="0"/>
+=======
+                          <Component id="RenewButton2" min="-2" max="-2" attributes="0"/>
+>>>>>>> a5cde2a5e3d1b6888ea5e29bf3922b1529638eee
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="secondreturn" min="-2" max="-2" attributes="0"/>
                       </Group>
@@ -1054,7 +1104,11 @@
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="secondreturn" alignment="3" min="-2" max="-2" attributes="0"/>
+<<<<<<< HEAD
                       <Component id="secondrenew" alignment="3" min="-2" max="-2" attributes="0"/>
+=======
+                      <Component id="RenewButton2" alignment="3" min="-2" max="-2" attributes="0"/>
+>>>>>>> a5cde2a5e3d1b6888ea5e29bf3922b1529638eee
                   </Group>
                   <EmptySpace pref="40" max="32767" attributes="0"/>
               </Group>
@@ -1086,7 +1140,11 @@
             <Property name="text" type="java.lang.String" value="Due : May 12, 2026"/>
           </Properties>
         </Component>
+<<<<<<< HEAD
         <Component class="javax.swing.JButton" name="secondrenew">
+=======
+        <Component class="javax.swing.JButton" name="RenewButton2">
+>>>>>>> a5cde2a5e3d1b6888ea5e29bf3922b1529638eee
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="f7" green="f2" red="ee" type="rgb"/>
@@ -1184,7 +1242,11 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="123" max="-2" attributes="0"/>
+<<<<<<< HEAD
                           <Component id="thirdreturn" min="-2" max="-2" attributes="0"/>
+=======
+                          <Component id="ReturnButton" min="-2" max="-2" attributes="0"/>
+>>>>>>> a5cde2a5e3d1b6888ea5e29bf3922b1529638eee
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="payfine" min="-2" max="-2" attributes="0"/>
                       </Group>
@@ -1211,7 +1273,11 @@
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
+<<<<<<< HEAD
                       <Component id="thirdreturn" alignment="3" min="-2" max="-2" attributes="0"/>
+=======
+                      <Component id="ReturnButton" alignment="3" min="-2" max="-2" attributes="0"/>
+>>>>>>> a5cde2a5e3d1b6888ea5e29bf3922b1529638eee
                       <Component id="payfine" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
@@ -1244,7 +1310,11 @@
             <Property name="text" type="java.lang.String" value="Due : April 28 2026   Fine : Rs 45"/>
           </Properties>
         </Component>
+<<<<<<< HEAD
         <Component class="javax.swing.JButton" name="thirdreturn">
+=======
+        <Component class="javax.swing.JButton" name="ReturnButton">
+>>>>>>> a5cde2a5e3d1b6888ea5e29bf3922b1529638eee
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="f7" green="f2" red="ee" type="rgb"/>
@@ -1353,7 +1423,11 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="129" max="-2" attributes="0"/>
+<<<<<<< HEAD
                           <Component id="jButton19" min="-2" max="-2" attributes="0"/>
+=======
+                          <Component id="ReserveButton" min="-2" max="-2" attributes="0"/>
+>>>>>>> a5cde2a5e3d1b6888ea5e29bf3922b1529638eee
                       </Group>
                   </Group>
                   <EmptySpace pref="102" max="32767" attributes="0"/>
@@ -1377,7 +1451,11 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel46" min="-2" pref="23" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
+<<<<<<< HEAD
                   <Component id="jButton19" min="-2" max="-2" attributes="0"/>
+=======
+                  <Component id="ReserveButton" min="-2" max="-2" attributes="0"/>
+>>>>>>> a5cde2a5e3d1b6888ea5e29bf3922b1529638eee
                   <EmptySpace pref="55" max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -1454,7 +1532,11 @@
             <Property name="text" type="java.lang.String" value="jLabel46"/>
           </Properties>
         </Component>
+<<<<<<< HEAD
         <Component class="javax.swing.JButton" name="jButton19">
+=======
+        <Component class="javax.swing.JButton" name="ReserveButton">
+>>>>>>> a5cde2a5e3d1b6888ea5e29bf3922b1529638eee
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="6b" green="3a" red="1b" type="rgb"/>
@@ -1467,6 +1549,12 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Reserve"/>
           </Properties>
+<<<<<<< HEAD
+=======
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ReserveButtonActionPerformed"/>
+          </Events>
+>>>>>>> a5cde2a5e3d1b6888ea5e29bf3922b1529638eee
         </Component>
       </SubComponents>
     </Container>
@@ -1500,7 +1588,11 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="136" max="-2" attributes="0"/>
+<<<<<<< HEAD
                           <Component id="jButton20" min="-2" max="-2" attributes="0"/>
+=======
+                          <Component id="BorrowButton" min="-2" max="-2" attributes="0"/>
+>>>>>>> a5cde2a5e3d1b6888ea5e29bf3922b1529638eee
                       </Group>
                   </Group>
                   <EmptySpace pref="20" max="32767" attributes="0"/>
@@ -1528,7 +1620,11 @@
                           <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
                       </Group>
                   </Group>
+<<<<<<< HEAD
                   <Component id="jButton20" min="-2" max="-2" attributes="0"/>
+=======
+                  <Component id="BorrowButton" min="-2" max="-2" attributes="0"/>
+>>>>>>> a5cde2a5e3d1b6888ea5e29bf3922b1529638eee
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -1605,7 +1701,11 @@
             <Property name="text" type="java.lang.String" value="jLabel50"/>
           </Properties>
         </Component>
+<<<<<<< HEAD
         <Component class="javax.swing.JButton" name="jButton20">
+=======
+        <Component class="javax.swing.JButton" name="BorrowButton">
+>>>>>>> a5cde2a5e3d1b6888ea5e29bf3922b1529638eee
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="6b" green="3a" red="1b" type="rgb"/>
@@ -1656,7 +1756,11 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="137" max="-2" attributes="0"/>
+<<<<<<< HEAD
                           <Component id="jButton21" min="-2" max="-2" attributes="0"/>
+=======
+                          <Component id="JoinWaitlistButton" min="-2" max="-2" attributes="0"/>
+>>>>>>> a5cde2a5e3d1b6888ea5e29bf3922b1529638eee
                       </Group>
                   </Group>
                   <EmptySpace pref="29" max="32767" attributes="0"/>
@@ -1680,7 +1784,11 @@
                       <Component id="jPanel18" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
+<<<<<<< HEAD
                   <Component id="jButton21" min="-2" max="-2" attributes="0"/>
+=======
+                  <Component id="JoinWaitlistButton" min="-2" max="-2" attributes="0"/>
+>>>>>>> a5cde2a5e3d1b6888ea5e29bf3922b1529638eee
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -1757,7 +1865,11 @@
             <Property name="text" type="java.lang.String" value="jLabel54"/>
           </Properties>
         </Component>
+<<<<<<< HEAD
         <Component class="javax.swing.JButton" name="jButton21">
+=======
+        <Component class="javax.swing.JButton" name="JoinWaitlistButton">
+>>>>>>> a5cde2a5e3d1b6888ea5e29bf3922b1529638eee
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="6b" green="3a" red="1b" type="rgb"/>

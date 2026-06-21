@@ -1,8 +1,20 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * control.java  (controller package)
+ * ─────────────────────────────────────────────────────────────────────
+ * LoginController – wires LMS_Login_Page.java to the DAO layer.
+ *
+ * Buttons handled
+ *   • Signinbutton        → validate credentials, open appropriate screen
+ *   • CreateAnAccount     → open Signup_Page
+ *   • Forgotpasswordbutton → open Forgot_password_page
+ *
+ * All other controllers in this file:
+ *   SignupController, ForgotPasswordController,
+ *   MyBorrowingsController, WishlistController
+ *
+ * Pattern: same as Fixly HomeController / SignupController.
+ * ─────────────────────────────────────────────────────────────────────
  */
-
 package controller;
 
 import dao.data;

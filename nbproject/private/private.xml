@@ -3,7 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/D:/Group%206%20Project/libraryMS/src/view/booksearch.java</file>
+=======
+            <file>file:/C:/Users/acer/OneDrive/Dokumen/NetBeansProjects/LibraryMS/src/libraryms/LibraryMS.java</file>
+            <file>file:/C:/Users/acer/OneDrive/Dokumen/NetBeansProjects/LibraryMS/src/dao/data.java</file>
+            <file>file:/C:/Users/acer/OneDrive/Dokumen/NetBeansProjects/LibraryMS/src/controller/control.java</file>
+            <file>file:/C:/Users/acer/OneDrive/Dokumen/NetBeansProjects/LibraryMS/src/database/db.java</file>
+            <file>file:/C:/Users/acer/OneDrive/Dokumen/NetBeansProjects/LibraryMS/src/database/MySqlConnector.java</file>
+>>>>>>> a5cde2a5e3d1b6888ea5e29bf3922b1529638eee
         </group>
     </open-files>
 </project-private>
