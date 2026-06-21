@@ -124,20 +124,7 @@ public class MySqlConnector implements db {
      * Executes a parameterised INSERT / UPDATE / DELETE.
      * Returns rows affected, or -1 on error.
      */
-    public int preparedUpdate(Connection conn, String sql, Object... params) {
-        try {
-            PreparedStatement pst = conn.prepareStatement(sql);
-            for (int i = 0; i < params.length; i++) {
-                if (params[i] instanceof Integer) pst.setInt(i + 1, (Integer) params[i]);
-                else if (params[i] instanceof Double) pst.setDouble(i + 1, (Double) params[i]);
-                else pst.setString(i + 1, params[i] == null ? null : params[i].toString());
-            }
-            return pst.executeUpdate();
-        } catch (Exception e) {
-            System.err.println("LibraryMS DB: preparedUpdate error – " + e.getMessage());
-            return -1;
-        }
-    }
+    
 
     /**
      * Executes a parameterised INSERT and returns the auto-generated key.
