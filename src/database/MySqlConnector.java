@@ -143,4 +143,20 @@ public class MySqlConnector implements db {
      * Executes a parameterised INSERT and returns the auto-generated key.
      * Returns -1 on failure.
      */
-    
+    public int preparedInsertGetKey(Connection conn, String sql, Object... params) {
+        try {
+            PreparedStatement pst = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+            for (int i = 0; i < params.length; i++) {
+                if (params[i] instanceof Integer) pst.setInt(i + 1, (Integer) params[i]);
+                else if (params[i] instanceof Double) pst.setDouble(i + 1, (Double) params[i]);
+                else pst.setString(i + 1, params[i] == null ? null : params[i].toString());
+            }
+            pst.executeUpdate();
+            ResultSet keys = pst.getGeneratedKeys();
+            if (keys.next()) return keys.getInt(1);
+        } catch (Exception e) {
+            System.err.println("LibraryMS DB: preparedInsertGetKey error – " + e.getMessage());
+        }
+        return -1;
+    }
+}
