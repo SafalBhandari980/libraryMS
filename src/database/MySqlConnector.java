@@ -154,9 +154,6 @@ public class MySqlConnector implements db {
             pst.executeUpdate();
             ResultSet keys = pst.getGeneratedKeys();
             if (keys.next()) return keys.getInt(1);
-        } catch (Exception e) {
-            System.err.println("LibraryMS DB: preparedInsertGetKey error – " + e.getMessage());
-        }
-        return -1;
+        
     }
 }
