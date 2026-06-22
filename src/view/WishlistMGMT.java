@@ -102,9 +102,9 @@ public class WishlistMGMT extends javax.swing.JFrame {
         BookPanel3 = new javax.swing.JPanel();
         BookName3 = new javax.swing.JLabel();
         AuthorName3 = new javax.swing.JLabel();
-        AvailableLabel2 = new java.awt.Label();
+        CheckedOutLabel2 = new java.awt.Label();
         BookIcon3 = new javax.swing.JLabel();
-        BorrowNowButton3 = new javax.swing.JButton();
+        JoinWaitlistButton1 = new javax.swing.JButton();
         BookPanel4 = new javax.swing.JPanel();
         BookName4 = new javax.swing.JLabel();
         AuthorName4 = new javax.swing.JLabel();
@@ -120,9 +120,9 @@ public class WishlistMGMT extends javax.swing.JFrame {
         BookPanel6 = new javax.swing.JPanel();
         BookName6 = new javax.swing.JLabel();
         AuthorName6 = new javax.swing.JLabel();
-        AvailableLabel5 = new java.awt.Label();
+        CheckedOutLabel = new java.awt.Label();
         BookIcon6 = new javax.swing.JLabel();
-        BorrowNowButton6 = new javax.swing.JButton();
+        JoinWaitListButton = new javax.swing.JButton();
 
         jLabel34.setText("jLabel34");
 
@@ -334,7 +334,7 @@ public class WishlistMGMT extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jButton11, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE)
                         .addGap(51, 51, 51)))
-                .addContainerGap(105, Short.MAX_VALUE))
+                .addContainerGap(107, Short.MAX_VALUE))
         );
 
         jPanel2.setBackground(java.awt.Color.white);
@@ -697,13 +697,13 @@ public class WishlistMGMT extends javax.swing.JFrame {
         AuthorName3.setForeground(new java.awt.Color(204, 204, 204));
         AuthorName3.setText("Prerak Shrestha");
 
-        AvailableLabel2.setForeground(new java.awt.Color(153, 255, 153));
-        AvailableLabel2.setText("Available");
+        CheckedOutLabel2.setForeground(new java.awt.Color(255, 51, 51));
+        CheckedOutLabel2.setText("Checked Out");
 
         BookIcon3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-book3.png"))); // NOI18N
         BookIcon3.setText("jLabel33");
 
-        BorrowNowButton3.setText("Borrow Now");
+        JoinWaitlistButton1.setText("Join Waitlist");
 
         javax.swing.GroupLayout BookPanel3Layout = new javax.swing.GroupLayout(BookPanel3);
         BookPanel3.setLayout(BookPanel3Layout);
@@ -714,9 +714,9 @@ public class WishlistMGMT extends javax.swing.JFrame {
                 .addComponent(BookIcon3, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(45, 45, 45)
                 .addGroup(BookPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(BorrowNowButton3)
+                    .addComponent(JoinWaitlistButton1)
                     .addComponent(BookName3, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AvailableLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(CheckedOutLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(AuthorName3))
                 .addContainerGap(52, Short.MAX_VALUE))
         );
@@ -731,9 +731,9 @@ public class WishlistMGMT extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(AuthorName3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(AvailableLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(CheckedOutLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(BorrowNowButton3)
+                .addComponent(JoinWaitlistButton1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -844,14 +844,14 @@ public class WishlistMGMT extends javax.swing.JFrame {
         AuthorName6.setForeground(new java.awt.Color(204, 204, 204));
         AuthorName6.setText("Rojan Koju");
 
-        AvailableLabel5.setForeground(new java.awt.Color(255, 51, 51));
-        AvailableLabel5.setText("Checked Out");
+        CheckedOutLabel.setForeground(new java.awt.Color(255, 51, 51));
+        CheckedOutLabel.setText("Checked Out");
 
         BookIcon6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-book4.png"))); // NOI18N
         BookIcon6.setText("jLabel33");
 
-        BorrowNowButton6.setBackground(new java.awt.Color(204, 204, 204));
-        BorrowNowButton6.setText("Borrow Now");
+        JoinWaitListButton.setBackground(new java.awt.Color(204, 204, 204));
+        JoinWaitListButton.setText("Join Waitlist");
 
         javax.swing.GroupLayout BookPanel6Layout = new javax.swing.GroupLayout(BookPanel6);
         BookPanel6.setLayout(BookPanel6Layout);
@@ -862,9 +862,9 @@ public class WishlistMGMT extends javax.swing.JFrame {
                 .addComponent(BookIcon6, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(45, 45, 45)
                 .addGroup(BookPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(BorrowNowButton6)
+                    .addComponent(JoinWaitListButton)
                     .addComponent(BookName6, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AvailableLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(CheckedOutLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(AuthorName6))
                 .addContainerGap(52, Short.MAX_VALUE))
         );
@@ -879,10 +879,10 @@ public class WishlistMGMT extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(AuthorName6)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(AvailableLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(CheckedOutLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(BorrowNowButton6)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(JoinWaitListButton)
+                .addContainerGap(8, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
@@ -967,7 +967,7 @@ public class WishlistMGMT extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(37, 37, 37)
+                        .addGap(40, 40, 40)
                         .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(188, Short.MAX_VALUE))
@@ -1022,10 +1022,8 @@ public class WishlistMGMT extends javax.swing.JFrame {
     private javax.swing.JLabel AuthorName6;
     private java.awt.Label AvailableLabel;
     private java.awt.Label AvailableLabel1;
-    private java.awt.Label AvailableLabel2;
     private java.awt.Label AvailableLabel3;
     private java.awt.Label AvailableLabel4;
-    private java.awt.Label AvailableLabel5;
     private javax.swing.JLabel BookIcon1;
     private javax.swing.JLabel BookIcon2;
     private javax.swing.JLabel BookIcon3;
@@ -1047,17 +1045,19 @@ public class WishlistMGMT extends javax.swing.JFrame {
     private javax.swing.JButton BookSearchButton;
     private javax.swing.JButton BorrowNowButton1;
     private javax.swing.JButton BorrowNowButton2;
-    private javax.swing.JButton BorrowNowButton3;
     private javax.swing.JButton BorrowNowButton4;
     private javax.swing.JButton BorrowNowButton5;
-    private javax.swing.JButton BorrowNowButton6;
     private javax.swing.JButton BorrowingButton;
     private javax.swing.JToggleButton BorrowingButton2;
+    private java.awt.Label CheckedOutLabel;
+    private java.awt.Label CheckedOutLabel2;
     private javax.swing.JButton DashboardButton;
     private javax.swing.JToggleButton EditProfileButton;
     private javax.swing.JButton FineButton;
     private javax.swing.JToggleButton FineButton2;
     private javax.swing.JButton InventoryButton;
+    private javax.swing.JButton JoinWaitListButton;
+    private javax.swing.JButton JoinWaitlistButton1;
     private javax.swing.JButton MyAccountButton;
     private javax.swing.JButton NotificationButton;
     private javax.swing.JButton ProfileButton;

@@ -1,24 +1,16 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-/*
  * db.java  (database package)
- * ─────────────────────────────────────────────────────────────────
- * Low-level SQL executor. Called ONLY by DAO classes (data.java).
- * Never call this directly from Controller or View.
- *
- * Pattern:
- *   View → Controller → DAO → db → MySqlConnector → MySQL
- * ─────────────────────────────────────────────────────────────────
+ * Interface defining the database contract for LibraryMS.
+ * Pattern used by Fixly and Class39 projects.
  */
 package database;
 
 import java.sql.Connection;
+import java.sql.ResultSet;
 
-
-public class db {
-
-
-    
+public interface db {
+    Connection openConnection();
+    void closeConnection(Connection conn);
+    ResultSet runQuery(Connection conn, String query);
+    int executeUpdate(Connection conn, String query);
 }
